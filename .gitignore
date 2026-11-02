@@ -1,0 +1,12 @@
+node_modules
+build
+.react-router
+.env
+.env.*
+!.env.example
+coverage
+playwright-report
+test-results
+.ai/specs
+.DS_Store
+*.local
