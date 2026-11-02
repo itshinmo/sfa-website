@@ -1,0 +1,387 @@
+{
+  "locale": "fa",
+  "meta": {
+    "title": "صفا | بهینه‌سازی آبیاری برای کشاورزی مناطق خشک",
+    "description": "صفا با هوش مصنوعی و بهینه‌سازی ریاضی، برنامه آبیاری را برای هر محصول، خاک و مرحله رشد تنظیم می‌کند."
+  },
+  "hero": {
+    "eyebrow": "بهینه‌سازی آبیاری برای مناطق خشک و نیمه‌خشک",
+    "title": "آب دقیق‌تر،",
+    "titleAccent": "مزرعه مطمئن‌تر",
+    "description": "صفا مدل‌های رشد گیاه را با بهینه‌سازی ریاضی کنار هم می‌گذارد تا برنامه آبیاری با محصول، خاک و مرحله رشد هماهنگ شود و آب در جای درست مصرف شود.",
+    "primaryCta": "دریافت صفا",
+    "secondaryCta": "صفا چطور کار می‌کند",
+    "image": {
+      "landscape": "/images/homepage/hero-landscape.jpg",
+      "landscapeWebp": "/images/homepage/hero-landscape.webp",
+      "portrait": "/images/homepage/hero-portrait.jpg",
+      "portraitWebp": "/images/homepage/hero-portrait.webp",
+      "alt": "نمایی از یک مزرعه سرسبز در نور روز"
+    },
+    "highlights": [
+      {
+        "id": "hero-water-reduction",
+        "value": "۲۸٪",
+        "label": "کاهش مصرف آب"
+      },
+      {
+        "id": "hero-crop-species",
+        "value": "۲۴۶",
+        "label": "گونه زراعی و باغی"
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "چرا صفا",
+    "title": "برنامه‌ای که با گیاه هم‌گام می‌شود",
+    "description": "صفا داده‌های محصول و خاک را با مدل رشد گیاه ترکیب می‌کند تا تصمیم آبیاری از یک الگوی ثابت فاصله بگیرد.",
+    "items": [
+      {
+        "id": "water-optimization",
+        "title": "بهینه‌سازی آبیاری",
+        "description": "برنامه بهینه با توابع تولید محصول و بهینه‌سازی ریاضی تعیین می‌شود؛ برای محصولات زراعی و باغی."
+      },
+      {
+        "id": "ai-assistant",
+        "title": "دستیار هوش مصنوعی",
+        "description": "پرسش‌های کشاورزی را به زبان ساده بپرسید؛ صفا با تکیه بر پایگاه‌های داده کشاورزی، پاسخ و توصیه تخصصی می‌دهد."
+      },
+      {
+        "id": "multi-crop-support",
+        "title": "پشتیبانی از ۲۴۶ گونه",
+        "description": "برنامه بر اساس مرحله رشد و حساسیت گیاه به تنش آبی تنظیم می‌شود."
+      },
+      {
+        "id": "arid-regions",
+        "title": "ساخته‌شده برای مناطق کم‌آب",
+        "description": "برای مناطق خشک و نیمه‌خشک طراحی شده و با داده‌های ملی کشاورزی و سامانه‌های مدیریت منابع آب سازگار است."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "نحوه کار",
+    "title": "از داده مزرعه تا تصمیم آبیاری",
+    "description": "صفا در سه گام، داده‌های مزرعه را به برنامه‌ای قابل اجرا تبدیل می‌کند.",
+    "steps": [
+      {
+        "id": "field-context",
+        "step": 1,
+        "title": "مزرعه را در نظر می‌گیرد",
+        "description": "محصول، خاک و مرحله رشد، ورودی تصمیم آبیاری هستند."
+      },
+      {
+        "id": "optimization",
+        "step": 2,
+        "title": "برنامه بهینه را می‌سازد",
+        "description": "توابع تولید محصول و بهینه‌سازی ریاضی، برنامه آبیاری را تعیین می‌کنند."
+      },
+      {
+        "id": "growth-stage",
+        "step": 3,
+        "title": "با رشد گیاه هم‌گام می‌شود",
+        "description": "حساسیت به تنش آبی و تغییر مرحله رشد، برنامه را دقیق‌تر می‌کند."
+      }
+    ],
+    "screens": [
+      {
+        "id": "fields",
+        "src": "/images/app/app-fields.png",
+        "alt": "نمای صفحه مزارع در اپلیکیشن صفا"
+      },
+      {
+        "id": "irrigation",
+        "src": "/images/app/app-irrigation.png",
+        "alt": "نمای برنامه آبیاری در اپلیکیشن صفا"
+      },
+      {
+        "id": "soil-lab",
+        "src": "/images/app/app-soil-lab.png",
+        "alt": "نمای آزمایشگاه خاک در اپلیکیشن صفا"
+      },
+      {
+        "id": "login",
+        "src": "/images/app/app-login.jpg",
+        "alt": "نمای ورود به اپلیکیشن صفا",
+        "webp": "/images/app/app-login.webp"
+      }
+    ]
+  },
+  "research": {
+    "eyebrow": "پژوهش",
+    "title": "نتیجه پژوهش‌ها",
+    "description": "اعدادی که در پژوهش‌های تیم صفا به دست آمده‌اند.",
+    "stats": [
+      {
+        "id": "saved-water",
+        "value": 2000,
+        "display": "۲٬۰۰۰",
+        "unit": "m³",
+        "label": "آب صرفه‌جویی‌شده در هر هکتار"
+      },
+      {
+        "id": "reduced-use",
+        "value": 28,
+        "display": "۲۸",
+        "unit": "%",
+        "label": "کاهش مصرف آب"
+      },
+      {
+        "id": "water-productivity",
+        "value": 4,
+        "display": "۴",
+        "unit": "برابر",
+        "label": "افزایش بهره‌وری آب"
+      },
+      {
+        "id": "crop-species",
+        "value": 246,
+        "display": "۲۴۶",
+        "unit": "",
+        "label": "گونه زراعی و باغی تحت پشتیبانی"
+      }
+    ]
+  },
+  "achievements": {
+    "eyebrow": "مسیر صفا",
+    "title": "دستاوردها",
+    "description": "عناوینی که در مسیر توسعه صفا به دست آمده‌اند.",
+    "items": [
+      {
+        "id": "irc-best-idea",
+        "title": "ایده برتر",
+        "description": "دریافت عنوان ایده برتر در اولین دوره مسابقه IRC."
+      },
+      {
+        "id": "irc-best-paper",
+        "title": "مقاله برتر",
+        "description": "کسب عنوان مقاله برتر در اولین دوره مسابقه IRC."
+      },
+      {
+        "id": "watsave-national-nominee",
+        "title": "منتخب ملی مسابقه Watsave",
+        "description": "انتخاب به‌عنوان نماینده ملی برای حضور در مسابقه Watsave در حوزه مدیریت."
+      },
+      {
+        "id": "unesco-national-nominee",
+        "title": "منتخب ملی مسابقه یونسکو",
+        "description": "انتخاب به‌عنوان نماینده ملی برای حضور در مسابقه یونسکو بر اساس شایستگی‌های علمی و دستاوردهای پژوهشی."
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "تیم",
+    "title": "تیم صفا",
+    "description": "پژوهش کشاورزی، مهندسی آب و هوش مصنوعی، در یک تیم.",
+    "members": [
+      {
+        "id": "mahdi-sarai",
+        "name": "مهدی سرایی تبریزی",
+        "role": "مدیر پروژه",
+        "bio": "متخصص هیدروانفورماتیک با تمرکز بر آبیاری و زهکشی.",
+        "image": "/images/team/Mahdi.png",
+        "imageAlt": "پرتره مهدی سرایی تبریزی",
+        "links": [
+          {
+            "label": "وب‌سایت",
+            "href": "https://zil.ink/mahdi-sarai-tabrizi"
+          }
+        ]
+      },
+      {
+        "id": "arash-tafteh",
+        "name": "آرش تافته",
+        "role": "متخصص ارشد سامانه‌های کشاورزی و منابع آب",
+        "bio": "مشاور مدل‌سازی هیدرولوژیکی و توابع تولید.",
+        "image": "/images/team/Arash.png",
+        "imageAlt": "پرتره آرش تافته",
+        "links": [
+          {
+            "label": "لینکدین",
+            "href": "https://ir.linkedin.com/in/arash-tafteh-09b1067b"
+          },
+          {
+            "label": "Google Scholar",
+            "href": "https://scholar.google.com/citations?user=UTmyMe0AAAAJ&hl=en"
+          }
+        ]
+      },
+      {
+        "id": "hossein-moradi",
+        "name": "حسین مرادی سیزکوهی",
+        "role": "سرپرست فنی",
+        "bio": "معمار راهکار و رهبر فنی مهندسی.",
+        "image": "/images/team/Hossein.png",
+        "imageAlt": "پرتره حسین مرادی سیزکوهی",
+        "links": [
+          {
+            "label": "لینکدین",
+            "href": "https://www.linkedin.com/in/hossein-moradi-bb35ab2b2"
+          }
+        ]
+      },
+      {
+        "id": "mohsen-shamsitabar",
+        "name": "محسن شمسی‌تبار",
+        "role": "توسعه‌دهنده وب",
+        "bio": "سازنده رابط‌های وب مقیاس‌پذیر.",
+        "image": "/images/team/Mohsen.png",
+        "imageAlt": "پرتره محسن شمسی‌تبار",
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Mohsen-Shamsitabar"
+          }
+        ]
+      },
+      {
+        "id": "kamyar-nakhaie",
+        "name": "کامیار نخعی خونیکی",
+        "role": "توسعه‌دهنده هوش مصنوعی و یادگیری ماشین",
+        "bio": "طراح و پیاده‌ساز مدل‌های پیشرفته یادگیری ماشین.",
+        "image": "/images/team/Kamyar.png",
+        "imageAlt": "پرتره کامیار نخعی خونیکی",
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/thekampiler-code"
+          }
+        ]
+      },
+      {
+        "id": "soheil-mehrizi",
+        "name": "سهیل مهریزی",
+        "role": "دانشمند داده و مهندس هوش مصنوعی",
+        "bio": "تحلیلگر داده و مهندس یادگیری عمیق.",
+        "image": "/images/team/Soheil.png",
+        "imageAlt": "پرتره سهیل مهریزی",
+        "links": [
+          {
+            "label": "لینکدین",
+            "href": "https://www.linkedin.com/in/soheilmehrizi"
+          }
+        ]
+      }
+    ]
+  },
+  "partners": {
+    "eyebrow": "همراهان",
+    "title": "همکاران علمی",
+    "description": "صفا با همکاری نهادهای دانشگاهی و پژوهشی توسعه پیدا می‌کند.",
+    "items": [
+      {
+        "id": "srbiau",
+        "name": "دانشگاه آزاد اسلامی، واحد علوم و تحقیقات",
+        "logo": "/images/partners/srbiau.png",
+        "logoAlt": "لوگوی دانشگاه آزاد اسلامی، واحد علوم و تحقیقات"
+      },
+      {
+        "id": "swri",
+        "name": "مؤسسه تحقیقات خاک و آب",
+        "logo": "/images/partners/swri.png",
+        "logoAlt": "لوگوی مؤسسه تحقیقات خاک و آب"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "پرسش‌ها",
+    "title": "پرسش‌های پرتکرار",
+    "description": "پاسخ کوتاه به پرسش‌هایی که پیش از شروع با صفا مطرح می‌شوند.",
+    "items": [
+      {
+        "id": "what-is-sfa",
+        "question": "صفا چیست؟",
+        "answer": "صفا یک سامانه بهینه‌سازی آبیاری مبتنی بر هوش مصنوعی است که برای کشاورزی مناطق خشک و نیمه‌خشک طراحی شده است."
+      },
+      {
+        "id": "how-schedule-works",
+        "question": "برنامه آبیاری چگونه تعیین می‌شود؟",
+        "answer": "مدل صفا با توابع تولید محصول و بهینه‌سازی ریاضی، برنامه بهینه را برای محصولات زراعی و باغی تعیین می‌کند و آن را با مرحله رشد و حساسیت گیاه به تنش آبی تنظیم می‌کند."
+      },
+      {
+        "id": "species-count",
+        "question": "صفا از چند گونه پشتیبانی می‌کند؟",
+        "answer": "۲۴۶ گونه زراعی و باغی."
+      },
+      {
+        "id": "faq-ai-assistant",
+        "question": "دستیار هوش مصنوعی چه کاری انجام می‌دهد؟",
+        "answer": "پرسش‌های کشاورزی را به زبان ساده دریافت می‌کند و با تکیه بر پایگاه‌های داده کشاورزی، پاسخ و توصیه تخصصی ارائه می‌دهد."
+      },
+      {
+        "id": "supported-regions",
+        "question": "صفا برای چه مناطقی مناسب است؟",
+        "answer": "مناطق خشک و نیمه‌خشک؛ صفا با داده‌های ملی کشاورزی و سامانه‌های مدیریت منابع آب سازگار است."
+      },
+      {
+        "id": "download",
+        "question": "اپلیکیشن صفا را از کجا دریافت کنم؟",
+        "answer": "لینک‌های رسمی فروشگاه‌ها به‌زودی در بخش دریافت همین صفحه قرار می‌گیرند. نسخه وب هم از همان بخش در دسترس است."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "تماس",
+    "title": "با ما در تماس باشید",
+    "description": "برای پرسش درباره صفا، همکاری پژوهشی یا دسترسی به اپلیکیشن بنویسید.",
+    "email": "info@sfa-agri.ir",
+    "phone": null,
+    "location": "تهران، ایران",
+    "hours": "شنبه تا چهارشنبه، ۹:۰۰ تا ۱۷:۰۰"
+  },
+  "downloads": {
+    "eyebrow": "دریافت",
+    "title": "صفا را روی دستگاه خود داشته باشید",
+    "description": "نسخه وب را همین حالا باز کنید؛ نسخه‌های اندروید و دسکتاپ به‌زودی اضافه می‌شوند.",
+    "note": "لینک‌های فروشگاه‌ها به‌زودی تکمیل می‌شوند.",
+    "items": [
+      {
+        "id": "web",
+        "label": "نسخه وب",
+        "status": "available",
+        "href": "https://sfa-agri.ir"
+      },
+      {
+        "id": "google-play",
+        "label": "Google Play",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "bazaar",
+        "label": "بازار",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "myket",
+        "label": "مایکت",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "apk",
+        "label": "فایل APK",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "macos",
+        "label": "macOS",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "linux",
+        "label": "Linux",
+        "status": "placeholder",
+        "href": null
+      }
+    ]
+  }
+}

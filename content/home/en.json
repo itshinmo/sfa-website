@@ -1,0 +1,387 @@
+{
+  "locale": "en",
+  "meta": {
+    "title": "SFA | Irrigation optimization for arid farms",
+    "description": "SFA combines AI, crop models, and mathematical optimization to tailor irrigation to each crop, soil, and growth stage."
+  },
+  "hero": {
+    "eyebrow": "Irrigation optimization for arid and semi-arid farms",
+    "title": "Precise water,",
+    "titleAccent": "resilient farms",
+    "description": "SFA pairs crop growth models with mathematical optimization to align irrigation with each crop, soil, and growth stage—so water goes where it is needed most.",
+    "primaryCta": "Get SFA",
+    "secondaryCta": "See how SFA works",
+    "image": {
+      "landscape": "/images/homepage/hero-landscape.jpg",
+      "landscapeWebp": "/images/homepage/hero-landscape.webp",
+      "portrait": "/images/homepage/hero-portrait.jpg",
+      "portraitWebp": "/images/homepage/hero-portrait.webp",
+      "alt": "A green farm field in daylight"
+    },
+    "highlights": [
+      {
+        "id": "hero-water-reduction",
+        "value": "28%",
+        "label": "Reduction in water use"
+      },
+      {
+        "id": "hero-crop-species",
+        "value": "246",
+        "label": "Crop and orchard species"
+      }
+    ]
+  },
+  "features": {
+    "eyebrow": "Why SFA",
+    "title": "A plan that follows the crop",
+    "description": "SFA combines crop and soil data with a crop growth model, moving irrigation decisions away from a one-size-fits-all schedule.",
+    "items": [
+      {
+        "id": "water-optimization",
+        "title": "Irrigation optimization",
+        "description": "Optimal schedules come from crop yield functions and mathematical optimization, for field crops and orchards."
+      },
+      {
+        "id": "ai-assistant",
+        "title": "AI assistant",
+        "description": "Ask farming questions in plain language; SFA draws on agricultural databases to return expert answers and recommendations."
+      },
+      {
+        "id": "multi-crop-support",
+        "title": "Support for 246 species",
+        "description": "Schedules adapt to growth stage and each crop's sensitivity to water stress."
+      },
+      {
+        "id": "arid-regions",
+        "title": "Built for water-scarce regions",
+        "description": "Designed for arid and semi-arid regions and compatible with national agricultural datasets and water-management systems."
+      }
+    ]
+  },
+  "showcase": {
+    "eyebrow": "How it works",
+    "title": "From field data to an irrigation decision",
+    "description": "In three steps, SFA turns field data into an irrigation plan.",
+    "steps": [
+      {
+        "id": "field-context",
+        "step": 1,
+        "title": "It reads the field",
+        "description": "Crop, soil, and growth stage shape the irrigation decision."
+      },
+      {
+        "id": "optimization",
+        "step": 2,
+        "title": "It builds the optimal schedule",
+        "description": "Crop yield functions and mathematical optimization determine the irrigation schedule."
+      },
+      {
+        "id": "growth-stage",
+        "step": 3,
+        "title": "It moves with the crop",
+        "description": "Water-stress sensitivity and changing growth stages keep the plan aligned."
+      }
+    ],
+    "screens": [
+      {
+        "id": "fields",
+        "src": "/images/app/app-fields.png",
+        "alt": "The fields screen in the SFA app"
+      },
+      {
+        "id": "irrigation",
+        "src": "/images/app/app-irrigation.png",
+        "alt": "The irrigation plan screen in the SFA app"
+      },
+      {
+        "id": "soil-lab",
+        "src": "/images/app/app-soil-lab.png",
+        "alt": "The soil lab screen in the SFA app"
+      },
+      {
+        "id": "login",
+        "src": "/images/app/app-login.jpg",
+        "alt": "The SFA app login screen",
+        "webp": "/images/app/app-login.webp"
+      }
+    ]
+  },
+  "research": {
+    "eyebrow": "Research",
+    "title": "Research results",
+    "description": "Numbers from the SFA research team's work.",
+    "stats": [
+      {
+        "id": "saved-water",
+        "value": 2000,
+        "display": "2,000",
+        "unit": "m³",
+        "label": "Water saved per hectare"
+      },
+      {
+        "id": "reduced-use",
+        "value": 28,
+        "display": "28",
+        "unit": "%",
+        "label": "Reduction in water use"
+      },
+      {
+        "id": "water-productivity",
+        "value": 4,
+        "display": "4",
+        "unit": "×",
+        "label": "Increase in water productivity"
+      },
+      {
+        "id": "crop-species",
+        "value": 246,
+        "display": "246",
+        "unit": "",
+        "label": "Supported crop and orchard species"
+      }
+    ]
+  },
+  "achievements": {
+    "eyebrow": "The SFA journey",
+    "title": "Achievements",
+    "description": "Recognition earned along SFA's path.",
+    "items": [
+      {
+        "id": "irc-best-idea",
+        "title": "Best Idea",
+        "description": "Received the Best Idea Award in the first IRC competition."
+      },
+      {
+        "id": "irc-best-paper",
+        "title": "Best Paper",
+        "description": "Awarded Best Paper in the first IRC competition."
+      },
+      {
+        "id": "watsave-national-nominee",
+        "title": "National Watsave nominee",
+        "description": "Selected as the national nominee to take part in the Watsave competition in the Management category."
+      },
+      {
+        "id": "unesco-national-nominee",
+        "title": "National UNESCO nominee",
+        "description": "Selected as the national nominee for the UNESCO competition based on academic merit and research achievements."
+      }
+    ]
+  },
+  "team": {
+    "eyebrow": "Team",
+    "title": "The SFA team",
+    "description": "Agricultural research, water engineering, and AI, in one team.",
+    "members": [
+      {
+        "id": "mahdi-sarai",
+        "name": "Mahdi Sarai Tabrizi",
+        "role": "Project Manager",
+        "bio": "Hydroinformatics specialist focused on irrigation and drainage.",
+        "image": "/images/team/Mahdi.png",
+        "imageAlt": "Portrait of Mahdi Sarai Tabrizi",
+        "links": [
+          {
+            "label": "Website",
+            "href": "https://zil.ink/mahdi-sarai-tabrizi"
+          }
+        ]
+      },
+      {
+        "id": "arash-tafteh",
+        "name": "Arash Tafteh",
+        "role": "Senior Specialist, Agricultural and Water Resource Systems",
+        "bio": "Consultant in hydrological modeling and production functions.",
+        "image": "/images/team/Arash.png",
+        "imageAlt": "Portrait of Arash Tafteh",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "https://ir.linkedin.com/in/arash-tafteh-09b1067b"
+          },
+          {
+            "label": "Google Scholar",
+            "href": "https://scholar.google.com/citations?user=UTmyMe0AAAAJ&hl=en"
+          }
+        ]
+      },
+      {
+        "id": "hossein-moradi",
+        "name": "Hossein Moradi Sizkouhi",
+        "role": "Technical Lead",
+        "bio": "Solution architect and engineering lead.",
+        "image": "/images/team/Hossein.png",
+        "imageAlt": "Portrait of Hossein Moradi Sizkouhi",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/hossein-moradi-bb35ab2b2"
+          }
+        ]
+      },
+      {
+        "id": "mohsen-shamsitabar",
+        "name": "Mohsen Shamsitabar",
+        "role": "Web Developer",
+        "bio": "Builds scalable web interfaces.",
+        "image": "/images/team/Mohsen.png",
+        "imageAlt": "Portrait of Mohsen Shamsitabar",
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Mohsen-Shamsitabar"
+          }
+        ]
+      },
+      {
+        "id": "kamyar-nakhaie",
+        "name": "Kamyar Nakhaie Khoonikie",
+        "role": "AI and Machine Learning Developer",
+        "bio": "Designs and deploys advanced machine-learning models.",
+        "image": "/images/team/Kamyar.png",
+        "imageAlt": "Portrait of Kamyar Nakhaie Khoonikie",
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/thekampiler-code"
+          }
+        ]
+      },
+      {
+        "id": "soheil-mehrizi",
+        "name": "Soheil Mehrizi",
+        "role": "Data Scientist and AI Engineer",
+        "bio": "Data analyst and deep-learning engineer.",
+        "image": "/images/team/Soheil.png",
+        "imageAlt": "Portrait of Soheil Mehrizi",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/soheilmehrizi"
+          }
+        ]
+      }
+    ]
+  },
+  "partners": {
+    "eyebrow": "Partners",
+    "title": "Research partners",
+    "description": "SFA develops alongside university and research-institute partners.",
+    "items": [
+      {
+        "id": "srbiau",
+        "name": "Islamic Azad University, Science and Research Branch",
+        "logo": "/images/partners/srbiau.png",
+        "logoAlt": "Islamic Azad University, Science and Research Branch logo"
+      },
+      {
+        "id": "swri",
+        "name": "Soil and Water Research Institute",
+        "logo": "/images/partners/swri.png",
+        "logoAlt": "Soil and Water Research Institute logo"
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Frequently asked questions",
+    "description": "Short answers to the questions people ask before starting with SFA.",
+    "items": [
+      {
+        "id": "what-is-sfa",
+        "question": "What is SFA?",
+        "answer": "SFA is an AI-assisted irrigation optimization system built for arid and semi-arid agriculture."
+      },
+      {
+        "id": "how-schedule-works",
+        "question": "How is the irrigation schedule determined?",
+        "answer": "SFA uses crop yield functions and mathematical optimization to determine an optimal schedule for field crops and orchards, then adjusts it for growth stage and water-stress sensitivity."
+      },
+      {
+        "id": "species-count",
+        "question": "How many species does SFA support?",
+        "answer": "246 field and orchard species."
+      },
+      {
+        "id": "faq-ai-assistant",
+        "question": "What does the AI assistant do?",
+        "answer": "It takes farming questions in plain language and draws on agricultural databases to provide expert answers and recommendations."
+      },
+      {
+        "id": "supported-regions",
+        "question": "Which regions is SFA designed for?",
+        "answer": "Arid and semi-arid regions. SFA is compatible with national agricultural datasets and water-management systems."
+      },
+      {
+        "id": "download",
+        "question": "Where can I download the SFA app?",
+        "answer": "Official store links will be added to the download section as soon as they are live. The web app is available from the same section."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in touch",
+    "description": "Write to us about SFA, research collaboration, or app access.",
+    "email": "info@sfa-agri.ir",
+    "phone": null,
+    "location": "Tehran, Iran",
+    "hours": "Saturday–Wednesday, 9:00–17:00"
+  },
+  "downloads": {
+    "eyebrow": "Download",
+    "title": "Bring SFA to your devices",
+    "description": "Open the web app now; Android and desktop versions are coming soon.",
+    "note": "Store links will be added as soon as the listings are live.",
+    "items": [
+      {
+        "id": "web",
+        "label": "Web app",
+        "status": "available",
+        "href": "https://sfa-agri.ir"
+      },
+      {
+        "id": "google-play",
+        "label": "Google Play",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "bazaar",
+        "label": "Bazaar",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "myket",
+        "label": "Myket",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "apk",
+        "label": "Direct APK",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "windows",
+        "label": "Windows",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "macos",
+        "label": "macOS",
+        "status": "placeholder",
+        "href": null
+      },
+      {
+        "id": "linux",
+        "label": "Linux",
+        "status": "placeholder",
+        "href": null
+      }
+    ]
+  }
+}
