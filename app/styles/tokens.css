@@ -1,0 +1,150 @@
+/* Primitive and semantic design tokens.
+ *
+ * Locked identity: Field Notes × Rooted — a light, editorial hybrid of the
+ * scientific-agritech and organic-modern directions. See ADR-008.
+ *
+ * Components consume semantic tokens (or component tokens) only. When the
+ * marketing identity changes, this file is the main place to edit.
+ */
+:root {
+  color-scheme: light;
+
+  /* Brand — forest green */
+  --color-brand-950: #071c14;
+  --color-brand-900: #0b2b21;
+  --color-brand-700: #15503b;
+  --color-brand-600: #246b4d;
+  --color-brand-500: #387253;
+  --color-brand-300: #9bbfa3;
+  --color-brand-100: #dde9dd;
+  --color-brand-50: #f1f6ef;
+
+  /* Warm neutrals — cream and sand */
+  --color-sand-50: #f7f1e3;
+  --color-sand-100: #efe7d6;
+  --color-sand-200: #e3d8c3;
+
+  /* Ink */
+  --color-ink-950: #0b1d16;
+  --color-ink-900: #13231c;
+  --color-ink-700: #384a42;
+  --color-ink-500: #4e6157;
+  --color-ink-300: #a7b3ad;
+
+  /* Water accent */
+  --color-water-700: #1d6380;
+  --color-water-500: #2d89ad;
+  --color-water-100: #d8eaf1;
+
+  /* Feedback */
+  --color-danger-700: #a13232;
+  --color-danger-100: #fbe5e5;
+  --color-success-700: #216b45;
+  --color-success-100: #e0f2e8;
+
+  /* Semantic color */
+  --color-bg: var(--color-sand-50);
+  --color-surface: #fffcf4;
+  --color-surface-raised: #fbf7ec;
+  --color-surface-muted: var(--color-sand-100);
+  --color-text: var(--color-ink-900);
+  --color-text-strong: var(--color-ink-950);
+  --color-text-muted: var(--color-ink-500);
+  --color-text-inverse: #ffffff;
+  --color-border: #dcd3c1;
+  --color-border-strong: #6f7c6b;
+  --color-brand: var(--color-brand-700);
+  --color-brand-strong: var(--color-brand-900);
+  --color-brand-soft: var(--color-brand-100);
+  --color-accent: var(--color-brand-500);
+  --color-accent-soft: var(--color-brand-50);
+  --color-water: var(--color-water-700);
+  --color-focus: var(--color-brand-700);
+  --color-focus-inverse: var(--color-water-100);
+  --color-hero-scrim-strong: rgb(7 28 20 / 0.92);
+  --color-hero-scrim-soft: rgb(7 28 20 / 0.35);
+
+  /* Typography */
+  --font-body:
+    "BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system,
+    sans-serif;
+  --font-display:
+    "BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system,
+    sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --leading-tight: 1.15;
+  --leading-snug: 1.4;
+  --leading-normal: 1.72;
+
+  /* Spacing and layout */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --page-gutter: 1rem;
+  --page-max: 80rem;
+  --header-height: 4.5rem;
+
+  /* Radii */
+  --radius-xs: 0.375rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+  --radius-2xl: 2rem;
+  --radius-organic: 46% 54% 48% 52% / 54% 46% 54% 46%;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgb(11 29 22 / 0.05);
+  --shadow-sm: 0 2px 10px rgb(11 29 22 / 0.06), 0 1px 2px rgb(11 29 22 / 0.04);
+  --shadow-md: 0 16px 40px rgb(11 29 22 / 0.09), 0 3px 8px rgb(11 29 22 / 0.04);
+  --shadow-lg: 0 30px 80px rgb(11 29 22 / 0.13), 0 8px 20px rgb(11 29 22 / 0.05);
+
+  /* Motion */
+  --motion-duration-fast: 160ms;
+  --motion-duration-base: 280ms;
+  --motion-duration-slow: 420ms;
+  --motion-duration-reveal: 650ms;
+  --motion-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --motion-distance-sm: 0.5rem;
+  --motion-distance-md: 1rem;
+  --motion-distance-lg: 1.5rem;
+
+  /* Z-index */
+  --z-header: 40;
+  --z-overlay: 50;
+  --z-toast: 60;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --page-gutter: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --page-gutter: 2rem;
+  }
+}

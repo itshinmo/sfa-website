@@ -1,0 +1,21 @@
+/* Self-hosted BYekan faces.
+ *
+ * The family is referenced through --font-body / --font-display so a future
+ * font swap is a token change, not a component rewrite. Keep font-display:
+ * swap so no text is invisible while the face loads.
+ */
+@font-face {
+  font-family: "BYekan";
+  src: url("/fonts/BYekan/BYekan.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BYekan";
+  src: url("/fonts/BYekan/BYekanBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
