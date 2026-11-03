@@ -1,7 +1,8 @@
 # Content workspace
 
 This directory holds **presentation content owned by the website**: homepage
-copy, team/achievement/partner facts, FAQ, contact, and download copy.
+copy, team/achievement facts, FAQ, contact, and download copy. Partners live
+in the footer as a research-credit strip.
 
 ## Homepage content
 
@@ -13,10 +14,10 @@ type, field rules, and migration notes live in
 [`docs/content-migration.md`](../docs/content-migration.md).
 
 The homepage sections are `hero`, `features`, `showcase`, `research`,
-`achievements`, `team`, `partners`, `faq`, `contact`, and `downloads`, plus
+`achievements`, `team`, `faq`, `contact`, and `downloads`, plus
 `meta` for the page title and description.
 
-Team, achievement, and partner facts live inside the localized homepage files
+Team and achievement facts live inside the localized homepage files
 for v1 because the homepage is the only consumer. If they gain a second page,
 extract them into `content/site/*.json` with the same IDs rather than copying
 them.
@@ -29,6 +30,6 @@ drafts, or a CMS here.
 
 ## Assets
 
-Migrated public images live under `public/images/team`, `public/images/partners`,
-and `public/images/brand`. Alt text is stored next to each image reference in the
-content files.
+Migrated public images live under `public/images/team`,
+`public/images/partners`, and `public/images/brand`. Alt text is stored next to
+each image reference in the content files.

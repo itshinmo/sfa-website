@@ -47,7 +47,8 @@ Defined in `app/styles/tokens.css`:
 - **Cards:** hover lift 2–4px and image scale ≤ 1.03; focus gets an equally
   clear state.
 - **Stats:** count-up on first view; reduced motion shows the final value.
-- **Partners marquee:** pause on hover/focus; stop for reduced motion.
+- **Team carousel:** pause on hover/focus and via the visible pause button; stop
+  for reduced motion. Partners are a static footer credit, not a marquee.
 - **Mobile nav:** slide/fade with focus trap; respect reduced motion.
 - **Page transitions:** short or none; never delay navigation.
 - **Hero parallax:** transform only, small range, disabled for reduced motion.
@@ -68,8 +69,14 @@ Defined in `app/styles/tokens.css`:
 Implemented:
 
 - `MotionProvider` — `MotionConfig reducedMotion="user"`.
-- `Reveal` — progressive scroll reveal; content visible without JS, reveals on
-  focus, and respects reduced motion.
+- `Reveal` — CSS `view()` timeline reveal with a visible no-support fallback;
+  there is no hydration-time hiding step, so the SSR paint does not flash.
+- `HomeTeam` — continuous Motion carousel with pause, hover/focus pause, drag-free
+  native scrolling on mobile, and reduced-motion opt-out.
+- FAQ — Base UI height/opacity transition with a no-JS native disclosure
+  fallback.
+- Header — staggered hero entrance, animated transparent→solid header, and an
+  animated mobile menu.
 - `CountUp` — stats animate on first view; reduced motion and SSR show the final
   value.
 - Hero CSS rise — transform-only, reduced-motion safe.
@@ -77,7 +84,6 @@ Implemented:
 Still optional:
 
 - `Stagger` / `StaggerItem`.
-- `Marquee` — accessible pause/stop.
 - `PageTransition` — optional, subtle.
 - `HoverLift` — shared card interaction.
 

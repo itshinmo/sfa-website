@@ -146,10 +146,9 @@ pnpm check:all        # check + build
 
 ## Current milestone
 
-M0, the blog vertical, the locked hybrid identity, and the full homepage are
-complete. Final audit verdict is **GO** with no P1 blockers. The site has SSR
-homepage/blog routes, the FastAPI adapter with mock fallback, four blog
-templates, TOC/search/tags/pagination, sitemap/robots/RSS, homepage content
-schema, farmland hero, BYekan, motion primitives, and passing unit/E2E/a11y/SEO
-checks. Next: author content/link confirmations and Docker image verification on
-a host with a daemon.
+The homepage and blog vertical are complete. The signed-off design has evolved
+with a BYekan + Inter two-script pairing, Base UI locale select and animated FAQ,
+Motion team carousel, footer research credit, long-form bilingual blog fixtures,
+multi-tag filtering, sitemap/robots/RSS, and passing unit/E2E/a11y/SEO checks.
+Next: author content/link confirmations, final visual review, and Docker image
+verification on a host with a daemon.

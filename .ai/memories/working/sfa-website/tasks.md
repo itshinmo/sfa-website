@@ -26,15 +26,15 @@ Update status as work moves. Status: `todo`, `in-progress`, `review`, `done`,
 
 ## M2 — homepage
 
-| ID    | Task                                                                           | Owner                     | Status | Files                                                                     |
-| ----- | ------------------------------------------------------------------------------ | ------------------------- | ------ | ------------------------------------------------------------------------- |
-| M2-1  | Homepage content model + copy                                                  | content-strategist        | review | `content/home`, locales                                                   |
-| M2-1b | Home content schema + server loader                                            | orchestrator              | done   | `app/modules/home`, `content/home`                                        |
-| M0-8  | Hydration/i18n + mobile-nav accessibility fixes                                | orchestrator              | done   | `app/root.tsx`, `app/shared/lib/site.ts`, `app/shared/ui/site-header.tsx` |
-| M2-2  | Hero, features, showcase, research, achievements, team, partners, FAQ, contact | implementer-home          | done   | `app/routes/home.tsx`, `app/modules/home/**`                              |
-| M2-3  | Motion primitives + hero sequence                                              | implementer-home/designer | done   | `app/shared/motion`                                                       |
-| M2-4  | Download section with placeholder config                                       | implementer-home          | done   | `app/shared/lib/site.ts`                                                  |
-| M2-5  | Homepage a11y/SEO/E2E tests                                                    | implementer-home          | done   | `tests`                                                                   |
+| ID    | Task                                                                          | Owner                     | Status | Files                                                                     |
+| ----- | ----------------------------------------------------------------------------- | ------------------------- | ------ | ------------------------------------------------------------------------- |
+| M2-1  | Homepage content model + copy                                                 | content-strategist        | review | `content/home`, locales                                                   |
+| M2-1b | Home content schema + server loader                                           | orchestrator              | done   | `app/modules/home`, `content/home`                                        |
+| M0-8  | Hydration/i18n + mobile-nav accessibility fixes                               | orchestrator              | done   | `app/root.tsx`, `app/shared/lib/site.ts`, `app/shared/ui/site-header.tsx` |
+| M2-2  | Hero, features, showcase, research, achievements, team carousel, FAQ, contact | implementer-home          | done   | `app/routes/home.tsx`, `app/modules/home/**`                              |
+| M2-3  | Motion primitives + hero sequence                                             | implementer-home/designer | done   | `app/shared/motion`                                                       |
+| M2-4  | Download section with placeholder config                                      | implementer-home          | done   | `app/shared/lib/site.ts`                                                  |
+| M2-5  | Homepage a11y/SEO/E2E tests                                                   | implementer-home          | done   | `tests`                                                                   |
 
 ## M3 — blog
 
@@ -58,3 +58,14 @@ Update status as work moves. Status: `todo`, `in-progress`, `review`, `done`,
 | M4-6 | Close audit P1/P2 fixes                          | quality-fixer      | done                            | root, blog, Docker, docs        |
 | M4-7 | Final re-audit after homepage                    | quality-auditor    | done                            | all                             |
 | M4-5 | Resolve working memory                           | orchestrator       | blocked (author facts + Docker) | `.ai`                           |
+
+## M5 — 2026-11-03 refinement
+
+| ID   | Task                                             | Owner        | Status | Files                                                               |
+| ---- | ------------------------------------------------ | ------------ | ------ | ------------------------------------------------------------------- |
+| M5-1 | BYekan + Inter two-script typography             | orchestrator | done   | `app/styles/fonts.css`, `tokens.css`, `public/fonts/Inter`          |
+| M5-2 | Locale select + logo header                      | orchestrator | done   | `app/shared/ui/site-header.tsx`, `language-switcher.tsx`            |
+| M5-3 | Team carousel + footer partner/nav/rights fixes  | orchestrator | done   | `app/modules/home/presentation/home-team.tsx`, `site-footer.tsx`    |
+| M5-4 | Animated Base UI FAQ + reveal/count-up flicker   | orchestrator | done   | `app/shared/ui/faq-accordion.tsx`, `app/shared/motion/count-up.tsx` |
+| M5-5 | Long bilingual blog fixtures + multi-tag filters | orchestrator | done   | `app/modules/blog/infrastructure/mock-posts.json`, `blog-index.tsx` |
+| M5-6 | Tests, docs, production verification             | orchestrator | done   | `tests`, `docs`                                                     |

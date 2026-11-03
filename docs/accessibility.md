@@ -88,7 +88,9 @@ See [`motion.md`](./motion.md).
 - Homepage metadata (`canonical`, `hreflang`, `Organization`/`WebSite` JSON-LD) is implemented.
 - Hero/header contrast was re-measured over the actual farmland photo at
   360/768/1024/1440 in both locales; the scrim/header surface now clears AA.
-- FAQ answers are server-rendered native `<details>` content and work without JS.
-- BYekan and the locked hybrid tokens have been checked; re-check typography and
-  hero contrast after any font or photo swap. The dark hero uses
+- FAQ answers are rendered by a Base UI accordion with animated height; a native `<details>` fallback inside `<noscript>` keeps every answer usable without JavaScript.
+- The team carousel has a pause control, stops on hover/focus, and becomes a native horizontal scroller when motion is reduced.
+- The locale selector is a Base UI combobox with keyboard and screen-reader support.
+- The BYekan + Inter pairing and the locked hybrid tokens have been checked;
+  re-check typography and hero contrast after any font or photo swap. The dark hero uses
   `--color-focus-inverse` for focus visibility.

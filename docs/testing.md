@@ -28,11 +28,13 @@ or provide Chrome; adjust `playwright.config.ts` if the runner differs.
 
 - Homepage in both locales.
 - Blog index → detail navigation.
-- Language switch.
-- Search, tag filter, pagination.
+- Locale select and localized blog-slug switch.
+- Search, multi-tag filters with independent removal, pagination.
 - 404.
 - Download CTA states (available vs placeholder).
 - Mobile navigation.
+- Team carousel pause control and reduced-motion behavior.
+- FAQ animation plus no-JS disclosure fallback.
 
 ### Accessibility
 

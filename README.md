@@ -72,10 +72,11 @@ Start with [`AGENTS.md`](./AGENTS.md) for the rules, then:
 
 ## Status
 
-The site has a complete homepage, blog vertical, locked hybrid identity,
-self-hosted BYekan, FastAPI blog adapter with mock fallback, four templates, TOC,
-search/tags/pagination, sitemap/robots/RSS, and quality gates. Final audit
-verdict: **GO**. Remaining work is author content/link confirmation and Docker
+The site has a complete homepage, blog vertical, locked hybrid identity, a
+self-hosted BYekan + Inter pairing, locale select, animated team carousel,
+Base UI FAQ/select primitives, footer research credit, FastAPI blog adapter with
+mock fallback, four templates, TOC, multi-tag filtering, sitemap/robots/RSS, and
+quality gates. Remaining work is author content/link confirmation and Docker
 verification. See the working memory at
 [`.ai/memories/working/sfa-website/README.md`](./.ai/memories/working/sfa-website/README.md)
 for the task board.

@@ -36,15 +36,19 @@ Delivered:
 
 - Identity: hybrid **01 Field Notes + 02 Rooted**, light only.
 - Hero: original farmland photography, desktop + mobile crops.
-- Fonts: original BYekan regular/bold, tokenized for later replacement.
+- Fonts: BYekan for Persian/Arabic (unicode-ranged) + self-hosted Inter for
+  English/Latin; mixed sentences fall through cleanly.
 - Audience: farmers; alive and informative, not a dashboard or info dump.
 
 ## Status
 
 The homepage, blog vertical, hybrid identity, hero, motion, SEO, and quality
-fixes are complete. Final audit verdict: **GO**, no P1 blockers. Remaining work
-is author/content confirmation and Docker image verification on a machine with
-a daemon.
+fixes are complete. A 2026-11-03 refinement pass added the BYekan+Inter pairing,
+locale select, logo header, animated team carousel, footer research credit,
+animated Base UI FAQ, multi-tag blog filters, long-form bilingual blog fixtures,
+and fixes for hydration/text flicker. Remaining work is author/content
+confirmation, final visual sign-off, and Docker image verification on a machine
+with a daemon.
 
 ## Next
 
@@ -52,8 +56,8 @@ a daemon.
    facts, contact details, and real download URLs.
 2. Build/run the Docker image on a host with a daemon; verify the non-root
    runtime and healthcheck.
-3. Address optional P2s: WOFF2/subset fonts, team WebP/srcset, mobile 200% text
-   overflow, blog-index metadata length, and design-lab chunk exclusion.
+3. Address optional P2s: mobile 200% text overflow, team WebP/srcset,
+   blog-index metadata length, and design-lab chunk exclusion.
 
 ## Blackboard
 

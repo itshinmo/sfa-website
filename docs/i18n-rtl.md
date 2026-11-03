@@ -36,6 +36,8 @@ stale cookie.
 - Add a namespace to both locales and register it in `fa/index.ts` and
   `en/index.ts`.
 - No hardcoded UI strings. Proper nouns and API data are exceptions.
+- Persian uses BYekan; English uses Inter. BYekan's `unicode-range` excludes
+  Latin, so mixed sentences fall through to Inter cleanly.
 
 ## Localized slugs
 
@@ -53,9 +55,11 @@ The API returns `alternates` with the real slug per locale. Use those for:
 Do not mechanically swap the locale prefix on a localized slug; the slug may
 not exist in the other language.
 
-The `LanguageSwitcher` in `SiteHeader` reads the active blog post's
-`alternates` from route matches; otherwise it swaps the locale prefix. Add a
-regression test whenever the blog loader shape changes.
+The `LanguageSwitcher` in `SiteHeader` is a Base UI select. It reads the active
+blog post's `alternates` from route matches; otherwise it swaps the locale
+prefix while preserving the query string. Options come from
+`supportedLanguages`, so adding a locale requires a resource bundle and one
+array entry. Add a regression test whenever the blog loader shape changes.
 
 ## Fallback
 

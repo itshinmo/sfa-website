@@ -16,15 +16,15 @@ and what still needs author confirmation. The migrated copy lives in
 | ------------------------ | --------------------------------------------------------------- | ----------------------------------------- |
 | Brand logo               | `src/assets/sfa-512x512.png`                                    | Migrate                                   |
 | Team portraits           | `src/assets/team/*.png`                                         | Migrate                                   |
-| Partner logos            | `src/assets/srbiau.png`, `src/assets/swri.png`                  | Migrate, pending permission               |
+| Partner logo             | `src/assets/swri.png`                                           | Migrate SWRI only; footer credit          |
 | Product features         | `src/i18n/locales/{fa,en}/sfa-section.json`                     | Rewrite from facts                        |
 | Research numbers         | `src/pages/HomePage/components/ResearchSection.tsx` + copy      | Migrate numbers, verify                   |
 | Achievements             | `src/i18n/locales/{fa,en}/achievement-section.json`             | Migrate, add missing metadata             |
 | Team facts               | `src/i18n/locales/{fa,en}/team-section.json` + `TeamSection`    | Migrate and lightly rewrite               |
-| Partner facts            | `src/components/Footer.tsx` + logos                             | Migrate names/logos                       |
+| Partner facts            | `src/components/Footer.tsx` + SWRI logo                         | Migrate SWRI credit to footer             |
 | Contact/footer           | `src/i18n/locales/{fa,en}/footer.json`, `src/constants/site.ts` | Migrate partial; phone omitted            |
 | Hero/product narrative   | `src/i18n/locales/{fa,en}/common.json`, `HeroSection.tsx`       | Rewrite                                   |
-| Blog content             | `src/i18n/locales/*/blog/**`                                    | Do not migrate                            |
+| Blog content             | `src/i18n/locales/*/blog/**` + `src/assets/blogs/**`            | Migrate full articles and images          |
 | Feedback form/admin      | `src/components/forms`, `src/pages/AdminDashboardPage.tsx`      | Do not migrate                            |
 | Hero photography         | `src/assets/homepage/hero-section/*.jpg`                        | Migrate + optimize; farmland hero         |
 | Favicon SVG              | `public/favicon/favicon.svg`                                    | Do not migrate; 444 KB SVG wraps a raster |
@@ -32,33 +32,33 @@ and what still needs author confirmation. The migrated copy lives in
 
 ## Migration table
 
-| Content                      | Old source                                                         | New destination                                               | Treatment                    | Status / confidence                                              |
-| ---------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------- |
-| SFA logo                     | `src/assets/sfa-512x512.png`                                       | `public/images/brand/sfa-512x512.png`                         | Copy as-is                   | Verified hash; 512×512 PNG                                       |
-| Team portraits (6)           | `src/assets/team/{Mahdi,Arash,Hossein,Mohsen,Kamyar,Soheil}.png`   | `public/images/team/*.png`                                    | Copy + optimize              | Resized to max 512px and re-encoded; Mohsen reduced to ~332 KB   |
-| Team names                   | `team-section.json`                                                | `content/home/{fa,en}.json` → `team.members`                  | Migrate; normalize spelling  | High; Persian spelling normalized (`شمسی‌تبار`)                  |
-| Team roles                   | `team-section.json`                                                | `team.members[].role`                                         | Migrate; tighten wording     | High; confirm senior titles                                      |
-| Team bios                    | `team-section.json`                                                | `team.members[].bio`                                          | Light rewrite for clarity    | Medium; original claims preserved                                |
-| Team profile links           | `TeamSection.tsx`                                                  | `team.members[].links`                                        | Migrate public profiles      | High; cleaned tracking parameters                                |
-| Team personal emails         | `TeamSection.tsx`                                                  | —                                                             | Omit                         | Privacy; ask author before publishing                            |
-| Partner names/logos          | `Footer.tsx`, `src/assets/srbiau.png`, `swri.png`                  | `partners.items` + `public/images/partners/`                  | Migrate                      | Medium; logo use permission not documented                       |
-| Research: water saved        | `ResearchSection.tsx` (`2000`)                                     | `research.stats[saved-water]`                                 | Migrate, bilingual           | Medium; 2,000 m³ per hectare needs method/scope confirmation     |
-| Research: water reduction    | `ResearchSection.tsx` (`28`)                                       | `research.stats[reduced-use]`                                 | Migrate, bilingual           | Medium; 28% needs baseline/scope confirmation                    |
-| Research: water productivity | `ResearchSection.tsx` (`4`)                                        | `research.stats[water-productivity]`                          | Migrate, bilingual           | Medium; “4×” needs metric/scope confirmation                     |
-| Research: species count      | `ResearchSection.tsx` (`246`)                                      | `research.stats[crop-species]`, feature, FAQ, hero            | Migrate, bilingual           | High; repeated consistently across old site                      |
-| Achievements (4)             | `achievement-section.json`                                         | `achievements.items`                                          | Migrate; no invented years   | Medium; years/organizers missing; IRC not expanded               |
-| Product features (4)         | `sfa-section.json`                                                 | `features.items`                                              | Rewrite from facts           | High; facts preserved                                            |
-| How-it-works facts           | `sfa-section.json`, `ResearchSection.tsx`                          | `showcase.steps`                                              | Rewrite as 3 grounded steps  | Medium; no UI workflow was documented, so copy stays model-level |
-| Hero narrative               | `common.json`, `HeroSection.tsx`                                   | `hero`                                                        | Rewrite                      | New identity; old slogans not carried over                       |
-| Contact email                | Current `app/shared/lib/site.ts` (`info@sfa-agri.ir`)              | `contact.email`                                               | Use current code value       | Medium; old repo had `info@sfa.com`                              |
-| Contact location/hours       | `footer.json`                                                      | `contact.location`, `contact.hours`                           | Migrate                      | Medium; address is city-level only                               |
-| Contact phone                | `src/constants/site.ts` (`+98`)                                    | `contact.phone`                                               | Omitted (`null`)             | Old value is incomplete; do not publish                          |
-| Downloads                    | Current `app/shared/lib/site.ts`                                   | `downloads.items`                                             | Normalize to content shape   | Web available; all store/desktop links are placeholders          |
-| FAQ                          | No old FAQ                                                         | `faq.items`                                                   | New copy from verified facts | Draft; author approval needed                                    |
-| Hero photography             | `src/assets/homepage/hero-section/landscape1.jpg`, `portrait1.jpg` | `public/images/homepage/hero-{landscape,portrait}.{jpg,webp}` | Migrate + optimize           | 2000px/1200px wide; JPEG + WebP; same farmland feeling           |
-| Fonts                        | `public/fonts/BYekan/*.ttf`                                        | `public/fonts/BYekan/*.ttf`                                   | Migrate                      | BYekan regular/bold; author will change later                    |
-| Blog posts                   | `src/i18n/locales/*/blog/**`                                       | —                                                             | Do not migrate               | App/API owns blog content                                        |
-| Feedback/admin               | Old feedback form and dashboard                                    | —                                                             | Do not migrate               | Out of scope for presentation site                               |
+| Content                      | Old source                                                         | New destination                                                          | Treatment                     | Status / confidence                                                                              |
+| ---------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------------------------------------------ |
+| SFA logo                     | `src/assets/sfa-512x512.png`                                       | `public/images/brand/sfa-512x512.png`                                    | Copy as-is                    | Verified hash; 512×512 PNG                                                                       |
+| Team portraits (6)           | `src/assets/team/{Mahdi,Arash,Hossein,Mohsen,Kamyar,Soheil}.png`   | `public/images/team/*.png`                                               | Copy + optimize               | Resized to max 512px and re-encoded; Mohsen reduced to ~332 KB                                   |
+| Team names                   | `team-section.json`                                                | `content/home/{fa,en}.json` → `team.members`                             | Migrate; normalize spelling   | High; Persian spelling normalized (`شمسی‌تبار`)                                                  |
+| Team roles                   | `team-section.json`                                                | `team.members[].role`                                                    | Migrate; tighten wording      | High; confirm senior titles                                                                      |
+| Team bios                    | `team-section.json`                                                | `team.members[].bio`                                                     | Light rewrite for clarity     | Medium; original claims preserved                                                                |
+| Team profile links           | `TeamSection.tsx`                                                  | `team.members[].links`                                                   | Migrate public profiles       | High; cleaned tracking parameters                                                                |
+| Team personal emails         | `TeamSection.tsx`                                                  | —                                                                        | Omit                          | Privacy; ask author before publishing                                                            |
+| Partner logo/credit          | `Footer.tsx`, `src/assets/swri.png`                                | footer partner strip + `public/images/partners/swri.png`                 | Migrate SWRI only             | Medium; logo use permission still needs confirmation                                             |
+| Research: water saved        | `ResearchSection.tsx` (`2000`)                                     | `research.stats[saved-water]`                                            | Migrate, bilingual            | Medium; 2,000 m³ per hectare needs method/scope confirmation                                     |
+| Research: water reduction    | `ResearchSection.tsx` (`28`)                                       | `research.stats[reduced-use]`                                            | Migrate, bilingual            | Medium; 28% needs baseline/scope confirmation                                                    |
+| Research: water productivity | `ResearchSection.tsx` (`4`)                                        | `research.stats[water-productivity]`                                     | Migrate, bilingual            | Medium; “4×” needs metric/scope confirmation                                                     |
+| Research: species count      | `ResearchSection.tsx` (`246`)                                      | `research.stats[crop-species]`, feature, FAQ, hero                       | Migrate, bilingual            | High; repeated consistently across old site                                                      |
+| Achievements (4)             | `achievement-section.json`                                         | `achievements.items`                                                     | Migrate; no invented years    | Medium; years/organizers missing; IRC not expanded                                               |
+| Product features (4)         | `sfa-section.json`                                                 | `features.items`                                                         | Rewrite from facts            | High; facts preserved                                                                            |
+| How-it-works facts           | `sfa-section.json`, `ResearchSection.tsx`                          | `showcase.steps`                                                         | Rewrite as 3 grounded steps   | Medium; no UI workflow was documented, so copy stays model-level                                 |
+| Hero narrative               | `common.json`, `HeroSection.tsx`                                   | `hero`                                                                   | Rewrite                       | New identity; old slogans not carried over                                                       |
+| Contact email                | Current `app/shared/lib/site.ts` (`info@sfa-agri.ir`)              | `contact.email`                                                          | Use current code value        | Medium; old repo had `info@sfa.com`                                                              |
+| Contact location/hours       | `footer.json`                                                      | `contact.location`, `contact.hours`                                      | Migrate                       | Medium; address is city-level only                                                               |
+| Contact phone                | `src/constants/site.ts` (`+98`)                                    | `contact.phone`                                                          | Omitted (`null`)              | Old value is incomplete; do not publish                                                          |
+| Downloads                    | Current `app/shared/lib/site.ts`                                   | `downloads.items`                                                        | Normalize to content shape    | Web available; all store/desktop links are placeholders                                          |
+| FAQ                          | No old FAQ                                                         | `faq.items`                                                              | New copy from verified facts  | Draft; author approval needed                                                                    |
+| Hero photography             | `src/assets/homepage/hero-section/landscape1.jpg`, `portrait1.jpg` | `public/images/homepage/hero-{landscape,portrait}.{jpg,webp}`            | Migrate + optimize            | 2000px/1200px wide; JPEG + WebP; same farmland feeling                                           |
+| Fonts                        | BYekan TTF + new Inter variable                                    | `public/fonts/BYekan/*`, `public/fonts/Inter/InterVariable-latin.woff2`  | Two-script pairing            | BYekan restricted to Persian glyphs; Inter for Latin/English                                     |
+| Blog posts                   | `src/i18n/locales/*/blog/**` + `src/assets/blogs/**`               | `app/modules/blog/infrastructure/mock-posts.json`, `public/images/blog/` | Migrate full content + images | Full original translations and inline images preserved; six extra fixtures expanded with sources |
+| Feedback/admin               | Old feedback form and dashboard                                    | —                                                                        | Do not migrate                | Out of scope for presentation site                                                               |
 
 ## Asset inventory
 
@@ -67,38 +67,43 @@ then resized to 512 px and re-encoded; the hero was resized and exported as JPEG
 plus WebP. Partner logo proportions are preserved; do not crop the wordmarks.
 The original BYekan TTFs are copied unchanged.
 
-| Asset               | Destination                                                  | Dimensions | Size       | Alt text (fa / en)                                                        | Notes                                                           |
-| ------------------- | ------------------------------------------------------------ | ---------- | ---------- | ------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| SFA logo            | `public/images/brand/sfa-512x512.png`                        | 512×512    | 64 KB      | `لوگوی صفا` / `SFA logo`                                                  | Square mark with wordmark; transparent PNG                      |
-| Mahdi Sarai Tabrizi | `public/images/team/Mahdi.png`                               | 512×512    | 192 KB     | `پرتره مهدی سرایی تبریزی` / `Portrait of Mahdi Sarai Tabrizi`             | White background; optimized                                     |
-| Arash Tafteh        | `public/images/team/Arash.png`                               | 512×512    | 210 KB     | `پرتره آرش تافته` / `Portrait of Arash Tafteh`                            | White background; optimized                                     |
-| Hossein Moradi      | `public/images/team/Hossein.png`                             | 512×512    | 163 KB     | `پرتره حسین مرادی سیزکوهی` / `Portrait of Hossein Moradi Sizkouhi`        | White background; optimized                                     |
-| Mohsen Shamsitabar  | `public/images/team/Mohsen.png`                              | 512×512    | 324 KB     | `پرتره محسن شمسی‌تبار` / `Portrait of Mohsen Shamsitabar`                 | Dark photo; optimized from 640px                                |
-| Kamyar Nakhaie      | `public/images/team/Kamyar.png`                              | 512×512    | 171 KB     | `پرتره کامیار نخعی خونیکی` / `Portrait of Kamyar Nakhaie Khoonikie`       | White background; optimized                                     |
-| Soheil Mehrizi      | `public/images/team/Soheil.png`                              | 512×512    | 120 KB     | `پرتره سهیل مهریزی` / `Portrait of Soheil Mehrizi`                        | White background; optimized                                     |
-| SRBIAU logo         | `public/images/partners/srbiau.png`                          | 270×180    | 16 KB      | `لوگوی دانشگاه آزاد اسلامی، واحد علوم و تحقیقات` / official English name  | Keep aspect ratio; permission pending                           |
-| SWRI logo           | `public/images/partners/swri.png`                            | 144×144    | 36 KB      | `لوگوی مؤسسه تحقیقات خاک و آب` / `Soil and Water Research Institute logo` | Keep aspect ratio; permission pending                           |
-| Hero landscape      | `public/images/homepage/hero-landscape.jpg/.webp`            | 2000×1499  | 399/273 KB | `نمایی از یک مزرعه سرسبز در نور روز` / `A green farm field in daylight`   | Desktop hero; <picture> with WebP                               |
-| Hero portrait       | `public/images/homepage/hero-portrait.jpg/.webp`             | 1200×1800  | 351/249 KB | same                                                                      | Mobile hero; <picture> with WebP                                |
-| BYekan regular      | `public/fonts/BYekan/BYekan.ttf`                             | —          | 224 KB     | —                                                                         | Original site font; author will change later                    |
-| BYekan bold         | `public/fonts/BYekan/BYekanBold.ttf`                         | —          | 241 KB     | —                                                                         | Original site font; author will change later                    |
-| OG fallback         | `public/og-default.png`                                      | 1200×630   | 26 KB      | —                                                                         | Raster social fallback; SVG covers use this                     |
-| App screens         | `public/images/app/app-{fields,irrigation,soil-lab,login}.*` | 1200×750   | 36–122 KB  | localized in `showcase.screens`                                           | Placeholder captures of the current app; replace after redesign |
+| Asset                | Destination                                                  | Dimensions                   | Size           | Alt text (fa / en)                                                        | Notes                                                           |
+| -------------------- | ------------------------------------------------------------ | ---------------------------- | -------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| SFA logo             | `public/images/brand/sfa-512x512.png`                        | 512×512                      | 64 KB          | `لوگوی صفا` / `SFA logo`                                                  | Square mark with wordmark; transparent PNG                      |
+| Mahdi Sarai Tabrizi  | `public/images/team/Mahdi.png`                               | 512×512                      | 192 KB         | `پرتره مهدی سرایی تبریزی` / `Portrait of Mahdi Sarai Tabrizi`             | White background; optimized                                     |
+| Arash Tafteh         | `public/images/team/Arash.png`                               | 512×512                      | 210 KB         | `پرتره آرش تافته` / `Portrait of Arash Tafteh`                            | White background; optimized                                     |
+| Hossein Moradi       | `public/images/team/Hossein.png`                             | 512×512                      | 163 KB         | `پرتره حسین مرادی سیزکوهی` / `Portrait of Hossein Moradi Sizkouhi`        | White background; optimized                                     |
+| Mohsen Shamsitabar   | `public/images/team/Mohsen.png`                              | 512×512                      | 324 KB         | `پرتره محسن شمسی‌تبار` / `Portrait of Mohsen Shamsitabar`                 | Dark photo; optimized from 640px                                |
+| Kamyar Nakhaie       | `public/images/team/Kamyar.png`                              | 512×512                      | 171 KB         | `پرتره کامیار نخعی خونیکی` / `Portrait of Kamyar Nakhaie Khoonikie`       | White background; optimized                                     |
+| Soheil Mehrizi       | `public/images/team/Soheil.png`                              | 512×512                      | 120 KB         | `پرتره سهیل مهریزی` / `Portrait of Soheil Mehrizi`                        | White background; optimized                                     |
+| SWRI logo            | `public/images/partners/swri.png`                            | 144×144                      | 36 KB          | `لوگوی مؤسسه تحقیقات خاک و آب` / `Soil and Water Research Institute logo` | Keep aspect ratio; permission pending                           |
+| Hero landscape       | `public/images/homepage/hero-landscape.jpg/.webp`            | 2000×1499                    | 399/273 KB     | `نمایی از یک مزرعه سرسبز در نور روز` / `A green farm field in daylight`   | Desktop hero; <picture> with WebP                               |
+| Hero portrait        | `public/images/homepage/hero-portrait.jpg/.webp`             | 1200×1800                    | 351/249 KB     | same                                                                      | Mobile hero; <picture> with WebP                                |
+| Blog soil cover      | `public/images/blog/soil-texture-triangle/thumbnail.jpg`     | 1000×775                     | 48 KB          | old cover alt                                                             | Migrated from original article                                  |
+| Blog symphony images | `public/images/blog/symphony-of-droplets/image{1,2,3}.jpg`   | 1500×655, 1000×667, 1023×784 | 131/206/106 KB | old image alts                                                            | Three inline figures preserved                                  |
+| BYekan regular       | `public/fonts/BYekan/BYekan.ttf`                             | —                            | 224 KB         | —                                                                         | Original site font; author will change later                    |
+| BYekan bold          | `public/fonts/BYekan/BYekanBold.ttf`                         | —                            | 241 KB         | —                                                                         | Original site font; author will change later                    |
+| Inter variable       | `public/fonts/Inter/InterVariable-latin.woff2`               | —                            | 48 KB          | —                                                                         | SIL OFL; English + Latin fallback                               |
+| OG fallback          | `public/og-default.png`                                      | 1200×630                     | 26 KB          | —                                                                         | Raster social fallback; SVG covers use this                     |
+| App screens          | `public/images/app/app-{fields,irrigation,soil-lab,login}.*` | 1200×750                     | 36–122 KB      | localized in `showcase.screens`                                           | Placeholder captures of the current app; replace after redesign |
 
 Not migrated from the old repo:
 
 - `public/favicon/favicon.svg` (an SVG wrapper around an embedded raster, 444 KB;
   the new favicon is generated from the PNG mark).
-- Any old blog cover images. Blog media comes from the API.
+- The SRBIAU logo and any copy that presented the university as a partner. SWRI
+  remains as a footer research credit.
 - Old UI/visual assets and the old Vite architecture.
 
-The mock blog SVG covers were recolored to the locked forest/cream/water palette; real blog media still comes from the API.
+The two original blog articles are migrated in full (Persian and English) with
+their inline images. Additional fixtures are long-form and cite external
+sources; production blog media still comes from the API.
 
 ## Content shape
 
 The homepage content is one self-contained localized JSON document per locale.
 This is deliberate for v1: the homepage is the only consumer of team,
-achievement, and partner data, so a join between `content/home` and
+achievement data, so a join between `content/home` and
 `content/site` would add complexity without removing duplication. If these facts
 are reused on an About page later, extract them to `content/site/*.json` with the
 same stable IDs.
@@ -175,7 +180,6 @@ type HomeContent = {
     items: Achievement[];
   };
   team: { eyebrow: string; title: string; description: string; members: TeamMember[] };
-  partners: { eyebrow: string; title: string; description: string; items: Partner[] };
   faq: { eyebrow: string; title: string; description: string; items: FaqItem[] };
   contact: {
     eyebrow: string;
@@ -271,8 +275,8 @@ Facts and permissions that still need confirmation before launch:
    awards? What does IRC stand for? Are the titles “Best Idea” and “Best Paper”
    the official award names, and is “national nominee” the correct status for
    Watsave and UNESCO?
-3. **Partners.** Do we have written permission to publish the SRBIAU and SWRI
-   logos? What is the exact relationship wording we may use (partner, supporter,
+3. **Partner.** Do we have written permission to publish the SWRI logo, and what
+   exact relationship wording may we use (partner, supporter,
    research collaborator, host institution)? Are the Persian legal names correct?
 4. **Team.** Are the current roles and bios accurate? May we link the public
    profiles included in the content files? Should any personal emails be public?
@@ -291,7 +295,7 @@ Facts and permissions that still need confirmation before launch:
    screenshots (or approve a UI-free hero).
 9. **Brand assets.** Only the 512×512 PNG mark was migrated. Provide light/dark
    logo variants, a proper favicon set, and a social share image if available.
-10. **Structure.** If team/achievements/partners will also appear on an About or
+10. **Structure.** If team/achievements will also appear on an About or
     Research page, should we extract them to `content/site/*.json` now or later?
 
 ## Verification

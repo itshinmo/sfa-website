@@ -93,40 +93,36 @@ token composite.
 
 ## Typography
 
-The locked family is **BYekan**, self-hosted from the migrated original repo
-fonts:
+The site uses a deliberate two-script pairing:
 
-- `public/fonts/BYekan/BYekan.ttf` — 400
-- `public/fonts/BYekan/BYekanBold.ttf` — 700
+- **Persian/Arabic:** **BYekan**, self-hosted from the migrated original repo
+  (`public/fonts/BYekan/BYekan.ttf` 400, `BYekanBold.ttf` 700). Its
+  `unicode-range` is limited to Persian/Arabic glyphs.
+- **English/Latin:** **Inter Variable**, self-hosted at
+  `public/fonts/Inter/InterVariable-latin.woff2` (SIL OFL, licence beside the
+  font).
 
-`app/styles/fonts.css` defines two `@font-face` rules with
-`font-display: swap`. It is imported from `app/app.css`.
+Because BYekan excludes Latin glyphs, mixed Persian/English sentences use
+BYekan for Persian and Inter for Latin automatically. The English locale uses
+Inter for the whole page, with BYekan available for Persian fallback content.
 
-| Token            | Value                                                                                         |
-| ---------------- | --------------------------------------------------------------------------------------------- |
-| `--font-body`    | `"BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system, sans-serif` |
-| `--font-display` | same as `--font-body`                                                                         |
-| `--font-mono`    | `"JetBrains Mono", "SFMono-Regular", Consolas, monospace`                                     |
+| Token            | Value                                                                                                  |
+| ---------------- | ------------------------------------------------------------------------------------------------------ |
+| `--font-fa`      | `"BYekan", "Inter", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system, sans-serif` |
+| `--font-en`      | `"Inter", "BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system, sans-serif` |
+| `--font-body`    | `var(--font-fa)`; `html[lang="en"]` switches it to `var(--font-en)`                                    |
+| `--font-display` | same locale switch as `--font-body`                                                                    |
+| `--font-mono`    | `"JetBrains Mono", "SFMono-Regular", Consolas, monospace`                                              |
 
-- **Display weight is 700 (BYekan Bold).** `font-synthesis-weight: none` is set
-  globally so a component asking for 800/900 does not create faux bold. Use
-  `font-bold`, not `font-black`, in new components.
-- Body is 400. Do not introduce a third weight until a new face is licensed.
-- The family is a token. A future font swap changes `fonts.css` plus
-  `--font-body` / `--font-display`; it must not require component edits.
-- No external Google Fonts, no remote font CDN.
-- Scale: `--text-xs` through `--text-7xl`; line heights `tight` (`1.15`),
-  `snug` (`1.4`), `normal` (`1.72`).
-- Headings use `font-display` and `text-wrap: balance`; paragraphs use
-  `text-wrap: pretty`.
-- Persian and Latin text share BYekan. Test mixed-language pages at 14px, 16px,
-  18px, and display sizes. Keep display tracking near zero; BYekan is not a
-  tight-tracking Latin display face. If a component uses `tracking-tight`, check
-  Persian joining before shipping.
-- Load only the two used weights. TTF is the current format; WOFF2 conversion
-  and a preload of the regular face are performance follow-ups, not blockers.
-- BYekan is the current choice, not a permanent one. The author will revisit it;
-  keep the family behind tokens.
+- `font-display: swap` is intentional; both faces are preloaded in
+  `app/root.tsx` to keep the first paint stable.
+- `font-synthesis-weight: none` prevents faux bold. Use `font-bold` (700) in
+  new components.
+- No external Google Fonts or remote font CDN.
+- Test mixed-language strings at 14px, 16px, 18px, and display sizes. Keep
+  display tracking near zero.
+- The families are tokens; a future swap touches `fonts.css` and the token
+  layer, not components.
 
 ## Layout and shape
 
@@ -223,12 +219,16 @@ Base UI primitives live under `app/shared/ui`:
   `sm`, `md`, `lg`, `icon`.
 - `Container`, `Section`, `Card`, `Badge`.
 - `SiteHeader`, `SiteFooter`.
-- FAQ uses native `<details>/<summary>` so answers are server-rendered and
-  work without JS.
-- Next: `Field`, `Input`, `SearchField`, `Select`,
-  `Dialog`/`Popover` (mobile nav), `Tabs`, `Tooltip`, `Pagination`,
-  `TableOfContents`, `EmptyState`, `ErrorState`, `Skeleton`, `DownloadButton`,
-  `StoreBadge`, motion primitives.
+- `LanguageSwitcher` — Base UI Select, data-driven from
+  `supportedLanguages`; future locales need only a resource bundle and an entry
+  in that array.
+- FAQ uses Base UI Accordion with animated height and `keepMounted` panels, plus
+  a native `<details>` fallback inside `<noscript>`.
+- `HomeTeam` — Motion-driven continuous carousel with pause control and a
+  reduced-motion/native-scroll path.
+- Next: `Field`, `Input`, `SearchField`, `Dialog`/`Popover`, `Tabs`, `Tooltip`,
+  `Pagination`, `TableOfContents`, `EmptyState`, `ErrorState`, `Skeleton`,
+  `DownloadButton`, `StoreBadge`.
 
 Rules:
 
@@ -249,7 +249,7 @@ gated by `DESIGN_LAB=1` in production.
 The lab remains a historical record of the three proposals: 01 Field Notes, 02
 Rooted, and 03 Signal. Its scoped previews intentionally preserve the original
 proposal palettes and radii and are not the production token set; they inherit
-the locked BYekan family. Do not copy 03's dark, lime, or dashboard treatments
+the locked BYekan + Inter pairing. Do not copy 03's dark, lime, or dashboard treatments
 into production.
 
 ## Motion
@@ -267,8 +267,9 @@ See [`motion.md`](./motion.md). The locked hybrid uses:
 | `--motion-distance-sm/md/lg` | `0.5rem` / `1rem` / `1.5rem`     |
 
 Motion is calm and editorial: staggered hero entrance, subtle scroll reveals,
-hover lift 2–4px, count-up only when it adds meaning. No 03 kinetic ticker, no
-autoplay, no scroll hijacking. Reduced motion is mandatory.
+hover lift 2–4px, count-up only when it adds meaning, and a pauseable team
+carousel. No 03 kinetic ticker, no unpausable autoplay, no scroll hijacking.
+Reduced motion is mandatory.
 
 ## Accessibility
 
@@ -277,9 +278,9 @@ visibility, or reduced motion for visual effects. Test axe on every page type.
 
 - Use `--color-focus-inverse` on the dark hero photo; use `--color-focus`
   elsewhere.
-- Verify BYekan at 14px, 16px, 18px, and display sizes in both Persian and
-  English. `font-synthesis-weight: none` means unsupported weights render at the
-  nearest loaded weight (700).
+- Verify BYekan for Persian and Inter for English at 14px, 16px, 18px, and
+  display sizes. `font-synthesis-weight: none` means unsupported weights render
+  at the nearest loaded weight (700).
 - Keep hero text out of the bright sky; use the scrim, not a text shadow, for
   contrast.
 - Test the hero at 360px, 768px, 1024px, and 1440px, and with reduced motion.

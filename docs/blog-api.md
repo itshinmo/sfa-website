@@ -33,16 +33,16 @@ All examples below are relative to that base.
 ### List posts
 
 ```http
-GET /posts?locale=fa&page=1&pageSize=9&tag=soil&q=خاک
+GET /posts?locale=fa&page=1&pageSize=9&tag=soil&tag=irrigation&q=خاک
 ```
 
-| Param      | Type             | Required | Notes                             |
-| ---------- | ---------------- | -------- | --------------------------------- |
-| `locale`   | `fa` \| `en`     | yes      | Content locale                    |
-| `page`     | positive integer | no       | Default 1                         |
-| `pageSize` | 1–50             | no       | Default 9                         |
-| `tag`      | string           | no       | Filter by tag slug                |
-| `q`        | string           | no       | Search title, excerpt, tags, body |
+| Param      | Type                | Required | Notes                                                  |
+| ---------- | ------------------- | -------- | ------------------------------------------------------ |
+| `locale`   | `fa` \| `en`        | yes      | Content locale                                         |
+| `page`     | positive integer    | no       | Default 1                                              |
+| `pageSize` | 1–50                | no       | Default 9                                              |
+| `tag`      | string (repeatable) | no       | Filter by tag slug; all supplied tags must match (AND) |
+| `q`        | string              | no       | Search title, excerpt, tags, body                      |
 
 Response:
 
