@@ -24,18 +24,20 @@ export type BlogIndexLoaderData =
       tags: BlogTag[];
       page: number;
       q: string;
-      tag?: string;
+      selectedTags: string[];
       title: string;
       description: string;
+      siteUrl: string;
     }
   | {
       ok: false;
       locale: Locale;
       page: number;
       q: string;
-      tag?: string;
+      selectedTags: string[];
       title: string;
       description: string;
+      siteUrl: string;
       errorTitle: string;
       errorMessage: string;
       retryHref: string;
@@ -50,7 +52,15 @@ export async function loader({ request, context }: Route.LoaderArgs) {
   const locale = toLocale(getLocale(context));
   const url = new URL(request.url);
   const page = positivePage(url.searchParams.get("page"));
-  const tag = url.searchParams.get("tag")?.trim() || undefined;
+  const selectedTags = [
+    ...new Set(
+      url.searchParams
+        .getAll("tag")
+        .flatMap((value) => value.split(","))
+        .map((value) => value.trim())
+        .filter(Boolean),
+    ),
+  ];
   const q = url.searchParams.get("q")?.trim() || undefined;
 
   const i18n = getInstance(context);
@@ -60,7 +70,7 @@ export async function loader({ request, context }: Route.LoaderArgs) {
 
   try {
     const [result, tags] = await Promise.all([
-      blogRepository.listPosts({ locale, page, tag, q }),
+      blogRepository.listPosts({ locale, page, tags: selectedTags, q }),
       blogRepository.getTags(locale).catch((error: unknown) => {
         console.error("[blog-index] Failed to load tags", error);
         return [] as BlogTag[];
@@ -75,13 +85,14 @@ export async function loader({ request, context }: Route.LoaderArgs) {
         tags,
         page: result.page,
         q: q ?? "",
-        tag,
+        selectedTags,
         title,
         description,
+        siteUrl: SITE.url,
       },
       {
         headers: {
-          "Cache-Control": q || tag ? "no-store" : PUBLIC_CACHE,
+          "Cache-Control": q || selectedTags.length ? "no-store" : PUBLIC_CACHE,
         },
       },
     );
@@ -94,9 +105,10 @@ export async function loader({ request, context }: Route.LoaderArgs) {
         locale,
         page,
         q: q ?? "",
-        tag,
+        selectedTags,
         title,
         description,
+        siteUrl: SITE.url,
         errorTitle: t("errorTitle"),
         errorMessage: t("error"),
         retryHref: `${url.pathname}${url.search}`,
@@ -109,11 +121,11 @@ export async function loader({ request, context }: Route.LoaderArgs) {
 export const meta: Route.MetaFunction = ({ loaderData }) => {
   if (!loaderData) return [];
 
-  const { locale, title, description, q, tag, page } = loaderData;
-  const base = new URL(`/${locale}/blog`, SITE.url).toString();
+  const { locale, title, description, q, selectedTags, page, siteUrl } = loaderData;
+  const base = new URL(`/${locale}/blog`, siteUrl).toString();
   const canonical = page > 1 ? `${base}?page=${page}` : base;
-  const filtered = Boolean(q || tag || !loaderData.ok);
-  const image = new URL("/og-default.png", SITE.url).toString();
+  const filtered = Boolean(q || selectedTags.length || !loaderData.ok);
+  const image = new URL("/og-default.png", siteUrl).toString();
 
   return [
     { title },
@@ -125,20 +137,20 @@ export const meta: Route.MetaFunction = ({ loaderData }) => {
           {
             tagName: "link" as const,
             rel: "alternate",
-            hreflang: "fa",
-            href: new URL("/fa/blog", SITE.url).toString(),
+            hrefLang: "fa",
+            href: new URL("/fa/blog", siteUrl).toString(),
           },
           {
             tagName: "link" as const,
             rel: "alternate",
-            hreflang: "en",
-            href: new URL("/en/blog", SITE.url).toString(),
+            hrefLang: "en",
+            href: new URL("/en/blog", siteUrl).toString(),
           },
           {
             tagName: "link" as const,
             rel: "alternate",
-            hreflang: "x-default",
-            href: new URL("/fa/blog", SITE.url).toString(),
+            hrefLang: "x-default",
+            href: new URL("/fa/blog", siteUrl).toString(),
           },
         ]),
     { property: "og:type", content: "website" },
@@ -159,7 +171,7 @@ export const meta: Route.MetaFunction = ({ loaderData }) => {
 
 export default function BlogIndex({ loaderData }: Route.ComponentProps) {
   const { t } = useTranslation(["blog", "common"]);
-  const { locale, q, tag } = loaderData;
+  const { locale, q, selectedTags } = loaderData;
 
   if (!loaderData.ok) {
     return (
@@ -191,14 +203,17 @@ export default function BlogIndex({ loaderData }: Route.ComponentProps) {
   const formattedTotal = formatNumber(result.total, locale);
   const formattedPage = formatNumber(result.page, locale);
   const formattedTotalPages = formatNumber(result.totalPages, locale);
-  const activeTag = tag ? tags.find((item) => item.slug === tag) : undefined;
-  const activeTagLabel = activeTag?.label ?? tag ?? "";
+  const activeTags = selectedTags.map(
+    (slug) => tags.find((item) => item.slug === slug) ?? { slug, label: slug },
+  );
+  const activeTagLabels = activeTags
+    .map((item) => item.label)
+    .join(locale === "fa" ? "، " : ", ");
 
-  const buildSearchParams = (nextPage?: number, nextTag?: string) => {
+  const buildSearchParams = (nextPage?: number, nextTags = selectedTags) => {
     const params = new URLSearchParams();
     if (q) params.set("q", q);
-    if (nextTag) params.set("tag", nextTag);
-    else if (tag) params.set("tag", tag);
+    for (const tag of nextTags) params.append("tag", tag);
     if (nextPage && nextPage > 1) params.set("page", String(nextPage));
     return params;
   };
@@ -208,20 +223,22 @@ export default function BlogIndex({ loaderData }: Route.ComponentProps) {
     return `/${locale}/blog${params.size ? `?${params.toString()}` : ""}`;
   };
 
-  const tagHref = (nextTag: string) => {
+  const tagsHref = (nextTags: string[]) => {
     const params = new URLSearchParams();
     if (q) params.set("q", q);
-    if (nextTag) params.set("tag", nextTag);
+    for (const tag of nextTags) params.append("tag", tag);
     return `/${locale}/blog${params.size ? `?${params.toString()}` : ""}`;
   };
 
-  const clearSearchHref = tag
-    ? `/${locale}/blog?tag=${encodeURIComponent(tag)}`
-    : `/${locale}/blog`;
-  const clearTagHref = q
-    ? `/${locale}/blog?q=${encodeURIComponent(q)}`
-    : `/${locale}/blog`;
-  const hasFilters = Boolean(q || tag);
+  const toggleTagHref = (slug: string) =>
+    tagsHref(
+      selectedTags.includes(slug)
+        ? selectedTags.filter((item) => item !== slug)
+        : [...selectedTags, slug],
+    );
+
+  const clearSearchHref = tagsHref(selectedTags);
+  const hasFilters = Boolean(q || selectedTags.length);
 
   return (
     <main id="main-content" tabIndex={-1}>
@@ -260,7 +277,9 @@ export default function BlogIndex({ loaderData }: Route.ComponentProps) {
                   enterKeyHint="search"
                   className="h-11 min-w-0 flex-1 rounded-pill border border-border bg-surface px-4 text-sm text-foreground placeholder:text-muted focus:border-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
                 />
-                {tag && <input type="hidden" name="tag" value={tag} />}
+                {selectedTags.map((tag) => (
+                  <input key={tag} type="hidden" name="tag" value={tag} />
+                ))}
                 <Button type="submit" intent="primary" size="md">
                   <Search aria-hidden="true" className="size-4" />
                   <span>{t("searchSubmit")}</span>
@@ -285,10 +304,10 @@ export default function BlogIndex({ loaderData }: Route.ComponentProps) {
                       formattedCount: formattedTotal,
                     })}
               </span>
-              {tag && (
+              {selectedTags.length > 0 && (
                 <>
                   <span aria-hidden="true">·</span>
-                  <span>{t("tagFilter", { tag: activeTagLabel })}</span>
+                  <span>{t("tagFilters", { tags: activeTagLabels })}</span>
                 </>
               )}
               {result.totalPages > 1 && (
@@ -314,16 +333,17 @@ export default function BlogIndex({ loaderData }: Route.ComponentProps) {
                   <span className="sr-only">{t("clearSearch")}</span>
                 </Link>
               )}
-              {tag && (
+              {activeTags.map((tag) => (
                 <Link
-                  to={clearTagHref}
-                  className="inline-flex items-center gap-2 rounded-pill border border-border bg-surface px-3 py-1.5 font-medium text-foreground hover:border-brand hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+                  key={tag.slug}
+                  to={tagsHref(selectedTags.filter((item) => item !== tag.slug))}
+                  className="inline-flex items-center gap-2 rounded-pill border border-border bg-surface px-3 py-1.5 font-medium text-foreground transition-colors hover:border-brand hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
                 >
-                  {t("tagFilter", { tag: activeTagLabel })}
+                  {t("tagFilter", { tag: tag.label })}
                   <span aria-hidden="true">×</span>
-                  <span className="sr-only">{t("clearFilters")}</span>
+                  <span className="sr-only">{t("removeTag", { tag: tag.label })}</span>
                 </Link>
-              )}
+              ))}
               <Link
                 to={`/${locale}/blog`}
                 className="ms-1 font-semibold text-brand hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
@@ -335,35 +355,38 @@ export default function BlogIndex({ loaderData }: Route.ComponentProps) {
 
           <nav aria-label={t("tags")} className="flex flex-wrap items-center gap-2">
             <Link
-              to={tagHref("")}
+              to={tagsHref([])}
               className={cn(
                 "rounded-pill border px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
-                !tag
+                selectedTags.length === 0
                   ? "border-brand bg-brand-soft text-brand-strong"
                   : "border-border text-muted hover:border-brand hover:text-brand",
               )}
-              aria-current={!tag ? "page" : undefined}
+              aria-current={selectedTags.length === 0 ? "page" : undefined}
             >
               {t("allTags")}
             </Link>
-            {tags.map((item) => (
-              <Link
-                key={item.slug}
-                to={tagHref(item.slug)}
-                className={cn(
-                  "rounded-pill border px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
-                  tag === item.slug
-                    ? "border-brand bg-brand-soft text-brand-strong"
-                    : "border-border text-muted hover:border-brand hover:text-brand",
-                )}
-                aria-current={tag === item.slug ? "page" : undefined}
-              >
-                {item.label}
-                <span className="ms-2 text-xs text-muted">
-                  {formatNumber(item.count, locale)}
-                </span>
-              </Link>
-            ))}
+            {tags.map((item) => {
+              const selected = selectedTags.includes(item.slug);
+              return (
+                <Link
+                  key={item.slug}
+                  to={toggleTagHref(item.slug)}
+                  className={cn(
+                    "rounded-pill border px-4 py-2 text-sm font-medium transition-[background-color,border-color,color,transform] duration-[var(--motion-duration-fast)] hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
+                    selected
+                      ? "border-brand bg-brand-soft text-brand-strong"
+                      : "border-border text-muted hover:border-brand hover:text-brand",
+                  )}
+                  aria-current={selected ? "page" : undefined}
+                >
+                  {item.label}
+                  <span className="ms-2 text-xs text-muted">
+                    {formatNumber(item.count, locale)}
+                  </span>
+                </Link>
+              );
+            })}
           </nav>
         </Container>
       </Section>

@@ -25,6 +25,8 @@ const blog = {
   resultsFor_other: "{{formattedCount}} results for “{{query}}”",
   searchChip: "Search: {{query}}",
   tagFilter: "Topic: {{tag}}",
+  tagFilters: "Topics: {{tags}}",
+  removeTag: "Remove {{tag}}",
   clearFilters: "Clear filters",
   readingTime: "{{minutes}} min read",
   related: "Related reading",

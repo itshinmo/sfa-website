@@ -98,9 +98,14 @@ export class FastApiBlogRepository implements BlogRepository {
       locale: query.locale,
       page: clampInteger(query.page, 1, 1, Number.MAX_SAFE_INTEGER),
       pageSize: clampInteger(query.pageSize, DEFAULT_PAGE_SIZE, 1, MAX_PAGE_SIZE),
-      tag: query.tag?.trim() || undefined,
       q: query.q?.trim() || undefined,
     });
+
+    const tags = query.tags?.length ? query.tags : query.tag ? [query.tag] : [];
+    for (const tag of tags) {
+      const normalized = tag.trim();
+      if (normalized) url.searchParams.append("tag", normalized);
+    }
 
     return this.request(url, blogListResponseSchema);
   }

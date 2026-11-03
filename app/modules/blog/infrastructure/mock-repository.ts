@@ -29,10 +29,15 @@ export class MockBlogRepository implements BlogRepository {
     const pageSize = Math.min(Math.max(query.pageSize ?? DEFAULT_PAGE_SIZE, 1), 50);
     const page = Math.max(query.page ?? 1, 1);
     const search = query.q ? normalizeSearchText(query.q) : "";
+    const selectedTags = (query.tags?.length ? query.tags : query.tag ? [query.tag] : [])
+      .map((tag) => tag.trim())
+      .filter(Boolean);
 
     const filtered = this.posts
       .filter((post) => post.locale === query.locale)
-      .filter((post) => !query.tag || post.tags.some((tag) => tag.slug === query.tag))
+      .filter((post) =>
+        selectedTags.every((tag) => post.tags.some((item) => item.slug === tag)),
+      )
       .filter((post) => {
         if (!search) return true;
         const haystack = normalizeSearchText(

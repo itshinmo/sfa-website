@@ -1,0 +1,5334 @@
+[
+  {
+    "id": "post-1-fa",
+    "slug": "مثلث-بافت-خاک",
+    "locale": "fa",
+    "translationKey": "soil-texture-triangle",
+    "title": "بررسی تفصیلی ۱۲ کلاس بافت خاک در مثلث بافت خاک",
+    "excerpt": "راهنمای تفصیلی ۱۲ کلاس بافت خاک، شامل ویژگی‌های فیزیکی، رفتار آب، نیازهای آبیاری و اثر آن‌ها بر رشد گیاه و توسعه ریشه.",
+    "cover": {
+      "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+      "alt": "تصویر بندانگشتی مثلث بافت خاک",
+      "width": 1000,
+      "height": 775
+    },
+    "template": "reference",
+    "tags": [
+      {
+        "slug": "soil",
+        "label": "خاک"
+      },
+      {
+        "slug": "irrigation",
+        "label": "آبیاری"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-06-12T08:00:00.000Z",
+    "updatedAt": "2026-07-02T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "مثلث-بافت-خاک"
+      },
+      {
+        "locale": "en",
+        "slug": "soil-texture-triangle"
+      }
+    ],
+    "content": {
+      "type": "reference",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در ادامه، بررسی بسیار مفصل‌تری از هر یک از ۱۲ کلاس بافت خاک موجود در مثلث بافت خاک ارائه می‌شود؛ با تمرکز بر ویژگی‌های فیزیکی، رفتار هیدرولیکی، مدیریت آبیاری و اثر آن‌ها بر توسعه ریشه گیاه. توضیحات از مفاهیم تخصصی مدیریت مزرعه و کشاورزی استفاده می‌کند."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "۱. گروه خاک‌های شنی",
+          "subsections": [
+            {
+              "title": "۱.۱. شن",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این خاک بیش از ۸۵٪ ذرات شن (ذرات درشت‌بافت) دارد. به دلیل وجود منافذ بسیار بزرگ، آب با سرعت بسیار زیادی در این خاک نفوذ می‌کند و از ناحیه توسعه ریشه با زهکشی عمقی خارج می‌شود."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "ظرفیت تبادل کاتیونی (CEC) این خاک‌ها نزدیک به صفر است؛ یعنی توانایی بسیار کمی برای نگهداری مواد مغذی دارند و کودها به سرعت شسته می‌شوند."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "تولید کشاورزی در این خاک نیازمند استفاده از سیستم‌های آبیاری قطره‌ای با فواصل آبیاری بسیار کوتاه (حتی چند بار در روز) و سیستم‌های کوددهی همراه با آبیاری است. افزودن مقادیر زیاد مواد آلی (کمپوست و بیوچار) برای افزایش ظرفیت نگهداری آب ضروری است."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۱.۲. شن لومی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این بافت درصد بالایی شن و مقدار کمی رس و سیلت دارد. افزودن حتی مقدار کمی ذرات ریزتر باعث می‌شود دانه‌های شن کمی بهتر به هم بچسبند و خاک کاملاً سست و بی‌ساختار نباشد."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "ظرفیت نگهداری آب (ظرفیت زراعی) کمی بیشتر از شن خالص است، اما تبخیر و زهکشی همچنان بالاست. گیاهانی که به اکسیژن فراوان اطراف ریشه نیاز دارند و به بیماری‌های قارچی مرتبط با رطوبت حساس هستند (مانند بادام‌زمینی و برخی محصولات غده‌ای) در این خاک عملکرد خوبی دارند."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۱.۳. لوم شنی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این خاک با داشتن سهم زیاد شن و توزیع متعادل سیلت و رس، یکی از بافت‌های محبوب باغبانان و کشاورزان است. زهکشی خوبی دارد و مقدار رس آن برای نگهداری رطوبت و مواد مغذی به مدت چند روز کافی است."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "این خاک در بهار سریع گرم می‌شود و برای محصولات ابتدای فصل مناسب است. خطر غرقابی بسیار کم است و با سیستم‌های آبیاری بارانی و قطره‌ای سازگاری بالایی دارد."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "۲. گروه خاک‌های سیلتی",
+          "subsections": [
+            {
+              "title": "۲.۱. سیلت",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این خاک عمدتاً از ذرات سیلت تشکیل شده است. اندازه ذرات سیلت بین شن و رس است."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این خاک در حالت خشک بافتی شبیه پودر تالک یا پودر بچه دارد. در حالت مرطوب صاف و لغزنده است، اما چسبناک نیست."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "بزرگ‌ترین چالش خاک‌های سیلتی، آسیب‌پذیری بالای آن‌ها در برابر فرسایش آبی و بادی و همچنین تشکیل پوسته سطحی است. پوسته سطحی از جوانه‌زنی بذرها جلوگیری می‌کند. آبیاری باید با قطرات بسیار ریز (در سیستم‌های بارانی) انجام شود تا برخورد قطرات به ساختار سطحی آسیب نرساند."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۲.۲. لوم سیلتی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این بافت درصد بالایی سیلت و مقادیر متعادلی رس و شن دارد. یکی از حاصلخیزترین خاک‌های جهان محسوب می‌شود. بسیاری از خاک‌های آبرفتی نزدیک رودخانه‌های بزرگ در این دسته قرار می‌گیرند."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "ظرفیت آب در دسترس این خاک از بالاترین مقادیر برای رشد گیاه است. اما به دلیل نرمی و ساختار ضعیف، ماشین‌آلات سنگین کشاورزی می‌توانند به سرعت فشردگی ایجاد کنند و تهویه خاک را کاهش دهند."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "۳. گروه خاک‌های لومی (نقطه تعادل)",
+          "subsections": [
+            {
+              "title": "۳.۱. لوم",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این بافت نمایانگر خاک کشاورزی ایده‌آل است: ترکیبی متعادل از ویژگی‌های فیزیکی هر سه نوع ذره."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "رس مواد مغذی را نگه می‌دارد، شن تهویه را بهبود می‌دهد و اجازه می‌دهد آب اضافی تخلیه شود، و سیلت محیطی نرم برای نفوذ ریشه فراهم می‌کند."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "تقریباً همه گونه‌های گیاهی در این خاک خوب رشد می‌کنند. در آبیاری قطره‌ای، الگوی خیس‌شدگی (پیاز رطوبتی خاک) معمولاً توزیعی متقارن و سیب‌شکل پیدا می‌کند که یکی از بهترین الگوها برای رساندن آب به ناحیه ریشه است."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۳.۲. لوم رسی شنی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "این خاک مقدار قابل توجهی شن دارد، اما درصد رس آن به اندازه کافی زیاد است (حدود ۲۰ تا ۳۵٪) که ویژگی‌های شبیه رس در آن نمایان شود. در حالت مرطوب می‌توان آن را به شکل نوار کوتاهی درآورد، اما به راحتی می‌شکند."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "در تابستان‌های خشک، این خاک به دلیل وجود شن ترک‌های عمیق ایجاد نمی‌کند. با این حال، رس آب را در بازه‌های بین آبیاری برای مدت طولانی‌تری نگه می‌دارد. نفوذپذیری آن متوسط است."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۳.۳. لوم رسی سیلتی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "خاکی تحت تسلط ذرات ریز (سیلت و رس) با ظرفیت نگهداری آب بسیار بالا. بافت آن نرم اما چسبناک است."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "زهکشی در این خاک نسبتاً کند است. پس از آبیاری غرقابی یا بارندگی شدید، زمان زیادی طول می‌کشد تا خاک خشک شود و به ظرفیت زراعی برگردد. زمان‌بندی صحیح عملیات خاک‌ورزی برای جلوگیری از تشکیل کلوخه‌های سخت ضروری است."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۳.۴. لوم رسی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "خاکی متراکم حاوی حدود ۲۷ تا ۴۰٪ رس. این خاک پتانسیل حاصلخیزی بالایی دارد، زیرا مواد معدنی و مغذی به طور مؤثر در ساختارهای بلوری رس نگه داشته می‌شوند."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "این خاک مقاومت فیزیکی بالایی در برابر رشد ریشه دارد. محصولات غده‌ای (مانند سیب‌زمینی و هویج) ممکن است در این خاک دچار بدشکلی شوند. آبیاری باید با سرعت نفوذ پایین انجام شود تا رواناب سطحی ایجاد نشود."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "۴. گروه خاک‌های غنی از رس",
+          "subsections": [
+            {
+              "title": "۴.۱. رس شنی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "بیش از ۳۵٪ رس همراه با درصد بالایی شن دارد. ذرات رس فضاهای بین ذرات شن را پر می‌کنند."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "با وجود داشتن شن، این خاک از نظر هیدرولیکی مانند یک خاک رس سنگین رفتار می‌کند. در حالت خشک بسیار سخت و شبیه سیمان می‌شود؛ در حالت مرطوب سنگین و سخت برای کار است. مدیریت مواد آلی برای ایجاد منافذ ثانویه و بهبود ساختار بسیار مهم است."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۴.۲. رس سیلتی",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "خاکی با چسبندگی فوق‌العاده بالا، حاوی بیش از ۴۰٪ رس و درصد بالایی سیلت. ذرات درشت بسیار کمی برای ایجاد منافذ بزرگ وجود دارد."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "نفوذ آب در این خاک بسیار کند است. الگوی خیس‌شدگی در آبیاری قطره‌ای بسیار پهن و کم‌عمق می‌شود. آبیاری قطره‌ای باید با دبی بسیار کم (برای مثال لیتر در ساعت) و مدت‌های طولانی‌تر انجام شود تا آب فرصت کافی برای نفوذ داشته باشد و روی سطح تجمع نکند."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "۴.۳. رس",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "بافت رس خالص حاوی بیش از ۴۰٪ رس (و در برخی موارد بیش از ۶۰٪). این خاک بی‌شمار ریزمنفذ دارد که آب را با نیروهای ماتریکی بسیار قوی نگه می‌دارند. آب می‌تواند آن‌قدر محکم نگه داشته شود که برای گیاه غیرقابل استفاده شود و گیاه حتی با وجود رطوبت در خاک به نقطه پژمردگی دائمی برسد."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "بزرگ‌ترین مشکلات این خاک، کمبود شدید اکسیژن (خفگی ریشه) و خطر بیماری‌های پوسیدگی ریشه (مانند فیتوفترا) است. در حالت خشک، این خاک‌ها ترک‌های بسیار عمیق و پهن ایجاد می‌کنند که می‌تواند به موهای ریز ریشه آسیب بزند. روش‌های بهبود شامل افزودن شن، مواد درشت، پرلیت و استفاده از تناوب زراعی با گیاهان ریشه‌عمیق برای شکستن لایه‌های فشرده است."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-1-en",
+    "slug": "soil-texture-triangle",
+    "locale": "en",
+    "translationKey": "soil-texture-triangle",
+    "title": "Detailed Examination of the 12 Soil Texture Classes in the Soil Texture Triangle",
+    "excerpt": "A detailed guide to the 12 soil texture classes, explaining their physical properties, water behavior, irrigation needs, and effects on plant growth and root development.",
+    "cover": {
+      "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+      "alt": "Soil texture triangle thumbnail",
+      "width": 1000,
+      "height": 775
+    },
+    "template": "reference",
+    "tags": [
+      {
+        "slug": "soil",
+        "label": "Soil"
+      },
+      {
+        "slug": "irrigation",
+        "label": "Irrigation"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-06-12T08:00:00.000Z",
+    "updatedAt": "2026-07-02T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "مثلث-بافت-خاک"
+      },
+      {
+        "locale": "en",
+        "slug": "soil-texture-triangle"
+      }
+    ],
+    "content": {
+      "type": "reference",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Below is a much more detailed examination of each of the 12 soil texture classes found in the soil texture triangle, focusing on physical characteristics, hydraulic behavior, irrigation management, and their effects on plant root development. The explanations use specialized concepts from field and agricultural management."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "1. Sandy Soil Group",
+          "subsections": [
+            {
+              "title": "1.1. Sand",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "This soil contains more than 85% sand particles (coarse-textured particles). Due to the presence of very large macropores, water infiltrates this soil extremely quickly and leaves the root development zone through deep percolation."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "The cation exchange capacity (CEC) of these soils is close to zero, meaning they have very little ability to retain nutrients, and fertilizers are rapidly leached away."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Agricultural production in this soil requires the use of drip irrigation systems with very short irrigation intervals (even several times per day) and drip fertigation systems. Adding large amounts of organic matter (compost and biochar) is necessary to increase water-holding capacity."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "1.2. Loamy Sand",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "This texture contains a high percentage of sand with a small amount of clay and silt. The addition of even a small amount of finer particles allows sand grains to bind together slightly better, preventing the soil from being completely loose and structureless."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "The water-holding capacity (field capacity) is slightly higher than pure sand, but evaporation and drainage are still high. Plants that require abundant oxygen around their roots and are sensitive to moisture-related fungal diseases (such as peanuts and some tuber crops) perform well in this soil."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "1.3. Sandy Loam",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Containing a large proportion of sand along with a balanced distribution of silt and clay, this soil is one of the most preferred textures for gardeners and farmers. It provides good drainage, while the clay content is sufficient to retain moisture and nutrients for several days."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "This soil warms up quickly in spring, making it ideal for early-season crops. The risk of waterlogging is very low, and it is highly compatible with both sprinkler and drip irrigation systems."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "2. Silty Soil Group",
+          "subsections": [
+            {
+              "title": "2.1. Silt",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "This soil consists mainly of silt particles. Silt particles are intermediate in size between sand and clay."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "When dry, this soil has a texture similar to talcum powder or baby powder. When wet, it feels smooth and slippery but is not sticky."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "The biggest challenges of silty soils are their high vulnerability to water and wind erosion, as well as the formation of surface crusting. Crusting prevents seedlings from emerging from the soil. Irrigation should be performed using very fine droplets (in sprinkler systems) to prevent droplet impact from damaging the surface structure."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "2.2. Silt Loam",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "This texture contains a high percentage of silt along with balanced amounts of clay and sand. It is considered one of the most fertile soils in the world. Many alluvial soils near major rivers belong to this category."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "The available water capacity of this soil is among the highest for plant growth. However, due to its softness and weak structure, heavy agricultural machinery can quickly cause compaction, reducing soil aeration."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "3. Loamy Soil Group (The Balance Point)",
+          "subsections": [
+            {
+              "title": "3.1. Loam",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "This texture represents the ideal agricultural soil: a balanced combination of the physical properties of all three particle types."
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Clay retains nutrients, sand improves aeration and allows excess water to drain, and silt provides a soft medium for root penetration."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Almost all plant species grow well in this soil. Under drip irrigation, the wetting pattern (soil moisture bulb) usually develops a symmetrical, apple-shaped distribution, which is considered one of the best patterns for delivering water to the root zone."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "3.2. Sandy Clay Loam",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "This soil contains a significant amount of sand, but its clay percentage is high enough (approximately 20–35%) that clay-like properties become noticeable. When wet, it can be shaped into a short ribbon, but it breaks easily."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "During dry summers, this soil does not develop deep cracks because of the sand content. However, the clay retains water for longer periods between irrigation events. It has moderate permeability."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "3.3. Silty Clay Loam",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "A soil dominated by fine particles (silt and clay) with a very high water-holding capacity. Its texture is soft but sticky."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Drainage in this soil is relatively slow. After flood irrigation or heavy rainfall, it takes a long time for the soil to dry and return to field capacity. Proper timing of tillage operations is essential to prevent the formation of hard clods."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "3.4. Clay Loam",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "A dense soil containing approximately 27–40% clay. This soil has high fertility potential because minerals and nutrients are effectively retained within clay crystal structures."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "This soil has high physical resistance to root growth. Tuber crops (such as potatoes and carrots) may develop deformities in this soil. Irrigation should be applied at a low infiltration rate to prevent surface runoff."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "4. Clay-Rich Soil Group",
+          "subsections": [
+            {
+              "title": "4.1. Sandy Clay",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Contains more than 35% clay along with a high percentage of sand. Clay particles fill the spaces between sand particles."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Despite containing sand, this soil behaves hydraulically like a heavy clay soil. When dry, it becomes extremely hard and cement-like; when wet, it becomes heavy and difficult to work with. Organic matter management is very important to create secondary pore spaces and improve structure."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "4.2. Silty Clay",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "A soil with extremely high stickiness, containing more than 40% clay and a high percentage of silt. There are very few coarse particles available to create large pores."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Water infiltration is extremely slow in this soil. The wetting pattern under drip irrigation becomes very wide and shallow. Drip irrigation should use very low flow rates (for example, liters per hour) and longer irrigation durations so water has enough time to infiltrate instead of accumulating on the surface."
+                  }
+                ]
+              }
+            },
+            {
+              "title": "4.3. Clay",
+              "paragraphs": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "A pure clay texture containing more than 40% clay (and in some cases above 60%). This soil contains countless micropores that hold water with very strong matric forces. The water can become so tightly bound that it becomes unavailable to plants, causing plants to reach the permanent wilting point even while moisture remains in the soil."
+                    }
+                  ]
+                }
+              ],
+              "management": {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "The greatest problems with this soil are severe oxygen deficiency (root suffocation) and the risk of root-rot diseases (such as Phytophthora). When dry, these soils develop extremely deep and wide cracks that can damage fine root hairs. Improvement methods include adding sand, coarse materials, perlite, and using crop rotations with deep-rooted plants to break compacted layers."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-2-fa",
+    "slug": "سمفونی-قطره-ها",
+    "locale": "fa",
+    "translationKey": "symphony-of-droplets",
+    "title": "سمفونی قطره‌ها: چگونه علم فیزیک آینده کشاورزی جهانی را نجات می‌دهد (نسخه تفصیلی)",
+    "excerpt": "کاوشی عمیق در تکامل آبیاری و نشان‌دادن اینکه چگونه فیزیک، مهندسی و کشاورزی دقیق بهره‌وری آب را از آبیاری سطحی سنتی تا سیستم‌های قطره‌ای و زیرسطحی پیشرفته بهبود می‌دهند.",
+    "cover": {
+      "url": "/images/blog/symphony-of-droplets/image1.jpg",
+      "alt": "قطره‌های آب روی برگ",
+      "width": 1500,
+      "height": 655
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "water",
+        "label": "آب"
+      },
+      {
+        "slug": "research",
+        "label": "پژوهش"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-05-28T08:00:00.000Z",
+    "updatedAt": "2026-06-18T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "سمفونی-قطره-ها"
+      },
+      {
+        "locale": "en",
+        "slug": "symphony-of-droplets"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در دنیایی که با تغییرات اقلیمی دست‌وپنجه نرم می‌کند، دیگر نمی‌توانیم به سادگی آب را روی زمین رها کنیم و امیدوار باشیم محصولات سبز شوند. ذخایر آب زیرزمینی در حال تخلیه است و الگوهای بارش در سراسر کره زمین در حال تغییر است. ما در عصر کشاورزی دقیق زندگی می‌کنیم؛ عصری که سازمان‌هایی مانند فائو هشدار می‌دهند بقای تمدن ما به بهبود بهره‌وری مصرف آب گره خورده است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "از نظر علمی، این بقا را می‌توان در یک اصل ساده اما حیاتی خلاصه کرد: بیشینه‌سازی نسبت عملکرد محصول به تبخیروتعرق. هر قطره آبی که بدون ورود به بافت گیاه تبخیر شود، فرصتی از دست رفته برای امنیت غذایی جهانی است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "بیایید نگاهی عمیق‌تر به تکامل سیستم‌های آبیاری از دریچه فیزیک، شیمی و مهندسی هیدرولیک بیندازیم؛ داستانی که با غرقاب کردن مزارع آغاز شد و به تزریق پنهان آب در لایه‌های تاریک و عمیق خاک رسیده است."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image1.jpg",
+            "alt": "سمفونی قطره‌ها — تصویر ۱",
+            "width": 1500,
+            "height": 655
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "میراث کهن و چالش گرانش: آبیاری سطحی"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "هزاران سال است که انسان اجازه می‌دهد آب روی زمین جریان یابد و کار را به گرانش می‌سپارد. از دشت‌های نیل تا بین‌النهرین، این روش تمدن‌ها را پشتیبانی کرده و جمعیت‌ها را تغذیه کرده است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "با این حال، از دیدگاه هیدرودینامیکی، حرکت آب روی سطحی ناهموار بسیار متلاطم و غیرقابل پیش‌بینی است. فیزیک‌دانان خاک از مدل‌های ریاضی پیچیده برای درک این رفتار و محاسبه نرخ نفوذ آب، ظرفیت جذب خاک و هدایت هیدرولیکی استفاده می‌کنند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مطالعات کلاسیک واکر و اسکوگربو نشان داد چرا بهره‌وری این روش اغلب محدود است: آب در ابتدای مزرعه مدت بسیار بیشتری می‌ماند و نفوذ بیش از حد به زیر ناحیه ریشه (تلفات زهکشی عمقی) رخ می‌دهد، در حالی که در انتهای مزرعه به صورت رواناب سطحی از دست می‌رود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "با این روش ممکن است در انرژی پمپاژ صرفه‌جویی کنیم و از تجهیزات پیچیده دوری کنیم، اما یکی از ارزشمندترین منابع کره زمین را با سهولت شگفت‌انگیزی از دست می‌دهیم."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image2.jpg",
+            "alt": "سمفونی قطره‌ها — تصویر ۲",
+            "width": 1000,
+            "height": 667
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "رقص آب در هوا: معمای آبیاری بارانی"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "با اختراع پمپ‌های فشار بالا، انسان تلاش کرد از طبیعت تقلید کند و آبیاری بارانی پدید آمد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در این سیستم، آب تحت فشار از نازل‌ها عبور می‌کند و به صورت قطره به هوا پرتاب می‌شود. مهندسان این سیستم‌ها را با تحلیل توزیع قطرات و شاخص‌های آماری ارزیابی می‌کنند تا از یکنواختی آبیاری اطمینان حاصل کنند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "یک سیستم بارانی ایده‌آل باید ضریب یکنواختی بالایی داشته باشد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "اما این رقص هوایی قطرات هزینه‌ای دارد. مطالعات تارجوئلو و همکاران (۲۰۰۰) نشان داد در مناطق خشک و نیمه‌خشک، شرایط جوی می‌تواند اثر مخربی داشته باشد. باد و گرما می‌توانند بخش قابل توجهی از آب آبیاری را پیش از رسیدن به سطح خاک تبخیر کنند؛ پدیده‌ای که به عنوان بادبردگی و تلفات تبخیر (WDEL) شناخته می‌شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "علاوه بر این، انرژی جنبشی قطرات بزرگ آب می‌تواند ساختار خاک را تخریب کند و به تشکیل پوسته سطحی (crusting) کمک کند. از سوی دیگر، رطوبت مداوم روی برگ‌های گیاه محیطی ایده‌آل برای رشد عوامل بیماری‌زای قارچی ایجاد می‌کند."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image3.jpg",
+            "alt": "سمفونی قطره‌ها — تصویر ۳",
+            "width": 1023,
+            "height": 784
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "انقلاب خرد: آبیاری قطره‌ای و مهندسی رطوبت"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در میانه قرن بیستم، آبیاری قطره‌ای قواعد مدیریت آب کشاورزی را برای همیشه تغییر داد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "این روش به جای خیس کردن بی‌دلیل کل مزرعه، ناحیه‌ای سه‌بعدی به نام پیاز رطوبتی را مستقیماً زیر گیاه ایجاد می‌کند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در این سیستم، نیروهای مویینگی خاک بر گرانش غلبه می‌کنند. همان‌طور که دانیل هیلل، دانشمند برجسته فیزیک خاک، توضیح می‌دهد، آبیاری قطره‌ای پتانسیل ماتریکی خاک را در محدوده بهینه نگه می‌دارد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "گیاه دیگر نیازی ندارد انرژی زیادی صرف استخراج آب از خاک کند و می‌تواند انرژی بیشتری را صرف رشد و تولید میوه کند. همچنین ترکیب کود با آب آبیاری (کوددهی همراه آبیاری) بهره‌وری مصرف مواد مغذی را به‌شدت بهبود می‌دهد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "با این حال، طبیعت همیشه در برابر مداخلات دقیق مقاومت می‌کند. رسوبات شیمیایی مانند کربنات کلسیم و رشد کلونی‌های باکتریایی (بیوفیلم) می‌توانند گذرگاه‌های میکرومتری داخل قطره‌چکان‌ها را مسدود کنند. نگهداری این سیستم‌ها نیازمند دانش شیمیایی پیشرفته، از جمله شست‌وشوی دقیق با اسید و تیمارهای کلرزنی است."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "آخرین مرز مهندسی: آبیاری قطره‌ای زیرسطحی (SDI)"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "دستاورد نهایی مهندسی آب، پنهان کردن آب آبیاری از پرتوهای شدید خورشید است. در سیستم‌های SDI، لوله‌های انتقال آب در عمق‌هایی از چند سانتی‌متر زیر سطح خاک (بسته به نیاز محصول) دفن می‌شوند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "بر اساس مطالعات شناخته‌شده کمپ (۱۹۹۸)، حذف تبخیر سطحی می‌تواند بهره‌وری کاربرد آب را به سطوح چشمگیری برساند. در این روش، سطح خاک کاملاً خشک می‌ماند. این سطح خشک رشد علف‌های هرز را کاهش می‌دهد، تبخیر را به‌طور قابل توجهی کم می‌کند و امکان حرکت مداوم تراکتور را بدون فشرده‌سازی خاک مرطوب فراهم می‌کند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "اما در زیر سطح، نبردی پنهان در جریان است. ریشه‌های گیاه به طور طبیعی تمایل دارند به سمت دهانه قطره‌چکان‌ها رشد کنند و وارد آن‌ها شوند. همچنین خاموش شدن ناگهانی پمپ می‌تواند مکش معکوس ایجاد کند و باعث ورود ذرات خاک و رسوبات به خطوط آبیاری شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مهندسی مدرن راه‌حل‌هایی مانند شیرهای ضدسیفون و تیمارهای بازدارنده ریشه (مثل ترکیب علف‌کش تریفلورالین در پلیمر قطره‌چکان) توسعه داده است تا عمر این سیستم‌ها برای دهه‌ها افزایش یابد."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "سخن پایانی مجله"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "آینده امنیت غذایی جهانی تنها مسئله فیزیک یا اقتصاد نیست؛ یک مسئله بهینه‌سازی چندهدفه است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "گذار از سیستم‌های آبیاری مبتنی بر گرانش به فناوری‌های آبیاری خرد، یکپارچه‌سازی حسگرهای رطوبت خاک با هوش مصنوعی و درک عمیق‌تر فیزیک آب در منافذ خاک، تنها مسیری است که به انسان امکان می‌دهد با آب کمتر غذای بیشتری تولید کند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "قطرات آب نت‌های موسیقی بقای ما هستند؛ باید یاد بگیریم آن‌ها را با دقت بنوازیم."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-2-en",
+    "slug": "symphony-of-droplets",
+    "locale": "en",
+    "translationKey": "symphony-of-droplets",
+    "title": "Symphony of Droplets: How the Science of Physics Is Saving the Future of Global Agriculture (Detailed Version)",
+    "excerpt": "A deep exploration of irrigation evolution, showing how physics, engineering, and precision agriculture improve water efficiency from traditional surface irrigation to advanced drip and subsurface systems.",
+    "cover": {
+      "url": "/images/blog/symphony-of-droplets/image1.jpg",
+      "alt": "Water droplets on a leaf",
+      "width": 1500,
+      "height": 655
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "water",
+        "label": "Water"
+      },
+      {
+        "slug": "research",
+        "label": "Research"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-05-28T08:00:00.000Z",
+    "updatedAt": "2026-06-18T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "سمفونی-قطره-ها"
+      },
+      {
+        "locale": "en",
+        "slug": "symphony-of-droplets"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In a world struggling with climate change, we can no longer simply release water onto the land and hope for green crops. Groundwater reserves are being depleted, and rainfall patterns are changing across the planet. We are living in the era of Precision Agriculture, where organizations such as the FAO warn that the survival of our civilization is closely tied to improving water-use efficiency."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In scientific terms, this survival can be summarized by one simple but critical principle: maximizing the ratio of crop yield to evapotranspiration. Every drop of water that evaporates without entering plant tissues represents a lost opportunity for global food security."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Let us take a deeper look at the evolution of irrigation systems through the lens of physics, chemistry, and hydraulic engineering — a story that began with flooding fields and has evolved into the hidden injection of water deep within the darkest layers of soil."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image1.jpg",
+            "alt": "Symphony of droplets — image 1",
+            "width": 1500,
+            "height": 655
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ancient Heritage and the Challenge of Gravity: Surface Irrigation"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "For thousands of years, humans have allowed water to flow across the land and relied on gravity to do the work. From the plains of the Nile to Mesopotamia, this method has supported civilizations and fed populations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "However, from a hydrodynamic perspective, water movement across an uneven surface is highly turbulent and unpredictable. Soil physicists use complex mathematical models to understand this behavior and calculate water infiltration rates, soil absorption capacity, and hydraulic conductivity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Classic studies by Walker and Skogerboe demonstrated why the efficiency of this method is often limited: water remains at the beginning of the field for a much longer time, allowing excessive infiltration beyond the root zone (deep percolation losses), while at the end of the field it is lost as surface runoff."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "With this method, we may save pumping energy and avoid complicated equipment, but we also lose one of the planet’s most valuable resources with surprising ease."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image2.jpg",
+            "alt": "Symphony of droplets — image 2",
+            "width": 1000,
+            "height": 667
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The Dance of Water in the Air: The Puzzle of Sprinkler Irrigation"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "With the invention of high-pressure pumps, humans attempted to imitate nature, leading to the development of sprinkler irrigation."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In this system, pressurized water passes through nozzles and is projected into the air as droplets. Engineers evaluate these systems by analyzing droplet distribution using statistical indicators to ensure uniform water application."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "An ideal sprinkler system should achieve a high uniformity coefficient."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "However, this aerial dance of droplets comes with a cost. Studies by Tarjuelo and colleagues (2000) showed that in arid and semi-arid regions, atmospheric conditions can have a damaging effect. Wind and heat can cause a significant portion of irrigation water to evaporate before reaching the soil surface — a phenomenon known as Wind Drift and Evaporation Loss (WDEL)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Furthermore, the kinetic energy of large water droplets can damage soil structure and contribute to the formation of surface crusts (crusting). On the other hand, continuous moisture on plant leaves creates an ideal environment for the development of fungal pathogens."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image3.jpg",
+            "alt": "Symphony of droplets — image 3",
+            "width": 1023,
+            "height": 784
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The Micro Revolution: Drip Irrigation and Moisture Engineering"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In the middle of the twentieth century, drip irrigation permanently changed the rules of agricultural water management."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Instead of unnecessarily wetting the entire field, this method creates a three-dimensional zone called the wetted bulb directly beneath the plant."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In this system, soil capillary forces overcome gravity. As explained by Daniel Hillel, a leading scientist in soil physics, drip irrigation maintains soil matric potential in an optimal range."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The plant no longer needs to spend excessive energy extracting water from the soil, allowing it to allocate more energy toward growth and fruit production. Additionally, combining fertilizer with irrigation water (fertigation) dramatically improves nutrient-use efficiency."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "However, nature always resists precise interventions. Chemical deposits such as calcium carbonate and the growth of bacterial colonies (biofilms) can block the micrometer-scale passages inside drip emitters. Maintaining these systems requires advanced chemical knowledge, including precise acid flushing and chlorination treatments."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The Final Frontier of Engineering: Subsurface Drip Irrigation (SDI)"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The ultimate achievement of water engineering is hiding irrigation water from the intense rays of the sun. In SDI systems, water-delivery pipes are buried at depths ranging from several centimeters below the soil surface (depending on crop requirements)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "According to the widely recognized studies of Camp (1998), eliminating surface evaporation can increase water application efficiency to remarkable levels. In this method, the soil surface remains completely dry. This dry surface reduces weed growth, significantly decreases evaporation, and allows continuous tractor operation without compacting wet soil."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "However, beneath the surface, a hidden battle takes place. Plant roots naturally tend to grow toward and enter emitter openings. Additionally, sudden pump shutdowns can create reverse suction, causing soil particles and sediments to enter the irrigation lines."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Modern engineering has developed solutions such as anti-siphon valves and root-inhibiting treatments (such as incorporating the herbicide trifluralin into emitter polymers) to extend the lifespan of these systems for decades."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Final Words from the Magazine"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The future of global food security is not simply a matter of physics or economics; it is a multi-objective optimization problem."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The transition from gravity-based irrigation systems to micro-irrigation technologies, the integration of soil moisture sensors with artificial intelligence, and a deeper understanding of water physics within soil pores represent the only path that allows humanity to produce more food with less water."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Water droplets are the musical notes of our survival; we must learn how to play them with precision."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-3-fa",
+    "slug": "نتایج-پایلوت-صفا",
+    "locale": "fa",
+    "translationKey": "sfa-pilot-results",
+    "title": "نتایج پایلوت صفا در یک فصل زراعی",
+    "excerpt": "چه اتفاقی افتاد وقتی برنامه آبیاری صفا در یک مزرعه نیمه‌خشک به کار رفت؟",
+    "cover": {
+      "url": "/images/blog/sfa-pilot-results.svg",
+      "alt": "مزرعه پایلوت صفا",
+      "width": 1600,
+      "height": 900
+    },
+    "template": "case-study",
+    "tags": [
+      {
+        "slug": "research",
+        "label": "پژوهش"
+      },
+      {
+        "slug": "irrigation",
+        "label": "آبیاری"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-04-15T08:00:00.000Z",
+    "updatedAt": "2026-05-01T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "نتایج-پایلوت-صفا"
+      },
+      {
+        "locale": "en",
+        "slug": "sfa-pilot-results"
+      }
+    ],
+    "content": {
+      "type": "case-study",
+      "challenge": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در یک مزرعه نمونه در منطقه‌ای نیمه‌خشک، برنامه آبیاری سنتی با مصرف بالای آب و بازده پایین همراه بود. زمان‌بندی بیشتر بر پایه تجربه و تقویم تنظیم می‌شد تا نیاز واقعی گیاه و ظرفیت نگهداشت خاک."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "خاک و شیب مزرعه یکنواخت نبود؛ بخش‌هایی آب را سریع‌تر تخلیه می‌کردند و بخش‌هایی دیگر دیرتر. بدون داده مکانی، یک برنامه ثابت برای کل مزرعه یا آب بیش از حد می‌داد یا بخش‌هایی را کم‌آب می‌گذاشت."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "روش‌های مرجع مانند نشریه ۵۶ فائو بر برآورد نیاز آبی گیاه و پایش خاک تأکید دارند؛ اما اجرای آن‌ها در مزرعه به داده محلی و تصمیم‌گیری مرحله‌به‌مرحله نیاز دارد ("
+            },
+            {
+              "text": "FAO 56",
+              "href": "https://www.fao.org/4/x0490e/x0490e00.htm"
+            },
+            {
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "داده پایه محدود بود. برای مقایسه معنادار، تیم نیاز داشت بداند پیش از شروع، آب چگونه و چه زمانی اعمال می‌شد، خاک در نقاط مختلف چه رفتار دارد و کشاورز چه محدودیت‌هایی در تجهیزات و نیروی کار دارد. بدون این خط پایه، هر تغییری در مصرف آب می‌توانست به اشتباه به برنامه جدید نسبت داده شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "انتخاب نقاط پایش هم آسان نبود. نقاط باید در بخش‌های مختلف خاک و تحت تأثیر سیستم آبیاری متفاوت باشند، اما در همان حال امکان دسترسی منظم و مقایسه را داشته باشند. تیم نقاط را با نقشه خاک و مشاهده اولیه انتخاب کرد و در طول فصل تغییر نداد تا مقایسه معنا داشته باشد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "محدودیت دیگر، انتظار کشاورز بود. تغییر برنامه نباید برداشت یا عملیات اصلی را مختل می‌کرد. به همین دلیل تصمیم‌ها به‌صورت تدریجی و با هماهنگی کارهای روزمره مزرعه اعمال شد، نه به‌عنوان یک تغییر ناگهانی."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "نتایج این پایلوت یک نمونه میدانی است، نه تضمینی برای همه مزارع. تفسیر آن باید همراه با اقلیم، خاک، محصول و روش مدیریت همان مزرعه انجام شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "کیفیت داده نیز محدودیت خود را داشت. بعضی قرائت‌ها تحت تأثیر شرایط لحظه‌ای، محل نصب حسگر یا خطای ابزار قرار می‌گرفتند. تیم یاد گرفت پیش از هر تصمیم، قرائت‌های غیرعادی را با روش دوم بررسی کند و تنها بر پایه یک عدد اقدام نکند."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "تیم صفا داده‌های خاک، اقلیم و مرحله رشد محصول را ترکیب کرد و یک برنامه آبیاری بهینه طراحی کرد. برنامه در طول فصل با بازخورد کشاورز و مشاهده میدانی به‌روزرسانی شد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "به جای یک زمان‌بندی ثابت، تیم نقاط نماینده مزرعه را تعریف کرد و رطوبت و پاسخ گیاه را در همان نقاط دنبال کرد. این کار اجازه داد تفاوت‌های مکانی در تصمیم‌ها دیده شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "پایش تنها به حجم آب محدود نبود؛ وضعیت تجهیزات، فشار، گرفتگی قطره‌چکان و رواناب هم بررسی شد. یک برنامه خوب با سیستم معیوب اجرا نمی‌شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "تیم یک حلقه تصمیم هفتگی تعریف کرد: بررسی پیش‌بینی هوا، خواندن رطوبت در نقاط ثابت، بازبینی وضعیت تجهیزات و ثبت حجم واقعی آب. تصمیم‌ها بر اساس همان داده‌ها گرفته می‌شد و در صورت بارندگی یا موج گرما، برنامه بازنگری می‌شد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "نتیجه تنها یک عدد نبود؛ یک روش قابل تکرار بود. کشاورز یاد گرفت چه چیزی را اندازه بگیرد و چه زمانی برنامه را تغییر دهد. این بخش برای پایداری نتیجه اهمیت داشت، چون برنامه‌ای که فقط توسط تیم بیرونی اجرا شود پس از پایان پایلوت دوام نمی‌آورد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "حسگرها و روش‌های میدانی پیش از شروع بررسی شدند. تیم فقط به یک ابزار تکیه نکرد: قرائت حسگر، بررسی دستی خاک و مشاهده گیاه با هم خوانده می‌شد. اگر ابزاری خارج از محدوده یا مشکوک بود، پیش از تصمیم‌گیری دوباره بررسی می‌شد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "بخشی از کار، مدیریت انتظارات بود. برنامه بهینه به معنای صفر کردن آبیاری یا پیروی کورکورانه از یک نرم‌افزار نیست. تصمیم نهایی با در نظر گرفتن وضعیت واقعی مزرعه، تجهیزات و ریسک کشاورز گرفته شد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در پایان پایلوت، روش کار به شکل یک چک‌لیست ساده در اختیار تیم مزرعه قرار گرفت: چه چیزی، کجا، هر چند وقت و با چه آستانه‌ای اندازه‌گیری شود. این چک‌لیست بخشی از خروجی پروژه بود، نه ضمیمه‌ای تشریفاتی."
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "label": "کاهش مصرف آب",
+          "value": "۲۸٪",
+          "description": "نسبت به دوره پایه"
+        },
+        {
+          "label": "افزایش بهره‌وری آب",
+          "value": "۴ برابر",
+          "description": "در تیمار بهینه"
+        },
+        {
+          "label": "پایش",
+          "value": "۲۴۶ گونه",
+          "description": "پشتیبانی از محصولات"
+        }
+      ],
+      "gallery": [
+        {
+          "url": "/images/blog/sfa-pilot-results.svg",
+          "alt": "مزرعه پایلوت صفا",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "cta": {
+        "label": "درباره صفا بخوانید",
+        "href": "/fa#showcase"
+      }
+    }
+  },
+  {
+    "id": "post-3-en",
+    "slug": "sfa-pilot-results",
+    "locale": "en",
+    "translationKey": "sfa-pilot-results",
+    "title": "SFA pilot results from one growing season",
+    "excerpt": "What happened when the SFA irrigation schedule was deployed on a semi-arid farm?",
+    "cover": {
+      "url": "/images/blog/sfa-pilot-results.svg",
+      "alt": "The SFA pilot farm",
+      "width": 1600,
+      "height": 900
+    },
+    "template": "case-study",
+    "tags": [
+      {
+        "slug": "research",
+        "label": "Research"
+      },
+      {
+        "slug": "irrigation",
+        "label": "Irrigation"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-04-15T08:00:00.000Z",
+    "updatedAt": "2026-05-01T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "نتایج-پایلوت-صفا"
+      },
+      {
+        "locale": "en",
+        "slug": "sfa-pilot-results"
+      }
+    ],
+    "content": {
+      "type": "case-study",
+      "challenge": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A demonstration farm in a semi-arid region was using a traditional irrigation schedule with high water use and low efficiency. Timing was based mostly on experience and the calendar rather than on crop demand and the soil's storage capacity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The field was not uniform. Some areas drained quickly; others held water longer. Without spatial data, one fixed schedule for the whole field either over-watered some zones or left others short."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Reference methods such as FAO Irrigation and Drainage Paper 56 emphasize estimating crop water demand and monitoring the soil, but field implementation still depends on local data and decisions made through the season ("
+            },
+            {
+              "text": "FAO 56",
+              "href": "https://www.fao.org/4/x0490e/x0490e00.htm"
+            },
+            {
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Baseline data was limited. To make a meaningful comparison, the team needed to know how and when water had been applied before the trial, how the soil behaved in different zones, and what equipment and labor constraints the farmer faced. Without that baseline, any change in water use could be attributed to the new schedule by default."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Choosing monitoring points was not trivial. The points had to represent different soil zones and irrigation behavior while remaining accessible for repeat visits. The team selected them from the soil map and an initial walk, then kept them fixed through the season so comparisons remained meaningful."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Another constraint was the farmer's operating reality. The new schedule could not disrupt harvest or essential field work. Decisions were therefore introduced gradually and coordinated with daily tasks rather than as a sudden change."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The results are one field demonstration, not a guarantee for every farm. They should be interpreted alongside the climate, soil, crop, and management of the specific field."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Data quality had its own limits. Some readings were affected by short-term conditions, sensor placement, or instrument error. The team learned to cross-check unusual readings with a second method before making a decision, rather than acting on a single number."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The team also documented what did not change: crop variety, planting date, and the field layout. Keeping those variables stable made the comparison easier to explain and prevented a water result from being confused with an agronomic change."
+            }
+          ]
+        }
+      ],
+      "solution": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The SFA team combined soil, climate, and crop-stage data to design an optimized irrigation schedule. The schedule was updated through the season with farmer feedback and field observations."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Instead of a fixed timer, the team defined representative monitoring points and followed moisture and crop response in the same places. That made spatial differences visible in the decisions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Monitoring was not limited to water volume. Equipment condition, pressure, emitter clogging, and runoff were checked as well. A good schedule cannot be delivered by a failing system."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The team established a weekly decision loop: review the forecast, read moisture at fixed points, inspect the equipment, and record the actual volume applied. Decisions were based on those readings, and the schedule was revisited after rainfall or a heat wave."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The result was not only a number; it was a repeatable method. The farmer learned what to measure and when to change the schedule. That mattered for durability, because a plan that only an outside team can operate does not survive the end of the pilot."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Sensors and field methods were checked before the trial. The team did not rely on a single tool: sensor readings, hand checks, and crop observations were read together. If a reading looked implausible, it was checked again before changing the schedule."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Part of the work was expectation management. An optimized schedule does not mean zero irrigation or blind obedience to software. The final decision considered the field's actual condition, the equipment, and the farmer's risk."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "At the end of the pilot, the method was reduced to a simple checklist for the farm team: what to measure, where, how often, and at what threshold to act. That checklist was part of the project output, not an afterthought."
+            }
+          ]
+        }
+      ],
+      "results": [
+        {
+          "label": "Water use reduction",
+          "value": "28%",
+          "description": "Against the baseline"
+        },
+        {
+          "label": "Water productivity",
+          "value": "4x",
+          "description": "In the optimized treatment"
+        },
+        {
+          "label": "Coverage",
+          "value": "246 species",
+          "description": "Supported crops"
+        }
+      ],
+      "gallery": [
+        {
+          "url": "/images/blog/sfa-pilot-results.svg",
+          "alt": "The SFA pilot farm",
+          "width": 1600,
+          "height": 900
+        }
+      ],
+      "cta": {
+        "label": "See how SFA works",
+        "href": "/en#showcase"
+      }
+    }
+  },
+  {
+    "id": "post-4-fa",
+    "slug": "به-صفا-خوش-آمدید",
+    "locale": "fa",
+    "translationKey": "welcome-to-sfa",
+    "title": "به بلاگ صفا خوش آمدید",
+    "excerpt": "یادداشت‌های پژوهشی، راهنماهای میدانی و داستان‌های تیم صفا.",
+    "cover": {
+      "url": "/images/blog/welcome-to-sfa.svg",
+      "alt": "بلاگ صفا",
+      "width": 1600,
+      "height": 900
+    },
+    "template": "simple",
+    "tags": [
+      {
+        "slug": "research",
+        "label": "پژوهش"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-03-01T08:00:00.000Z",
+    "updatedAt": "2026-03-01T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "به-صفا-خوش-آمدید"
+      },
+      {
+        "locale": "en",
+        "slug": "welcome-to-sfa"
+      }
+    ],
+    "content": {
+      "type": "simple",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "به بلاگ صفا خوش آمدید. اینجا یادداشت‌های پژوهشی، راهنماهای میدانی و داستان‌های تیم ما را درباره آب، خاک و کشاورزی هوشمند دنبال می‌کنید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ما می‌خواهیم دانش فنی به زبانی روشن و قابل استفاده در مزرعه منتشر شود؛ نه به شکل فهرستی از اصطلاحات، بلکه به شکل تصمیم‌هایی که کشاورز بتواند امروز یا فصل بعد امتحان کند."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "چرا آب و خاک را با هم می‌بینیم؟",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "آبیاری فقط رساندن آب نیست؛ آب در خاک حرکت می‌کند، در منطقه ریشه می‌ماند یا از آن خارج می‌شود و مواد مغذی را با خود می‌برد. بافت خاک، ساختار، ماده آلی و زهکشی تعیین می‌کنند یک برنامه آبیاری چقدر مؤثر باشد."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "به همین دلیل نوشته‌های صفا اغلب از خاک شروع می‌شوند و به آبیاری می‌رسند. نشریه ۵۶ فائو و راهنماهای کیفیت آب برای ما مرجع‌های مهمی هستند، اما توصیه نهایی باید با داده مزرعه و مشاهده میدانی تطبیق پیدا کند."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "چه چیزی منتشر می‌کنیم؟",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "راهنماهای عملی برای برنامه‌ریزی آبیاری، خواندن آزمون خاک، مدیریت شوری، کشت پوششی، ماده آلی و پایش مزرعه. همچنین نتایج پایلوت‌ها و یادداشت‌هایی درباره تصمیم‌های مهندسی و پژوهشی تیم."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "هر مقاله تا حد امکان منابع خود را ذکر می‌کند. اگر عددی از یک پژوهش می‌آید، سعی می‌کنیم روش و محدودیت آن را هم بگوییم تا عدد به توصیه‌ای بی‌قید و شرط تبدیل نشود."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "چطور از داده مزرعه استفاده می‌کنیم؟",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "داده بدون زمینه تصمیم نیست. یک عدد رطوبت، یک آزمون خاک یا یک تصویر ماهواره‌ای تنها وقتی مفید است که با مرحله رشد، بافت خاک، الگوی بارندگی و هدف کشاورز کنار هم دیده شود."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "در نوشته‌های صفا تلاش می‌کنیم همین پیوند را نشان دهیم: چه چیزی اندازه می‌گیریم، چرا اندازه می‌گیریم و تصمیم بعدی چگونه تغییر می‌کند. گاهی پاسخ درست این است که داده بیشتری جمع کنیم، نه اینکه سریع اقدام کنیم."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "درباره عدم قطعیت و منابع",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "هیچ توصیه کشاورزی برای همه مزارع قطعی نیست. اقلیم، خاک، رقم، تجهیزات و اقتصاد مزرعه نتیجه را تغییر می‌دهند. ما سعی می‌کنیم مفروضات را واضح بگوییم و عددها را به منبع یا روش آن‌ها وصل کنیم."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "اگر داده محلی با یک توصیه عمومی تفاوت دارد، داده محلی را جدی بگیرید و توصیه را با آن تطبیق دهید. هدف این بلاگ جایگزینی مشاوره میدانی نیست؛ کمک به پرسیدن سؤال بهتر و تصمیم‌گیری آگاهانه‌تر است."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "چه چیزی اینجا پیدا نمی‌کنید",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "این بلاگ جای مشاوره تخصصی برای یک مزرعه مشخص نیست و دستورالعمل جهانی برای همه اقلیم‌ها ارائه نمی‌دهد. همچنین جایگزین آزمون خاک، آزمایش آب یا بازدید میدانی نمی‌شود."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "هدف ما این است که تصمیم‌های فنی را قابل فهم کنیم و نشان دهیم چگونه داده به اقدام تبدیل می‌شود. اگر مقاله‌ای به مزرعه شما نزدیک است، آن را نقطه شروع گفت‌وگو با مشاور یا آزمایشگاه بدانید."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "چطور یک یادداشت میدانی بخوانیم؟",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "ابتدا ببینید مقاله برای چه اقلیم، بافت خاک و مرحله رشدی نوشته شده است. سپس بخش روش یا پروتکل میدانی را بخوانید. توصیه‌های عمومی نقطه شروع هستند؛ تصمیم نهایی به داده و شرایط مزرعه شما بستگی دارد."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "اگر مقاله‌ای به موضوعی نزدیک است اما با شرایط شما تفاوت دارد، سؤال بپرسید. یکی از اهداف این بلاگ این است که گفت‌وگوی فنی با کشاورزان و پژوهشگران را ساده‌تر کند."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "منابع و دعوت به گفت‌وگو",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "در پایان مقاله‌های پژوهشی، فهرست منابع را می‌بینید. برای شروع می‌توانید از نشریه ۵۶ فائو درباره نیاز آبی گیاه و راهنمای کیفیت آب فائو استفاده کنید."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "اگر پیشنهادی برای موضوع یا اصلاح محتوا دارید، با تیم صفا در تماس باشید. این بلاگ در حال رشد است و بازخورد میدانی بخش مهمی از آن است."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "چگونه از این نوشته‌ها استفاده کنیم",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "هر مقاله را می‌توانید به عنوان یک راهنمای شروع بخوانید: ابتدا بخش روش یا پروتکل میدانی را ببینید، سپس داده‌های مزرعه خودتان را کنار آن بگذارید. اگر داده محلی ندارید، با یک آزمون ساده و ثبت منظم شروع کنید."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "ما تلاش می‌کنیم در پایان هر نوشته منابع را ذکر کنیم تا بتوانید خودتان بررسی کنید. اگر مقاله‌ای با شرایط شما نمی‌خواند، آن را کنار نگذارید؛ بخش مفید آن را بردارید و بقیه را با مشاور یا داده محلی تطبیق دهید."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-4-en",
+    "slug": "welcome-to-sfa",
+    "locale": "en",
+    "translationKey": "welcome-to-sfa",
+    "title": "Welcome to the SFA blog",
+    "excerpt": "Research notes, field guides, and stories from the SFA team.",
+    "cover": {
+      "url": "/images/blog/welcome-to-sfa.svg",
+      "alt": "The SFA blog",
+      "width": 1600,
+      "height": 900
+    },
+    "template": "simple",
+    "tags": [
+      {
+        "slug": "research",
+        "label": "Research"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-03-01T08:00:00.000Z",
+    "updatedAt": "2026-03-01T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "به-صفا-خوش-آمدید"
+      },
+      {
+        "locale": "en",
+        "slug": "welcome-to-sfa"
+      }
+    ],
+    "content": {
+      "type": "simple",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Welcome to the SFA blog. This is where we share research notes, field guides, and stories about water, soil, and smart farming."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Our aim is to make technical knowledge usable in the field: not a list of terms, but decisions a farmer can test this season or the next."
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "title": "Why we look at water and soil together",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Irrigation is not just delivering water. Water moves through soil, stays in the root zone or leaves it, and carries nutrients with it. Texture, structure, organic matter, and drainage determine how effective an irrigation plan can be."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "That is why SFA writing often starts with soil and ends with irrigation. FAO Irrigation and Drainage Paper 56 and FAO's water-quality guidance are important references, but the final recommendation has to fit field data and observation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "What we publish",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Practical guides to irrigation scheduling, soil-test interpretation, salinity management, cover crops, organic matter, and field scouting. We also share pilot results and notes on the engineering and research decisions behind SFA."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Articles cite their sources whenever possible. When a number comes from a study, we try to explain the method and its limits so the number does not become an unconditional recommendation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "How we use field data",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Data without context is not a decision. A moisture reading, a soil test, or a satellite image is useful only when it is read alongside crop stage, soil texture, rainfall pattern, and the farmer's objective."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "SFA writing tries to show that connection: what we measure, why we measure it, and how the next decision changes. Sometimes the right answer is to collect more data rather than act immediately."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "A note on uncertainty and sources",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "No agricultural recommendation is certain for every field. Climate, soil, variety, equipment, and farm economics change the outcome. We try to state assumptions clearly and connect numbers to a source or to the method that produced them."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "If local data disagrees with a general recommendation, take the local data seriously and adapt the recommendation. This blog is not a replacement for field advice; it is a way to ask better questions and make more informed decisions."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "What you will not find here",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "This blog is not a substitute for site-specific advice, and it does not offer a universal prescription for every climate. It is also not a replacement for a soil test, a water test, or a field visit."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Our aim is to make technical decisions understandable and show how data becomes action. If an article is close to your situation, treat it as a starting point for a conversation with an adviser or laboratory."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "How to read a field note",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "First check the climate, soil texture, and crop stage the article was written for. Then read the method or field protocol. General recommendations are a starting point; the final decision depends on your own data and conditions."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "If an article is close to your situation but not identical, ask. One purpose of this blog is to make technical conversations between farmers and researchers easier."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sources and an open invitation",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Research articles end with a source list. You can start with FAO Irrigation and Drainage Paper 56 for crop water requirements and FAO's water-quality guidance for irrigation water."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "If you have a topic suggestion or a correction, contact the SFA team. The blog is growing, and field feedback is an important part of it."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "How to use these notes",
+          "paragraphs": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "You can read each article as a starting guide: begin with the method or field protocol, then place your own field data beside it. If you do not have local data yet, start with a simple test and consistent records."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "We try to list sources at the end so you can check them yourself. If an article does not match your conditions, do not discard it; take the useful part and adapt the rest with an adviser or local data."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-5-fa",
+    "slug": "برنامه-ریزی-آبیاری-قطره-ای",
+    "locale": "fa",
+    "translationKey": "drip-scheduling",
+    "title": "برنامه‌ریزی آبیاری قطره‌ای در سه گام",
+    "excerpt": "چگونه دور و مدت آبیاری را بر اساس بافت خاک، اقلیم و مرحله رشد محصول تنظیم کنیم.",
+    "cover": {
+      "url": "/images/blog/symphony-of-droplets/image3.jpg",
+      "alt": "قطره‌چکان آبیاری در خاک",
+      "width": 1023,
+      "height": 784
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "irrigation",
+        "label": "آبیاری"
+      },
+      {
+        "slug": "water",
+        "label": "آب"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-02-20T08:00:00.000Z",
+    "updatedAt": "2026-02-20T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "برنامه-ریزی-آبیاری-قطره-ای"
+      },
+      {
+        "locale": "en",
+        "slug": "drip-scheduling-in-three-steps"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "آبیاری قطره‌ای اغلب به دلیل رساندن آب به نزدیک ریشه، کارآمد توصیف می‌شود؛ اما این تنها نیمی از ماجراست. اگر برنامه بر پایه عادت و نه اندازه‌گیری تنظیم شود، همان سیستم می‌تواند آب بیش از حد بدهد، کم‌آبی ایجاد کند یا مواد مغذی را به زیر منطقه ریشه ببرد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "یک برنامه قابل اتکا سه چیز را به هم وصل می‌کند: نیاز آبی گیاه، ظرفیت نگهداشت خاک و خروجی قطره‌چکان‌ها. هدف خیس نگه‌داشتن سطح خاک نیست؛ هدف نگه‌داشتن رطوبت منطقه ریشه در محدوده مفید، با جا برای بارندگی و هوا است."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "از نیاز آبی گیاه شروع کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "تبخیروتعرق مرجع (ET0) قدرت خشک‌کنندگی جو را نشان می‌دهد. ضریب گیاهی (Kc) این عدد را برای محصول و مرحله رشد اصلاح می‌کند و تبخیروتعرق گیاه معمولاً به صورت ETc = ET0 × Kc برآورد می‌شود. نشریه ۵۶ آبیاری و زهکشی فائو این روش و داده‌های لازم برای استفاده مسئولانه از آن را توضیح می‌دهد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "از داده هواشناسی محلی استفاده کنید، نه میانگین یک شهر دور. گیاه جوان، باغ بالغ و محصولی که به برداشت نزدیک است ضریب‌های متفاوتی دارند. با تغییر مرحله رشد یا پس از موج گرما محاسبه را به‌روز کنید و نتیجه را نقطه شروع مشاهده میدانی بدانید."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image3.jpg",
+            "alt": "قطره‌چکان آبیاری در خاک",
+            "width": 1023,
+            "height": 784
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "مخزن خاک را بشناسید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "بافت خاک تعیین می‌کند منطقه ریشه چقدر آب قابل استفاده نگه می‌دارد. شن سریع تخلیه می‌شود و آب کمی نگه می‌دارد؛ رس بیشتر نگه می‌دارد اما ممکن است کند تخلیه شود و هوای کمی باقی بگذارد. عمق ریشه هم به اندازه بافت مهم است، چون ریشه کم‌عمق مخزن کوچک‌تری دارد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "منطقه ریشه را بدون عبور آب از آن پر کنید. اگر حجم آبیاری از کمبود ذخیره خاک بیشتر شود، آب اضافی به صورت زهکشی عمقی از منطقه ریشه خارج می‌شود و مواد مغذی متحرک را با خود می‌برد. یک قرائت رطوبت پیش و پس از آبیاری از یک زمان‌بندی ثابت هفتگی مفیدتر است."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "نیاز را به زمان اجرا تبدیل کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "دبی قطره‌چکان، تعداد قطره‌چکان هر گیاه و سطح خیس‌شده تعیین می‌کند سیستم برای رساندن عمق مشخصی آب چقدر باید کار کند. آبیاری قطره‌ای معمولاً بازده کاربرد بالایی دارد، اما این موضوع به تمیز بودن قطره‌چکان‌ها، فشار مناسب و الگوی خیس‌شدگی درست بستگی دارد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "خروجی واقعی را با ظرف و زمان‌سنج اندازه بگیرید، نه فقط با عدد کاتالوگ. فشار انتهای خط را بررسی کنید، لترال‌ها را شست‌وشو دهید و گرفتگی قطره‌چکان‌ها را ببینید. سیستمی که فشار یا دبی خود را از دست داده، دیگر برنامه طراحی‌شده را اجرا نمی‌کند."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "نتیجه را اندازه بگیرید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "تانسیومتر، حسگر رطوبت خازنی و آزمون ساده دستی هر کدام پرسش متفاوتی را پاسخ می‌دهند. با هر ابزاری که کار می‌کنید، منطقه فعال ریشه را در بیش از یک عمق نمونه‌برداری کنید و روند را دنبال کنید. یک قرائت بلافاصله پس از آبیاری ممکن است عالی باشد، در حالی که عمق پایین‌تر هنوز خشک است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "بارندگی، حجم آبیاری و مرحله رشد را با هم ثبت کنید. پس از چند چرخه، برنامه پیش‌بینی‌شده را با رطوبت مشاهده‌شده مقایسه کنید. همین حلقه بازخورد است که توصیه عمومی را به برنامه مزرعه شما تبدیل می‌کند."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "روتین هفتگی پیشنهادی"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "پیش از تغییر برنامه، پیش‌بینی هوا و بارندگی هفته گذشته را بررسی کنید."
+              }
+            ],
+            [
+              {
+                "text": "رطوبت خاک را در دو عمق و در نقاط نماینده مزرعه بخوانید."
+              }
+            ],
+            [
+              {
+                "text": "فشار، فیلترها و قطره‌چکان‌ها را inspect کنید و نشتی را پیش از اثرگذاری بر برنامه برطرف کنید."
+              }
+            ],
+            [
+              {
+                "text": "زمان اجرا را با مرحله رشد تنظیم کنید، نه فقط با تقویم."
+              }
+            ],
+            [
+              {
+                "text": "حجم واقعی آبیاری را ثبت کنید و رواناب یا نقاط خشک را یادداشت کنید."
+              }
+            ],
+            [
+              {
+                "text": "۲۴ ساعت بعد از آبیاری دوباره منطقه ریشه را بررسی کنید، نه اینکه فرض کنید درست کار کرده است."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "الگوی خیس‌شدگی و توزیع ریشه"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "سیستم قطره‌ای کل مزرعه را یکنواخت خیس نمی‌کند. حول هر قطره‌چکان یک حجم خیس ایجاد می‌شود که شکل آن به بافت خاک، فاصله قطره‌چکان‌ها و دبی بستگی دارد. در خاک شنی حباب معمولاً باریک و عمیق است؛ در خاک رسی می‌تواند پهن‌تر و کم‌عمق‌تر باشد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "قطره‌چکان را جایی بگذارید که ریشه فعال است، نه فقط کنار ساقه. گیاه جوان ریشه کوچکی دارد و ممکن است سطح خیس کمتری بخواهد؛ باغ بالغ ممکن است چند قطره‌چکان برای هر درخت لازم داشته باشد. پس از آبیاری یک گودال کوچک بکنید و الگوی خیس‌شدگی را ببینید؛ اگر نقاط خشک ماند، فاصله یا زمان اجرا را اصلاح کنید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "گرفتگی، شوری و نگهداری"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "سیستم قطره‌ای در برابر گرفتگی ناشی از کربنات کلسیم، رسوب معلق و بیوفیلم باکتریایی آسیب‌پذیر است. فیلتر تنها وقتی محافظت می‌کند که درست انتخاب و به‌موقع تمیز شود. لترال‌ها را دوره‌ای بشویید، دبی قطره‌چکان را بررسی کنید و تیمار شیمیایی را فقط با راهنمای محلی و دستور سازنده انجام دهید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "نمک‌ها در لبه جبهه خیس‌شدگی جمع می‌شوند. این می‌تواند مفید باشد چون نمک از قطره‌چکان دور است، اما به این معنا هم هست که منطقه ریشه یکنواخت نیست. شوری و رطوبت را در بیش از یک فاصله از قطره‌چکان پایش کنید، به‌ویژه در مناطق خشک یا هنگام استفاده از آب با کیفیت مرزی."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "منابع"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "فائو، نشریه ۵۶ آبیاری و زهکشی: تبخیروتعرق گیاه",
+                "href": "https://www.fao.org/4/x0490e/x0490e00.htm"
+              }
+            ],
+            [
+              {
+                "text": "فائو: نیاز آبی گیاه و برنامه‌ریزی آبیاری",
+                "href": "https://www.fao.org/4/s2022e/s2022e00.htm"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-5-en",
+    "slug": "drip-scheduling-in-three-steps",
+    "locale": "en",
+    "translationKey": "drip-scheduling",
+    "title": "Drip irrigation scheduling in three steps",
+    "excerpt": "How to tune irrigation interval and duration to soil texture, climate, and crop stage.",
+    "cover": {
+      "url": "/images/blog/symphony-of-droplets/image3.jpg",
+      "alt": "An irrigation emitter in the soil",
+      "width": 1023,
+      "height": 784
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "irrigation",
+        "label": "Irrigation"
+      },
+      {
+        "slug": "water",
+        "label": "Water"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-02-20T08:00:00.000Z",
+    "updatedAt": "2026-02-20T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "برنامه-ریزی-آبیاری-قطره-ای"
+      },
+      {
+        "locale": "en",
+        "slug": "drip-scheduling-in-three-steps"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Drip irrigation is often described as efficient because it places water near the root zone. That is only half the story. The system can still over-water, under-water, or push nutrients below the roots if the schedule is based on habit rather than measurement."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A reliable schedule connects three things: crop water demand, the soil's storage capacity, and the output of the emitters. The goal is not to keep the surface wet. It is to keep the root zone inside a useful moisture range while leaving enough room for rain and air."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Start with crop water demand"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Reference evapotranspiration (ET0) describes the drying power of the atmosphere. The crop coefficient (Kc) adjusts that value for the crop and its growth stage; crop evapotranspiration is commonly estimated as ETc = ET0 × Kc. FAO Irrigation and Drainage Paper 56 documents this approach and the field data needed to use it responsibly."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Use a local weather source, not a distant city average. A young crop, a mature orchard, and a crop entering harvest can have very different coefficients. Recalculate when the growth stage changes or after a heat wave, and treat the result as a starting point for field observation."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image3.jpg",
+            "alt": "An irrigation emitter in the soil",
+            "width": 1023,
+            "height": 784
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Know the soil reservoir"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Soil texture determines how much plant-available water a root zone can hold. Sand drains quickly and holds little; clay holds more but may drain slowly and leave little air. Rooting depth matters as much as texture because a shallow root system has a smaller reservoir."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Refill the root zone without pushing water past it. If the application exceeds the soil's storage deficit, the extra water leaves the root zone as deep percolation and carries mobile nutrients with it. A simple soil-moisture reading before and after an irrigation event is more useful than a fixed weekly runtime."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Turn demand into run time"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Emitter flow rate, the number of emitters per plant, and the wetted area determine how long the system must run to deliver a given depth of water. Drip systems are commonly credited with high application efficiency, but that assumes clean emitters, pressure compensation, and a well-designed wetting pattern."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Measure the actual output with a container and a timer instead of trusting the catalog number. Check pressure at the end of the line, flush the laterals, and inspect emitters for clogging. A system that has lost pressure or has clogged emitters is no longer applying the schedule you designed."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measure the result"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Tensiometers, capacitance probes, and simple hand-feel tests answer different questions. Whatever tool you use, sample the active root zone at more than one depth and follow the trend. A single reading after irrigation can look perfect while the lower root zone is still dry."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Record rainfall, irrigation volume, and crop stage together. After a few cycles, compare the planned schedule with the observed moisture. That feedback loop is what turns a generic recommendation into a farm-specific schedule."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A practical weekly routine"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Check the forecast and the previous week's rainfall before changing the schedule."
+              }
+            ],
+            [
+              {
+                "text": "Read soil moisture at two depths in representative parts of the field."
+              }
+            ],
+            [
+              {
+                "text": "Inspect pressure, filters, and emitters; fix leaks before they distort the application."
+              }
+            ],
+            [
+              {
+                "text": "Adjust run time for crop stage, not for the calendar alone."
+              }
+            ],
+            [
+              {
+                "text": "Record the actual volume applied and note any runoff or dry spots."
+              }
+            ],
+            [
+              {
+                "text": "Recheck the root zone 24 hours after irrigation rather than assuming it worked."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Wetting pattern and root distribution"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A drip system does not wet the whole field evenly. It creates a wetted volume around each emitter, and the shape of that volume depends on soil texture, emitter spacing, and application rate. In sandy soil the bulb tends to be narrow and deep; in clay it can be wider and shallower."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Place emitters where the active roots are, not simply where the plant stem is. Young plants have small root systems and may need a smaller wetted area; mature orchards may need several emitters per tree. Check the wetting pattern by digging a small inspection pit after irrigation, and adjust spacing or run time if dry gaps remain."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Clogging, salinity, and maintenance"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Drip systems are vulnerable to clogging from calcium carbonate, suspended sediment, and bacterial biofilms. A filter protects the system only if it is cleaned and sized correctly. Flush laterals periodically, inspect emitter flow, and use chemical treatment only according to local guidance and manufacturer instructions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Salts accumulate at the edge of the wetting front. That can be useful because the salts are away from the emitter, but it also means the root zone is not uniform. Monitor salinity and moisture at more than one distance from the emitter, especially in arid regions or when using marginal water."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "FAO Irrigation and Drainage Paper 56: crop evapotranspiration",
+                "href": "https://www.fao.org/4/x0490e/x0490e00.htm"
+              }
+            ],
+            [
+              {
+                "text": "FAO: crop water requirements and irrigation scheduling",
+                "href": "https://www.fao.org/4/s2022e/s2022e00.htm"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-6-fa",
+    "slug": "خواندن-هدایت-الکتریکی-خاک",
+    "locale": "fa",
+    "translationKey": "soil-electrical-conductivity",
+    "title": "هدایت الکتریکی خاک را چگونه بخوانیم؟",
+    "excerpt": "راهنمای تفسیر EC خاک، واحدها و آنچه درباره شوری و تغذیه گیاه می‌گوید.",
+    "cover": {
+      "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+      "alt": "تصویر بندانگشتی مثلث بافت خاک",
+      "width": 1000,
+      "height": 775
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "soil",
+        "label": "خاک"
+      },
+      {
+        "slug": "water",
+        "label": "آب"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-02-12T08:00:00.000Z",
+    "updatedAt": "2026-02-12T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "خواندن-هدایت-الکتریکی-خاک"
+      },
+      {
+        "locale": "en",
+        "slug": "reading-soil-electrical-conductivity"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "هدایت الکتریکی خاک (EC) یکی از پرتکرارترین اعداد آزمون خاک و در همان حال یکی از سهل‌ترترین آن‌ها برای تفسیر نادرست است. EC نشان می‌دهد محلول خاک چقدر جریان برق را عبور می‌دهد؛ این عدد نماینده غلظت یون‌های محلول است، نه دستور مستقیم برای افزودن کود یا گچ."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "این عدد تنها زمانی مفید است که روش اندازه‌گیری، واحد، رطوبت و عمق نمونه را بدانید. نتیجه عصاره خمیر اشباع با عصاره ۱:۵ خاک و آب قابل مقایسه نیست، حتی اگر هر دو با واحد dS/m گزارش شوند."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "EC واقعاً چه چیزی را اندازه می‌گیرد؟"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "نمک‌ها به یون‌های مثبت و منفی حل می‌شوند. این یون‌ها جریان را از منافذ پر از آب عبور می‌دهند، بنابراین یون بیشتر معمولاً EC بالاتری می‌سازد. سازمان NRCS آمریکا EC را نشانگر غیرمستقیم شوری خاک می‌داند و یادآوری می‌کند که با بافت، رطوبت، ماده آلی و ظرفیت تبادل کاتیونی نیز همبستگی دارد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "عصاره خمیر اشباع (ECe) مرجع استاندارد طبقه‌بندی شوری است. خاکی که ECe آن به ۴ dS/m برسد معمولاً شور توصیف می‌شود، اما برای گیاهان حساس آسیب ممکن است پیش از این عدد آغاز شود. این آستانه نقطه شروع است، نه تشخیص قطعی برای همه محصولات."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+            "alt": "تصویر بندانگشتی مثلث بافت خاک",
+            "width": 1000,
+            "height": 775
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "واحد و روش اهمیت دارد"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "EC معمولاً با دسی‌زیمنس بر متر (dS/m) گزارش می‌شود که از نظر عددی با میلی‌موس بر سانتی‌متر برابر است. برخی آزمایشگاه‌ها میلی‌زیمنس بر متر یا میکروزیمنس بر سانتی‌متر می‌دهند. پیش از مقایسه واحدها را تبدیل کنید و روش را کنار هر نتیجه نگه دارید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "عصاره ۱:۱ یا ۱:۵ برای پایش روزمره راحت است، اما محلول خاک را به شکلی متفاوت از خمیر اشباع رقیق می‌کند. در طول فصل‌ها از یک روش و یک آزمایشگاه استفاده کنید. اگر روش را عوض کردید، سری جدید را خط پایه تازه بدانید و اعداد ناهمگون را به هم وصل نکنید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "بافت، رطوبت و تغییرپذیری مزرعه"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "رس و ماده آلی می‌توانند یون و آب بیشتری نگه دارند؛ بنابراین دو خاک با EC یکسان ممکن است رفتار متفاوتی داشته باشند. EC با رطوبت هم تغییر می‌کند: خاک خشک و مرطوب یک اندازه‌گیری نیستند. در عمق و رطوبت یکسان نمونه بگیرید و قرائت فصل خشک را با قرائت بعد از آبیاری به عنوان تکرار مقایسه نکنید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در مزرعه‌های غیرشور، حسگرهای EC اغلب برای نقشه‌برداری بافت و رطوبت به کار می‌روند. این کار با تشخیص شوری متفاوت است. نقشه را ابزاری برای پیدا کردن نقاط نیازمند نمونه‌برداری بدانید، نه جایگزین عصاره کالیبره‌شده خاک."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "وقتی EC بالا است"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "EC بالا می‌تواند توان ریشه برای جذب آب را کاهش دهد، حتی وقتی خاک مرطوب به نظر می‌رسد. همچنین می‌تواند دسترسی به مواد مغذی و فعالیت میکروبی را تحت تأثیر قرار دهد. شوری ناشی از سدیم می‌تواند ساختار و نفوذپذیری خاک را تخریب کند؛ پس EC به‌تنهایی نمی‌گوید مشکل از کل نمک است یا سدیم، کلر یا ترکیبی از آن‌ها."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مدیریت با زهکشی و تراز آبی آغاز می‌شود. شست‌وشو تنها در صورت وجود زهکشی می‌تواند نمک را به زیر منطقه ریشه ببرد؛ افزودن آب بدون زهکشی می‌تواند سطح آب زیرزمینی را بالا ببرد و مشکل را بدتر کند. آب آبیاری را آزمایش کنید، محصول یا رقم متناسب با تحمل شوری انتخاب کنید و منطقه ریشه را پایش کنید، نه یک قرائت سطحی."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "پروتکل میدانی"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "روش آزمایشگاه، واحد، عمق و تاریخ نمونه را با هر نتیجه ثبت کنید."
+              }
+            ],
+            [
+              {
+                "text": "نقاط نماینده را جدا نمونه‌برداری کنید و لکه شور را در میانگین پنهان نکنید."
+              }
+            ],
+            [
+              {
+                "text": "EC را با بافت، رطوبت، سدیم، کلر و نشانه‌های گیاه مقایسه کنید."
+              }
+            ],
+            [
+              {
+                "text": "پیش از شروع شست‌وشو، زهکشی و سطح آب زیرزمینی را بررسی کنید."
+              }
+            ],
+            [
+              {
+                "text": "پیش از مقصر دانستن خاک، آب آبیاری را آزمایش کنید."
+              }
+            ],
+            [
+              {
+                "text": "روند را در فصل‌ها و پس از آبیاری یا بارندگی مهم دنبال کنید."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "شوری تنها داستان EC نیست"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "EC یک اثر جمعی است. سدیم، کلر، کلسیم، منیزیم، پتاسیم، نیترات و یون‌های دیگر همه در آن سهم دارند. EC بالایی که عمدتاً از سدیم می‌آید خطر ساختاری متفاوتی از EC بالای ناشی از گچ یا نمک کود دارد. به همین دلیل EC باید همراه با تحلیل کامل آب یا خاک خوانده شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در برخی مزارع EC بیشتر نقشه بافت یا رطوبت است؛ در برخی دیگر هشدار شوری. پیش از تفسیر عدد مشخص کنید کدام پرسش را می‌پرسید. اگر هدف شوری است، از روش کالیبره برای همان هدف استفاده کنید و آن را با داده تحمل محصول مقایسه کنید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "طراحی نمونه‌برداری پاسخ را تغییر می‌دهد"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "یک نمونه ترکیبی می‌تواند لکه شور را پنهان کند. مزرعه را بر اساس خاک، سیستم آبیاری و عملکرد ظاهری گیاه به ناحیه تقسیم کنید و هر ناحیه را جدا نمونه‌برداری کنید. عمق را ثابت نگه دارید چون نمک می‌تواند در منطقه ریشه لایه‌بندی شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "هر سال در زمان و رطوبت یکسان نمونه بگیرید. پس از آبیاری یا بارندگی شدید، نمک ممکن است موقتاً رقیق شود. قرائت بعد از باران غلط نیست، اما با خط پایه فصل خشک قابل مقایسه نیست مگر اینکه تفاوت را در نظر بگیرید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "منابع"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "USDA NRCS: برگه نشانگر هدایت الکتریکی خاک",
+                "href": "https://www.nrcs.usda.gov/sites/default/files/2022-10/Soil%20Electrical%20Conductivity.pdf"
+              }
+            ],
+            [
+              {
+                "text": "University of Florida IFAS: تفسیر EC خاک و محیط کشت",
+                "href": "https://ask.ifas.ufl.edu/publication/SS117"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-6-en",
+    "slug": "reading-soil-electrical-conductivity",
+    "locale": "en",
+    "translationKey": "soil-electrical-conductivity",
+    "title": "How to read soil electrical conductivity",
+    "excerpt": "A guide to interpreting soil EC, its units, and what it says about salinity and plant nutrition.",
+    "cover": {
+      "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+      "alt": "Soil texture triangle thumbnail",
+      "width": 1000,
+      "height": 775
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "soil",
+        "label": "Soil"
+      },
+      {
+        "slug": "water",
+        "label": "Water"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-02-12T08:00:00.000Z",
+    "updatedAt": "2026-02-12T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "خواندن-هدایت-الکتریکی-خاک"
+      },
+      {
+        "locale": "en",
+        "slug": "reading-soil-electrical-conductivity"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Electrical conductivity (EC) is one of the most frequently quoted soil numbers and one of the easiest to misread. It measures how readily the soil solution carries an electric current. That is a proxy for the concentration of soluble ions, not a direct instruction to add fertilizer or gypsum."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The value becomes useful only when you know the method, the units, the water content, and the depth sampled. A number from a saturated paste extract is not interchangeable with a 1:5 soil-to-water suspension, even if both are reported in dS/m."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What EC actually measures"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Salts dissolve into positively and negatively charged ions. Those ions carry current through water-filled pores, so more ions generally mean higher EC. USDA NRCS describes EC as an indirect indicator of soil salinity and notes that it can also correlate with texture, moisture, organic matter, and cation-exchange capacity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A saturated paste extract (ECe) is the standard reference for salinity classification. A soil is commonly described as saline when ECe reaches 4 dS/m, but crop damage can begin below that for sensitive species. The threshold is a starting point, not a universal crop diagnosis."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+            "alt": "Soil texture triangle thumbnail",
+            "width": 1000,
+            "height": 775
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Units and methods matter"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "EC is usually reported in deciSiemens per metre (dS/m), which is numerically equal to millimhos per centimetre (mmhos/cm). Some laboratories report milliSiemens per metre or microSiemens per centimetre. Convert before comparing, and keep the method attached to every result."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A 1:1 or 1:5 suspension is convenient for routine monitoring but dilutes the soil solution differently from a saturated paste. Use the same method and the same laboratory across seasons. If you change methods, treat the new series as a new baseline rather than drawing a trend line through incomparable numbers."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Texture, water, and field variation"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Clay and organic matter can hold more ions and water, so two soils with the same EC reading may behave differently. EC also changes with moisture: a dry soil and a wet soil are not the same measurement. Sample at a consistent depth and moisture condition, and avoid comparing a dry-season reading with a post-irrigation reading as if they were replicates."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In non-saline fields, EC sensors are often used to map texture and moisture patterns. That is a different use from salinity diagnosis. Treat maps as a way to find zones worth sampling, not as a substitute for calibrated soil extracts."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "When EC is high"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "High EC can reduce the ability of roots to take up water even when the soil looks moist. It can also affect nutrient availability and microbial activity. Salinity caused by sodium can damage soil structure and infiltration, so EC alone does not tell you whether the problem is total salt concentration, sodium, chloride, or a combination."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Management starts with drainage and the water balance. Leaching can move salts below the root zone only if drainage exists; adding water without drainage can raise the water table and make the problem worse. Test irrigation water, choose crops or varieties with appropriate tolerance, and monitor the root zone rather than reacting to one surface reading."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A field protocol"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Record the laboratory method, units, depth, and sampling date with every result."
+              }
+            ],
+            [
+              {
+                "text": "Sample representative zones separately; do not average away a salty patch."
+              }
+            ],
+            [
+              {
+                "text": "Compare EC with texture, moisture, sodium, chloride, and crop symptoms."
+              }
+            ],
+            [
+              {
+                "text": "Check drainage and the water table before starting a leaching program."
+              }
+            ],
+            [
+              {
+                "text": "Test irrigation water before blaming the soil."
+              }
+            ],
+            [
+              {
+                "text": "Follow the trend across seasons and after major irrigation or rainfall events."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Salinity is not the only EC story"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "EC is a sum effect. Sodium, chloride, calcium, magnesium, potassium, nitrate, and other ions all contribute. A high EC caused mainly by sodium has different structural risks from a high EC caused by gypsum or fertilizer salts. That is why EC should be read with a complete water or soil analysis."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In some fields EC is useful mainly as a texture or moisture map. In others it is a salinity warning. State which question you are asking before interpreting the number. If the goal is salinity, use a method calibrated for that purpose and compare it with crop tolerance data."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sampling design changes the answer"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A single composite sample can hide a salty patch. Divide the field into zones by soil, irrigation system, and visible crop performance, then sample each zone separately. Keep the depth consistent because salts can stratify in the root zone."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Sample at the same time of season and the same moisture condition each year. After irrigation or heavy rain, salts may temporarily dilute. A post-rain reading is not wrong, but it is not comparable with a dry-season baseline unless you account for the difference."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "USDA NRCS: Soil electrical conductivity indicator sheet",
+                "href": "https://www.nrcs.usda.gov/sites/default/files/2022-10/Soil%20Electrical%20Conductivity.pdf"
+              }
+            ],
+            [
+              {
+                "text": "University of Florida IFAS: Soil and container media EC interpretations",
+                "href": "https://ask.ifas.ufl.edu/publication/SS117"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-7-fa",
+    "slug": "کشت-پوششی-سپر-خاک",
+    "locale": "fa",
+    "translationKey": "cover-crops",
+    "title": "کشت پوششی؛ سپری برای خاک",
+    "excerpt": "چگونه گیاهان پوششی فرسایش را کاهش می‌دهند و ساختار خاک را در فصل‌های خشک حفظ می‌کنند.",
+    "cover": {
+      "url": "/images/homepage/hero-landscape.jpg",
+      "alt": "مزرعه سبز در نور روز",
+      "width": 2000,
+      "height": 1499
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "cover-crops",
+        "label": "کشت پوششی"
+      },
+      {
+        "slug": "soil",
+        "label": "خاک"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-02-04T08:00:00.000Z",
+    "updatedAt": "2026-02-04T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "کشت-پوششی-سپر-خاک"
+      },
+      {
+        "locale": "en",
+        "slug": "cover-crops-a-shield-for-soil"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "کشت پوششی محصول نقدی نیست و نه صرفاً علف هرزی که تصادفی رشد کرده است. پوششی برنامه‌ریزی‌شده است که در دوره آیش برای محافظت از سطح خاک، تغذیه زیست‌شناسی خاک و بهبود شرایط محصول بعدی کاشته می‌شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "این کار زمانی بهترین نتیجه را می‌دهد که بخشی از تناوب زراعی باشد، نه یک افزودنی حاشیه‌ای. انتخاب گونه، تاریخ کاشت، زمان خاتمه و تراز آبی مزرعه تعیین می‌کند پوشش به محصول کمک کند یا با آن رقابت کند."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "اصل پوشش خاک"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "سازمان NRCS آمریکا کاهش فرسایش، بهبود نفوذ آب، افزایش ماده آلی، چرخه بهتر مواد مغذی، مهار علف هرز و زیستگاه برای موجودات مفید را از مزایای کشت پوششی می‌داند. ریشه‌های زنده و بقایای سطحی، خاکدانه‌ها را از برخورد قطرات باران محافظت می‌کنند و سطح خاک را باز نگه می‌دارند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "اثر آن تجمعی است. یک فصل پوشش ممکن است نفوذپذیری را بهتر کند یا از یک مزرعه آسیب‌پذیر محافظت کند، اما تغییر قابل اندازه‌گیری ماده آلی و ساختار معمولاً چند چرخه زمان می‌برد. کشت پوششی را سرمایه‌گذاری بلندمدت خاک بدانید، نه راه‌حل سریع."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/homepage/hero-landscape.jpg",
+            "alt": "مزرعه سبز در نور روز",
+            "width": 2000,
+            "height": 1499
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "آب و فصل خشک"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "کشت پوششی در زمان رشد آب مصرف می‌کند. در منطقه خشک، این موضوع بسته به زمان می‌تواند مزیت یا هزینه باشد. پوشش می‌تواند رطوبت اضافی را پیش از کاشت بگیرد، اما اگر بیش از حد رشد کند ممکن است آب زیرسطحی مورد نیاز محصول بعدی را نیز تخلیه کند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "زمان خاتمه را با نیاز آبی محصول نقدی و پیش‌بینی هوا هماهنگ کنید. NRCS می‌گوید کشت پوششی می‌تواند در بلندمدت نفوذ و ذخیره آب را بهتر کند، اما تراز آبی کوتاه‌مدت همچنان باید مزرعه‌به‌مزرعه مدیریت شود. فرض نکنید پوشش، آب رایگان است."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "انتخاب و خاتمه"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "گندمیان مانند چاودار، ریشه فیبری و بقایای بیشتری تولید می‌کنند؛ حبوبات می‌توانند نیتروژن تثبیت کنند؛ گیاهان خانواده کلم می‌توانند کانال‌های ریشه عمیق بسازند. مخلوط‌ها چند کارکرد می‌دهند اما خاتمه و کاشت را پیچیده‌تر می‌کنند. گونه‌ای را انتخاب کنید که با اقلیم، دسترسی بذر و تجهیزات شما بخواند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "خاتمه یک تصمیم مدیریتی است، نه جزئیات فرعی. خاتمه مکانیکی یا شیمیایی باید پیش از بذر‌دهی پوشش و پیش از رقابت شدید بر سر آب انجام شود. پیش از اقدام، برچسب، قوانین محلی و گونه‌های مخلوط را بررسی کنید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "اثر را اندازه بگیرید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "پوشش سطح زمین، نفوذپذیری، پایداری خاکدانه، فعالیت کرم خاکی و عمق ریشه‌دوانی را ببینید. در صورت امکان یک نوار پوشش را با نوار آیش مقایسه کنید. عملکرد نهایی مهم است اما نوسان زیادی دارد؛ مشاهدات سطح خاک و نفوذ آب توضیح می‌دهند چرا تفاوت عملکرد ممکن است رخ دهد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "دفترچه ساده میدانی نگه دارید: تاریخ کاشت، گونه، میزان بذر، تاریخ خاتمه، بارندگی و هر تنش آبیvisible. پس از دو یا سه فصل، این دفترچه از یک عدد آزمایشگاهی تنها ارزشمندتر است."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "پروتکل میدانی"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "پیش از انتخاب گونه، وظیفه اصلی کشت پوششی را مشخص کنید."
+              }
+            ],
+            [
+              {
+                "text": "گونه و تاریخ کاشت را با اقلیم و تراز آبی محلی هماهنگ کنید."
+              }
+            ],
+            [
+              {
+                "text": "اگر اثر را ارزیابی می‌کنید، یک نوار مقایسه‌ای باقی بگذارید."
+              }
+            ],
+            [
+              {
+                "text": "پیش از رقابت با محصول نقدی یا بذر‌دهی پوشش، آن را خاتمه دهید."
+              }
+            ],
+            [
+              {
+                "text": "بارندگی، پوشش خاک، نفوذپذیری و استقرار محصول بعدی را ثبت کنید."
+              }
+            ],
+            [
+              {
+                "text": "پیش از قضاوت درباره سیستم، آن را چند فصل تکرار کنید."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "بقایا، خاتمه و محصول بعدی"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "روش خاتمه، بقایا را شکل می‌دهد. غلتک‌کوب، علف‌زن، چرا یا علف‌کش هر کدام پوشش و ریسک بانک بذر متفاوتی باقی می‌گذارند. هدف توقف رقابت و باقی گذاشتن بقایای کافی برای محافظت سطح، بدون مانع شدن برای کاشت است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "پیش از مقیاس‌دهی، طرح را در یک نوار کوچک آزمایش کنید. ببینید بقایا با قرارگیری بذر تداخل می‌کنند، پوشش دوباره رشد می‌کند یا محصول بعدی یکنواخت مستقر می‌شود. زمان خاتمه را اصلاح کنید، نه کل سیستم را بعد از یک فصل سخت."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "اقتصاد و ریسک"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "کشت پوششی هزینه دارد: بذر، کاشت، خاتمه و گاهی آب اضافی. مزایا ممکن است بلندمدت و در یک فصل سخت قابل مشاهده نباشند. NRCS استانداردهای برنامه‌ریزی و ابزار اقتصادی دارد؛ از بودجه محلی استفاده کنید، نه وعده سود عمومی."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "در سال خشک، هزینه آب می‌تواند از مزیت خاک بیشتر شود. در سال مرطوب، پوشش می‌تواند به خشک شدن مزرعه پیش از کاشت کمک کند. یک اقدام می‌تواند در یک فصل درست و در فصل دیگر نادرست باشد. انعطاف را در برنامه بگنجانید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "منابع"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "USDA NRCS: کشت پوششی برای سلامت خاک",
+                "href": "https://www.nrcs.usda.gov/conservation-basics/soil/soil-health/cover-crops-for-soil-health"
+              }
+            ],
+            [
+              {
+                "text": "USDA NRCS: سلامت خاک در زمین زراعی",
+                "href": "https://www.nrcs.usda.gov/conservation-basics/soil/soil-health/soil-health-on-cropland"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-7-en",
+    "slug": "cover-crops-a-shield-for-soil",
+    "locale": "en",
+    "translationKey": "cover-crops",
+    "title": "Cover crops: a shield for the soil",
+    "excerpt": "How cover crops reduce erosion and protect soil structure through dry seasons.",
+    "cover": {
+      "url": "/images/homepage/hero-landscape.jpg",
+      "alt": "A green farm field in daylight",
+      "width": 2000,
+      "height": 1499
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "cover-crops",
+        "label": "Cover crops"
+      },
+      {
+        "slug": "soil",
+        "label": "Soil"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-02-04T08:00:00.000Z",
+    "updatedAt": "2026-02-04T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "کشت-پوششی-سپر-خاک"
+      },
+      {
+        "locale": "en",
+        "slug": "cover-crops-a-shield-for-soil"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A cover crop is not a cash crop and not simply a weed that happens to grow. It is a planned plant cover grown during a fallow period to protect the soil surface, feed soil biology, and improve the next crop's growing conditions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The practice works best when it is treated as part of the rotation rather than an add-on. Species choice, planting date, termination timing, and the field's water balance all determine whether the cover helps or competes with the cash crop."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "The soil-cover principle"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "USDA NRCS lists reduced erosion, improved water infiltration, increased organic matter, better nutrient cycling, weed suppression, and habitat for beneficial organisms among the benefits of cover crops. Living roots and surface residue protect soil aggregates from raindrop impact and keep the surface open."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The effect is cumulative. A single season of cover may improve infiltration or protect a vulnerable field, but measurable changes in organic matter and structure usually take repeated cycles. Treat the cover crop as a long-term soil investment, not a quick fix."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/homepage/hero-landscape.jpg",
+            "alt": "A green farm field in daylight",
+            "width": 2000,
+            "height": 1499
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Water and the dry season"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cover crops use water while they grow. In a dry region, that can be a benefit or a cost depending on timing. A cover can take up excess moisture before planting, but it can also deplete subsoil water that the next crop needs if it is allowed to grow too long."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Plan termination around the cash crop's water needs and the forecast. NRCS notes that cover crops can improve infiltration and water storage over time, but the short-term water balance still has to be managed field by field. Do not assume a cover is free water."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Choosing and terminating"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Grasses such as cereal rye produce fibrous roots and residue; legumes can fix nitrogen; brassicas can create deep root channels. Mixtures can provide several functions, but they also complicate termination and seeding. Choose species that fit the local climate, seed availability, and the equipment you actually have."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Termination is a management decision, not an afterthought. Mechanical or chemical termination must be timed so the cover does not set seed or steal water from the next crop. Check the label, local rules, and the species in the mix before acting."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measure the effect"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Look at ground cover, infiltration, aggregate stability, earthworm activity, and the depth of rooting. Compare a cover strip with a fallow strip where possible. Yield is the final test, but it is noisy; soil-surface and water-infiltration observations explain why a yield difference may appear."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Keep a simple field log: planting date, species, seeding rate, termination date, rainfall, and any visible water stress. After two or three seasons, the log is more valuable than a single laboratory number."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A field protocol"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Define the cover crop's primary job before choosing a species."
+              }
+            ],
+            [
+              {
+                "text": "Match species and seeding date to the local climate and water balance."
+              }
+            ],
+            [
+              {
+                "text": "Leave a comparison strip if you are evaluating the practice."
+              }
+            ],
+            [
+              {
+                "text": "Terminate before the cover competes with the cash crop or sets seed."
+              }
+            ],
+            [
+              {
+                "text": "Record rainfall, soil cover, infiltration, and the next crop's establishment."
+              }
+            ],
+            [
+              {
+                "text": "Repeat for several seasons before judging the system."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Residue, termination, and the next crop"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Termination method shapes the residue. A roller-crimper, mower, grazing, or herbicide each leaves a different cover and a different seedbank risk. The goal is to stop competition and leave enough residue to protect the surface without blocking planting."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Test the plan on a small strip before scaling it. Check whether the residue interferes with seed placement, whether the cover regrows, and whether the next crop establishes evenly. Adjust termination timing rather than changing the whole system after one difficult season."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Economics and risk"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Cover crops have costs: seed, planting, termination, and sometimes extra water. The benefits may be long-term and difficult to see in one season. NRCS provides planning standards and economic tools; use local budgets rather than a generic promise of profit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "In a dry year, the water cost can outweigh the soil benefit. In a wet year, the cover may help dry the field before planting. The same practice can therefore be right in one season and wrong in another. Build flexibility into the plan."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "USDA NRCS: Cover crops for soil health",
+                "href": "https://www.nrcs.usda.gov/conservation-basics/soil/soil-health/cover-crops-for-soil-health"
+              }
+            ],
+            [
+              {
+                "text": "USDA NRCS: Soil health on cropland",
+                "href": "https://www.nrcs.usda.gov/conservation-basics/soil/soil-health/soil-health-on-cropland"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-8-fa",
+    "slug": "شوری-آب-آبیاری-و-انتخاب-محصول",
+    "locale": "fa",
+    "translationKey": "irrigation-water-salinity",
+    "title": "شوری آب آبیاری و انتخاب محصول",
+    "excerpt": "پیش از کاشت، کیفیت آب را بسنجید و محصول را با سطح تحمل شوری هماهنگ کنید.",
+    "cover": {
+      "url": "/images/blog/symphony-of-droplets/image2.jpg",
+      "alt": "پاشش آب در مزرعه",
+      "width": 1000,
+      "height": 667
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "salinity",
+        "label": "شوری"
+      },
+      {
+        "slug": "water",
+        "label": "آب"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-01-27T08:00:00.000Z",
+    "updatedAt": "2026-01-27T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "شوری-آب-آبیاری-و-انتخاب-محصول"
+      },
+      {
+        "locale": "en",
+        "slug": "irrigation-water-salinity-and-crop-choice"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "آب آبیاری هرگز فقط آب نیست. نمک‌های محلول را با خود می‌آورد که پس از تبخیر آب یا جذب آن توسط گیاه در خاک باقی می‌مانند. با گذشت زمان، حتی بار نمک متوسط هم می‌تواند در منطقه ریشه انباشته شود اگر زهکشی و شست‌وشو کافی نباشد."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "بنابراین مدیریت شوری یک مسئله تراز است، نه یک آزمون تک‌عددی. کیفیت آب، بافت خاک، زهکشی، تحمل محصول و کسر شست‌وشو با هم تعامل دارند."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "از کیفیت آب شروع کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "منبع آبیاری را برای هدایت الکتریکی (ECw)، نسبت جذب سدیم (SAR)، کلر و ترکیبات مهم محلی آزمایش کنید. راهنمای کیفیت آب فائو برای شوری، ECw را طبقه‌بندی می‌کند: کمتر از ۰٫۷ dS/m معمولاً بدون محدودیت، ۰٫۷ تا ۳٫۰ محدودیت کم تا متوسط و بالای ۳٫۰ برای بسیاری از محصولات محدودیت شدید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "این طبقه‌ها به‌تنهایی توصیه محصول نیستند. آبی که برای یک محصول متحمل قابل قبول است ممکن است برای محصول حساس مرزی باشد، و همان آب در خاک رسی با زهکشی ضعیف رفتار متفاوتی از خاک شنی عمیق دارد."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image2.jpg",
+            "alt": "پاشش آب در مزرعه",
+            "width": 1000,
+            "height": 667
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "آب را به منطقه ریشه ترجمه کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "غلظت نمک در محلول خاک معمولاً از آب آبیاری بیشتر است، چون گیاه آب را جذب می‌کند و نمک را باقی می‌گذارد. کسر شست‌وشو سهمی از آب کاربردی است که باید برای نگه‌داشتن شوری در محدوده تحمل محصول، از منطقه ریشه عبور کند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "شست‌وشو تنها وقتی کار می‌کند که خاک زهکشی داشته باشد. سطح آب زیرزمینی بالا، لایه فشرده یا حوضه بسته می‌تواند آب اضافی را به غرقاب تبدیل کند. پیش از افزایش آب، زهکشی را بررسی کنید و شست‌وشو را جایگزین رفع علت اصلی نکنید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "تراز نمک را مدیریت کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "محصول و رقم با تحمل شوری مناسب انتخاب کنید و کیفیت آب را با محصول هماهنگ کنید، نه اینکه محصول حساس را به زور در مزرعه مرزی بکارید. آبیاری قطره‌ای می‌تواند آب را دقیق‌تر برساند، اما نمک همچنان در جبهه خیس‌شدگی جمع می‌شود و باید پایش شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "از خیس کردن بی‌ضرورت برگ با آب شور، به‌ویژه در هوای گرم و خشک، پرهیز کنید. تجهیزات را تمیز نگه دارید، عملکرد قطره‌چکان را بررسی کنید و مراقب مشکلات خاص سدیم مانند پوسته‌شدن و کاهش نفوذپذیری باشید. آزمون خاک از حدس بصری آموزنده‌تر است."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "روند را پایش کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "هر فصل در همان عمق‌ها و زمان‌ها از منطقه ریشه نمونه بگیرید. ECe یا روش عصاره انتخابی را با نتیجه قبلی مقایسه کنید و آزمون آب آبیاری را کنار آزمون خاک نگه دارید. روند صعودی نشانه بازبینی شست‌وشو، زهکشی و انتخاب محصول پیش از افت عملکرد است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "بارندگی، حجم آبیاری و نشانه‌های ظاهری را ثبت کنید. شوری اغلب به صورت رشد کوتاه، سوختگی برگ یا لکه‌های پراکنده ظاهر می‌شود، نه فروپاشی dramatic. داده روند زودهنگام گزینه‌های بیشتری از درمان اضطراری می‌دهد."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "پروتکل میدانی"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "منبع آبیاری را پیش از فصل آزمایش کنید، نه بعد از ظهور نشانه‌ها."
+              }
+            ],
+            [
+              {
+                "text": "ECw، SAR، کلر و روش آزمایشگاه را ثبت کنید."
+              }
+            ],
+            [
+              {
+                "text": "پیش از برنامه شست‌وشو، زهکشی و سطح آب زیرزمینی را بررسی کنید."
+              }
+            ],
+            [
+              {
+                "text": "محصول و رقم را با کیفیت آب اندازه‌گیری‌شده هماهنگ کنید."
+              }
+            ],
+            [
+              {
+                "text": "شوری منطقه ریشه را در عمق و تاریخ یکسان پایش کنید."
+              }
+            ],
+            [
+              {
+                "text": "نقشه لکه‌های شور را نگه دارید و آن‌ها را جدا بررسی کنید."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "کسر شست‌وشو در عمل"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "کسر شست‌وشو سهمی از آب کاربردی است که باید برای جلوگیری از انباشت نمک، از منطقه ریشه تخلیه شود. یک درصد ثابت نیست. به شوری آب، تحمل محصول، خاک و اقلیم بستگی دارد. یک تراز آبی ساده و آزمون خاک از یک عدد حدسی مفیدتر است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "آب شست‌وشو را تنها وقتی اعمال کنید که زهکشی توان پذیرش داشته باشد. در صورت نیاز تقسیم کنید و منطقه ریشه را پایش کنید، نه اینکه فرض کنید نمک حرکت کرده است. در رس سنگین یا سطح آب زیرزمینی بالا، ممکن است پیش از شست‌وشو به بهبود زهکشی نیاز باشد."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "مرحله رشد و روش آبیاری مهم است"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مرحله جوانه‌زنی و گیاهچه اغلب از گیاه بالغ حساس‌تر است. آبی که در ادامه فصل قابل قبول است ممکن است برای استقرار شوری زیادی داشته باشد. شست‌وشوی پیش از کاشت، تراکم کاشت و روش آبیاری را در نظر بگیرید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "سیستم‌های قطره‌ای و زیرسطحی خیس شدن برگ را کم می‌کنند اما نمک را در جبهه خیس‌شدگی متمرکز می‌کنند. بارانی می‌تواند نمک را از برگ بشوید اما در هوای گرم و خشک برگ حساس را بسوزاند. روش را با محصول و کیفیت آب هماهنگ کنید و در هر روش منطقه ریشه را پایش کنید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "منابع"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "فائو: کیفیت آب برای کشاورزی",
+                "href": "https://www.fao.org/4/t0234e/t0234e00.htm"
+              }
+            ],
+            [
+              {
+                "text": "فائو: داده تحمل شوری محصولات",
+                "href": "https://www.fao.org/4/y4263e/y4263e0e.htm"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-8-en",
+    "slug": "irrigation-water-salinity-and-crop-choice",
+    "locale": "en",
+    "translationKey": "irrigation-water-salinity",
+    "title": "Irrigation water salinity and crop choice",
+    "excerpt": "Test water quality before planting and match the crop to its salinity tolerance.",
+    "cover": {
+      "url": "/images/blog/symphony-of-droplets/image2.jpg",
+      "alt": "Water spraying across a field",
+      "width": 1000,
+      "height": 667
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "salinity",
+        "label": "Salinity"
+      },
+      {
+        "slug": "water",
+        "label": "Water"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-01-27T08:00:00.000Z",
+    "updatedAt": "2026-01-27T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "شوری-آب-آبیاری-و-انتخاب-محصول"
+      },
+      {
+        "locale": "en",
+        "slug": "irrigation-water-salinity-and-crop-choice"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Irrigation water is never just water. It carries dissolved salts that remain in the soil when the water evaporates or is taken up by the crop. Over time, even a modest salt load can accumulate in the root zone if drainage and leaching are inadequate."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Salinity management is therefore a balance problem, not a single-number test. Water quality, soil texture, drainage, crop tolerance, and the leaching fraction all interact."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Start with water quality"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Test the irrigation source for electrical conductivity (ECw), sodium adsorption ratio (SAR), chloride, and other constituents that matter locally. FAO's water-quality guidance uses ECw classes: below 0.7 dS/m generally has no restriction for salinity, 0.7–3.0 dS/m is slight to moderate, and above 3.0 dS/m is severe for many crops."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Those classes are not crop recommendations by themselves. A water that is acceptable for a tolerant crop may be marginal for a sensitive one, and the same water can behave differently on a clay soil with poor drainage than on a deep sandy soil."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/symphony-of-droplets/image2.jpg",
+            "alt": "Water spraying across a field",
+            "width": 1000,
+            "height": 667
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Translate water to the root zone"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The salt concentration in the soil solution is usually higher than in the irrigation water because crops take up water and leave salts behind. The leaching fraction is the share of applied water that must pass below the root zone to keep salinity within the crop's tolerance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Leaching only works if the soil drains. A shallow water table, a compacted layer, or a closed basin can turn extra water into waterlogging. Check drainage before increasing application, and do not use leaching as a substitute for fixing the underlying cause."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Manage the salt balance"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Choose crops and varieties with appropriate salt tolerance, and match the water quality to the crop rather than forcing a sensitive crop into a marginal field. Drip irrigation can place water more precisely, but salts still accumulate at the wetting front and need monitoring."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Avoid unnecessary foliar wetting with saline water, especially in hot, dry conditions. Keep irrigation equipment clean, monitor emitter performance, and watch for sodium-specific problems such as crusting and reduced infiltration. A soil test is more informative than a visual guess."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Monitor the trend"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Sample the root zone at the same depths and times each season. Compare ECe or the chosen extract method with the previous results, and keep the irrigation water test beside the soil test. A rising trend is a signal to review leaching, drainage, and crop choice before yield declines."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Record rainfall, irrigation volume, and any visual symptoms. Salinity often appears as stunted growth, leaf burn, or a patchy field rather than a dramatic collapse. Early trend data gives you more options than a rescue treatment."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A field protocol"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Test the irrigation source before the season, not after symptoms appear."
+              }
+            ],
+            [
+              {
+                "text": "Record ECw, SAR, chloride, and the laboratory method."
+              }
+            ],
+            [
+              {
+                "text": "Check drainage and the water table before planning leaching."
+              }
+            ],
+            [
+              {
+                "text": "Match crop and variety to the measured water quality."
+              }
+            ],
+            [
+              {
+                "text": "Monitor root-zone salinity at consistent depths and dates."
+              }
+            ],
+            [
+              {
+                "text": "Keep a field map of salty patches and watch them separately."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Leaching fraction in practice"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The leaching fraction is the proportion of applied water that must drain below the root zone to keep salts from accumulating. It is not a fixed percentage. It depends on water salinity, crop tolerance, soil, and climate. A simple water balance and a soil test are more useful than a guessed number."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Apply leaching water only when drainage can accept it. Split applications if necessary, and monitor the root zone rather than assuming the salt has moved. In heavy clay or a shallow water table, leaching may need drainage improvements first."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Crop stage and method matter"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Germination and seedling stages are often more sensitive than mature plants. A water that is acceptable later in the season may be too saline for establishment. Consider pre-plant leaching, planting density, and the irrigation method."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Drip and subsurface systems reduce foliar wetting, but they concentrate salts at the wetting front. Sprinklers can wash salts from leaves but may burn sensitive foliage in hot, dry weather. Match the method to the crop and the water quality, and monitor the root zone regardless of method."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "FAO: Water quality for agriculture",
+                "href": "https://www.fao.org/4/t0234e/t0234e00.htm"
+              }
+            ],
+            [
+              {
+                "text": "FAO: Crop salt tolerance data",
+                "href": "https://www.fao.org/4/y4263e/y4263e0e.htm"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-9-fa",
+    "slug": "ماده-آلی-قلب-خاک-زنده",
+    "locale": "fa",
+    "translationKey": "soil-organic-matter",
+    "title": "ماده آلی، قلب خاک زنده",
+    "excerpt": "چرا ماده آلی برای نگهداشت آب، تغذیه گیاه و فعالیت میکروبی خاک تعیین‌کننده است.",
+    "cover": {
+      "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+      "alt": "تصویر بندانگشتی مثلث بافت خاک",
+      "width": 1000,
+      "height": 775
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "organic-matter",
+        "label": "ماده آلی"
+      },
+      {
+        "slug": "soil",
+        "label": "خاک"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-01-19T08:00:00.000Z",
+    "updatedAt": "2026-01-19T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "ماده-آلی-قلب-خاک-زنده"
+      },
+      {
+        "locale": "en",
+        "slug": "soil-organic-matter"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ماده آلی خاک شامل مواد زنده، مرده و در حال تجزیه است: ریشه‌ها، زیست‌توده میکروبی، بقایای تازه و هوموس پایداری که پس از تجزیه باقی می‌ماند. ماده آلی یک محصول تک‌جزئی قابل خرید نیست و با رنگ توده کمپوست سنجیده نمی‌شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ماده آلی مهم است چون بر خاکدانه‌سازی، نگهداشت آب، چرخه مواد مغذی و فعالیت زیستی اثر می‌گذارد. این اثرها واقعی اما کند هستند و به بافت، اقلیم و مدیریت بستگی دارند."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "ماده آلی چه می‌کند؟"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مواد آلی ذرات خاک را به خاکدانه پیوند می‌دهند. این خاکدانه‌ها فضای منافذی می‌سازند که آب را نگه می‌دارد و هوا را عبور می‌دهد. ماده آلی همچنین مواد مغذی را ذخیره می‌کند و میکروب‌هایی را تغذیه می‌کند که آن‌ها را بازیافت می‌کنند. NRCS آمریکا ماده آلی را نشانگر محوری سلامت خاک می‌داند، نه یک کود مستقل."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مزیت آبی آن اغلب ساده‌سازی می‌شود. ماده آلی می‌تواند آب نگه دارد، اما مقدار آن به ماده، خاک و نحوه توزیع بستگی دارد. University of Florida IFAS یادآوری می‌کند که ماده آلی می‌تواند چند برابر وزن خود آب نگه دارد، اما رابطه آن با نوع خاک و کیفیت ماده آلی تغییر می‌کند."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+            "alt": "تصویر بندانگشتی مثلث بافت خاک",
+            "width": 1000,
+            "height": 775
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "نگهداشت آب بدون افسانه"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "یک مقایسه میدانی پراستناد نشان داد لوم سیلتی با حدود ۴٪ ماده آلی بیش از دو برابر آب قابل استفاده همان خاک با حدود ۱٪ ماده آلی نگه می‌دارد. این مثال جهت اثر را نشان می‌دهد، نه یک ضریب تبدیل جهانی برای همه مزارع."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "از وعده درصد ثابت صرفه‌جویی آب پس از افزودن کمپوست پرهیز کنید. نفوذپذیری، پایداری خاکدانه و رطوبت خاک را در مزرعه خودتان اندازه بگیرید. ماده آلی توان خاک برای پذیرش آب را هم بهتر می‌کند که در بارندگی شدید می‌تواند به اندازه ذخیره آب مهم باشد."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "آن را آهسته بسازید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ورودی آلی، کشت پوششی، خاک‌ورزی کاهش‌یافته و ریشه‌های زنده همه ماده آلی را پشتیبانی می‌کنند. کمپوست و کود دامی ماده را مستقیم اضافه می‌کنند؛ کشت پوششی ریشه و بقایا می‌آورد؛ خاک‌ورزی کمتر هدررفت را کند می‌کند. ترکیب این‌ها از هر اقدام تک‌بخشی مهم‌تر است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ورودی‌ها را با بودجه مواد مغذی مزرعه هماهنگ کنید. کود دامی و کمپوست منابع بی‌پایان نیستند و مواد مغذی اضافی می‌توانند شسته شوند یا رواناب بسازند. ماده را آزمایش کنید، میزان کاربرد را محاسبه کنید و سابقه نگه دارید. ساختن ماده آلی فرایندی چندفصلی است، نه اصلاح یک‌باره."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "اثر را اندازه بگیرید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "آزمون ماده آلی آزمایشگاه را با مشاهدات میدانی همراه کنید: پایداری خاکدانه، سرعت نفوذ، فعالیت کرم خاکی، پوشش بقایا و رفتار نگهداشت آب. ماده آلی کند تغییر می‌کند، بنابراین در عمق و زمان یکسان اندازه بگیرید و روند را با مقدار تک مقایسه کنید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "دفترچه مدیریت ساده نگه دارید. ترکیب روند آزمایشگاهی و شواهد میدانی از یک عدد تنها قانع‌کننده‌تر است و کمک می‌کند بفهمید سیستم در مسیر درست حرکت می‌کند یا نه."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "پروتکل میدانی"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "ماده آلی را در عمق و زمان ثابت سال آزمایش کنید."
+              }
+            ],
+            [
+              {
+                "text": "ورودی آلی را بر پایه نیاز مواد مغذی اضافه کنید، نه عادت."
+              }
+            ],
+            [
+              {
+                "text": "در صورت امکان ریشه زنده را بیشتر سال در خاک نگه دارید."
+              }
+            ],
+            [
+              {
+                "text": "خاک‌ورزی غیرضروری را کم کنید و بقایا را روی سطح نگه دارید."
+              }
+            ],
+            [
+              {
+                "text": "نفوذپذیری و پایداری خاکدانه را در کنار عدد آزمایشگاه اندازه بگیرید."
+              }
+            ],
+            [
+              {
+                "text": "تغییر چندفصلی را انتظار داشته باشید و نتیجه کوتاه‌مدت را بیش از حد وعده ندهید."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "خاک‌ورزی، بقایا و ریشه زنده"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "خاک‌ورزی ماده آلی را در معرض اکسیژن قرار می‌دهد و می‌تواند هدررفت آن را تندتر کند. کاهش خاک‌ورزی غیرضروری، نگه‌داشتن بقایا روی سطح و حفظ ریشه زنده در بیشتر سال، افت را کند می‌کند و زیست‌شناسی خاک را تغذیه می‌کند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "این به معنای هرگز خاک‌ورزی نکردن نیست. لایه فشرده یا بستر بذر سخت ممکن است دخالت بخواهد. نکته این است که با هدف خاک‌ورزی کنید و پس از آن سطح خاک را محافظت کنید، نه اینکه خاک‌ورزی را routin بدانید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "کیفیت کمپوست و کود دامی"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "کمپوست و کود دامی از نظر بلوغ، مواد مغذی، نمک و بذر علف هرز متفاوت‌اند. پیش از کاربرد، به‌ویژه اگر ورودی اصلی است، ماده را آزمایش کنید. کمپوست نارس می‌تواند نیتروژن را بگیرد یا به ریشه جوان آسیب بزند؛ کود دامی شور می‌تواند مشکل شوری را بیشتر کند."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "میزان کاربرد را از تحلیل مواد مغذی ماده و نیاز محصول محاسبه کنید. بیشتر همیشه بهتر نیست. منبع، میزان و تاریخ را ثبت کنید تا بتوانید تغییرات آزمون خاک یا عملکرد محصول را توضیح دهید."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "منابع"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "University of Florida IFAS: افزایش ماده آلی برای نگهداشت آب",
+                "href": "https://ask.ifas.ufl.edu/publication/SS661"
+              }
+            ],
+            [
+              {
+                "text": "University of Minnesota Extension: ماده آلی و آب خاک",
+                "href": "https://blog-crop-news.extension.umn.edu/2020/03/the-connection-between-soil-organic.html"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-9-en",
+    "slug": "soil-organic-matter",
+    "locale": "en",
+    "translationKey": "soil-organic-matter",
+    "title": "Organic matter: the heart of living soil",
+    "excerpt": "Why organic matter is decisive for water retention, plant nutrition, and soil biology.",
+    "cover": {
+      "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+      "alt": "Soil texture triangle thumbnail",
+      "width": 1000,
+      "height": 775
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "organic-matter",
+        "label": "Organic matter"
+      },
+      {
+        "slug": "soil",
+        "label": "Soil"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-01-19T08:00:00.000Z",
+    "updatedAt": "2026-01-19T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "ماده-آلی-قلب-خاک-زنده"
+      },
+      {
+        "locale": "en",
+        "slug": "soil-organic-matter"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Soil organic matter is the living, dead, and decomposing material in soil: roots, microbial biomass, fresh residue, and the stable humus that remains after decomposition. It is not a single product you can buy, and it is not measured by the color of a compost pile."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Organic matter matters because it influences aggregation, water retention, nutrient cycling, and biological activity. The effects are real but slow, and they depend on texture, climate, and management."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "What organic matter does"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Organic materials bind soil particles into aggregates. Those aggregates create pore space that holds water and allows air to move. Organic matter also stores nutrients and feeds the microbes that recycle them. USDA NRCS treats organic matter as a central indicator of soil health rather than a standalone fertilizer input."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The water benefit is often oversimplified. Organic matter can hold water, but the amount depends on the material, the soil, and how the organic matter is distributed. University of Florida IFAS notes that organic matter can hold many times its weight in water, while also warning that the relationship varies with soil type and organic-matter quality."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/blog/soil-texture-triangle/thumbnail.jpg",
+            "alt": "Soil texture triangle thumbnail",
+            "width": 1000,
+            "height": 775
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Water retention without myths"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A widely cited field comparison found that a silt loam with about 4% organic matter held more than twice the available water of a similar soil with about 1% organic matter. That is a useful illustration of the direction of the effect, not a universal conversion factor for every field."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Do not promise a fixed water-saving percentage from a compost application. Measure infiltration, aggregate stability, and soil moisture in your own field. Organic matter also improves the soil's ability to accept water, which can matter as much as storage during intense rainfall."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Build it slowly"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Organic inputs, cover crops, reduced tillage, and living roots all support organic matter. Compost and manure add material directly; cover crops add roots and residue; reduced tillage slows losses. The combination matters more than any single application."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Match inputs to the field's nutrient budget. Manure and compost are not unlimited resources, and excess nutrients can leach or run off. Test the material, calculate application rates, and keep records. Building organic matter is a multi-season process, not a one-time amendment."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Measure the effect"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Use a laboratory organic-matter test, but pair it with field observations: aggregate stability, infiltration rate, earthworm activity, residue cover, and water-holding behavior. Organic matter changes slowly, so measure at the same depth and time of year and compare trends rather than single values."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Keep a simple management log. The combination of a lab trend and field evidence is more convincing than a single number, and it helps you decide whether the system is moving in the right direction."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A field protocol"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Test organic matter at a consistent depth and time of year."
+              }
+            ],
+            [
+              {
+                "text": "Add organic inputs based on nutrient needs, not habit."
+              }
+            ],
+            [
+              {
+                "text": "Keep living roots in the soil for more of the year where possible."
+              }
+            ],
+            [
+              {
+                "text": "Reduce unnecessary tillage and keep residue on the surface."
+              }
+            ],
+            [
+              {
+                "text": "Measure infiltration and aggregate stability alongside the lab number."
+              }
+            ],
+            [
+              {
+                "text": "Expect multi-season change and avoid overpromising short-term results."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tillage, residue, and living roots"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Tillage exposes organic matter to oxygen and can accelerate its loss. Reducing unnecessary tillage, keeping residue on the surface, and maintaining living roots for more of the year all slow the decline and feed soil biology."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "This does not mean never till. A compacted layer or a difficult seedbed may require intervention. The point is to till with a purpose and to protect the soil surface afterward, rather than treating tillage as a routine."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Compost and manure quality"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Compost and manure vary in maturity, nutrient content, salt, and weed seeds. Test the material before applying it, especially if it is a major input. Immature compost can tie up nitrogen or damage young roots; salty manure can add to a salinity problem."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Calculate application rates from the material's nutrient analysis and the crop's needs. More is not automatically better. Keep a record of sources, rates, and dates so you can explain changes in soil tests or crop performance."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "University of Florida IFAS: Raising soil organic matter for water holding capacity",
+                "href": "https://ask.ifas.ufl.edu/publication/SS661"
+              }
+            ],
+            [
+              {
+                "text": "University of Minnesota Extension: Soil organic matter and soil water",
+                "href": "https://blog-crop-news.extension.umn.edu/2020/03/the-connection-between-soil-organic.html"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-10-fa",
+    "slug": "پایش-میدانی-پیش-از-آنکه-دیر-شود",
+    "locale": "fa",
+    "translationKey": "field-scouting",
+    "title": "پایش میدانی؛ پیش از آنکه دیر شود",
+    "excerpt": "یک مسیر ساده برای بازدید منظم مزرعه و ثبت نشانه‌های تنش آب، آفت و کمبود مواد مغذی.",
+    "cover": {
+      "url": "/images/homepage/hero-landscape.jpg",
+      "alt": "مزرعه سبز در نور روز",
+      "width": 2000,
+      "height": 1499
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "scouting",
+        "label": "پایش مزرعه"
+      },
+      {
+        "slug": "research",
+        "label": "پژوهش"
+      }
+    ],
+    "author": {
+      "name": "تیم صفا"
+    },
+    "publishedAt": "2026-01-11T08:00:00.000Z",
+    "updatedAt": "2026-01-11T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "پایش-میدانی-پیش-از-آنکه-دیر-شود"
+      },
+      {
+        "locale": "en",
+        "slug": "field-scouting-before-problems-spread"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "پایش میدانی بخشی از مدیریت تلفیقی آفات است که پیش از تصمیم سمپاشی انجام می‌شود. یک بازدید ساختارمند است که ثبت می‌کند در مزرعه واقعاً چه می‌گذرد: مرحله رشد، فشار آفت، حشرات مفید، علف هرز، نشانه بیماری، رطوبت و هر چیزی که با بقیه قطعه متفاوت است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "هدف شناسایی تک‌تک حشرات نیست. هدف تشخیص زودهنگام تغییرهای معنادار برای اقدام به‌موقع و ساختن سابقه‌ای است که روند واقعی را از یک روز بد جدا کند."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "پیش از راه‌افتادن آماده شوید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "University of Wisconsin Extension توصیه می‌کند با تاریخچه مزرعه، اطلاعات کاشت، مرحله رشد و برنامه پایش شروع کنید. نقشه، دفترچه یا فرم موبایل، ذره‌بین، تور حشره‌گیری در صورت نیاز و ابزار عکس با موقعیت مکانی همراه داشته باشید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "تقویم آفت و آستانه کنترل محصولی را که پایش می‌کنید بشناسید. آستانه مجوز سمپاشی نیست؛ ابزار تصمیم‌گیری است که به مرحله رشد، هوا، دشمنان طبیعی و هزینه اقدام بستگی دارد."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/homepage/hero-landscape.jpg",
+            "alt": "مزرعه سبز در نور روز",
+            "width": 2000,
+            "height": 1499
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "سیستماتیک نمونه‌برداری کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مسیر ثابت را طی کنید: W، زیگزاگ یا چند ترانسکت در مزرعه. مزرعه را از کنار جاده یا حاشیه قضاوت نکنید. در چند ایستگاه توقف کنید، گیاهان با ارتفاع و مرحله متفاوت را بررسی کنید و زیر برگ و سطح خاک را ببینید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "تعداد گیاه یا حشره در هر نمونه را ثبت کنید، نه فقط برداشت «بله/خیر». الگوی نمونه‌برداری و تعداد ایستگاه‌ها را بنویسید تا بازدید بعدی قابل مقایسه باشد. اگر مزرعه ناهمگن است، نواحی را جدا نقشه‌برداری کنید، نه اینکه در یک عدد میانگین پنهان شوند."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "آنچه مهم است را ثبت کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "مرحله رشد، گونه و مرحله زندگی آفت، حشرات مفید، نشانه بیماری، گونه علف هرز، رطوبت خاک و عملیات اخیر مزرعه را ثبت کنید. عکس با تاریخ و موقعیت اغلب از یک پاراگراف نوشته‌شده از حافظه مفیدتر است."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "یک مقیاس ساده شدت یا شمارش نگه دارید. «چند شته» بین بازدیدها قابل مقایسه نیست؛ «۱۲ شته در ۱۰ گیاه در پنج ایستگاه» قابل مقایسه است. سابقه باید به شما بگوید جمعیت در حال افزایش، کاهش یا ثبات است."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "بر پایه آستانه اقدام و پیگیری کنید"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "از آستانه محلی یا راهنمای ترویج برای محصول و آفت استفاده کنید. پیش از انتخاب اقدام، حشرات مفید، هوا و مرحله رشد را در نظر بگیرید. اگر تیمار کردید، محصول، دوز، تاریخ و هدف را ثبت کنید و به همان ایستگاه‌ها برگردید تا نتیجه را ببینید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "پایش یک حلقه است: مشاهده، ثبت، تصمیم و راستی‌آزمایی. یک بازدید عکس لحظه‌ای است؛ بازدیدهای تکرارشده با روش یکسان یک ابزار مدیریتی است."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "پروتکل میدانی"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "پیش از بازدید، تاریخچه مزرعه، مرحله رشد و تقویم آفت را مرور کنید."
+              }
+            ],
+            [
+              {
+                "text": "هر بار از مسیر و تعداد ایستگاه یکسان استفاده کنید."
+              }
+            ],
+            [
+              {
+                "text": "برگ، ساقه، ریشه و سطح خاک را ببینید، نه فقط سایه‌انداز گیاه."
+              }
+            ],
+            [
+              {
+                "text": "شمارش، شدت، حشرات مفید و عکس با موقعیت را ثبت کنید."
+              }
+            ],
+            [
+              {
+                "text": "پیش از اقدام، شمارش را با آستانه محلی مقایسه کنید."
+              }
+            ],
+            [
+              {
+                "text": "پس از تیمار یا رویداد جوی برگردید و نتیجه را بررسی کنید."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "حشرات مفید و دشمنان طبیعی"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "سابقه پایشی که فقط آفت را می‌شمارد، نیمی از داستان را از دست می‌دهد. شکارگرها، پارازیتوئیدها و گرده‌افشان‌ها می‌توانند تصمیم را تغییر دهند. حشرات مفید رایج محصول خود را بشناسید و فراوانی آن‌ها را کنار شمارش آفت ثبت کنید."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "تیمارهای طیف گسترده می‌توانند دشمنان طبیعی را حذف کنند و طغیان ثانویه بسازند. اگر به آستانه نزدیک هستید، ببینید جمعیت مفید در حال افزایش است و گزینه انتخابی وجود دارد یا نه."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "کیفیت داده و پیگیری"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "هر بازدید از مسیر، تعداد ایستگاه و روش شمارش یکسان استفاده کنید. هوا و عملیات اخیر مزرعه را ثبت کنید چون بر فعالیت آفت و نشانه‌های گیاه اثر می‌گذارند. عکس بدون موقعیت مکانی بعداً سخت مقایسه می‌شود."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "پس از اقدام، به همان ایستگاه‌ها برگردید. جمعیت آفت کم شد؟ گیاه بهبود یافت؟ مشکل تازه‌ای ظاهر شد؟ بازدید پیگیری جایی است که پایش به مدیریت تبدیل می‌شود، نه فقط مشاهده."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "منابع"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "University of Wisconsin Extension: مقدمه‌ای بر پایش محصول",
+                "href": "https://cropsandsoils.extension.wisc.edu/articles/introduction-to-crop-scouting"
+              }
+            ],
+            [
+              {
+                "text": "Iowa State University Extension: پایش اوایل فصل",
+                "href": "https://crops.extension.iastate.edu/encyclopedia/early-season-crop-scouting"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-10-en",
+    "slug": "field-scouting-before-problems-spread",
+    "locale": "en",
+    "translationKey": "field-scouting",
+    "title": "Field scouting before problems spread",
+    "excerpt": "A simple routine for regular field walks and recording signs of water stress, pests, and nutrient gaps.",
+    "cover": {
+      "url": "/images/homepage/hero-landscape.jpg",
+      "alt": "A green farm field in daylight",
+      "width": 2000,
+      "height": 1499
+    },
+    "template": "narrative",
+    "tags": [
+      {
+        "slug": "scouting",
+        "label": "Field scouting"
+      },
+      {
+        "slug": "research",
+        "label": "Research"
+      }
+    ],
+    "author": {
+      "name": "SFA Team"
+    },
+    "publishedAt": "2026-01-11T08:00:00.000Z",
+    "updatedAt": "2026-01-11T08:00:00.000Z",
+    "readingTimeMinutes": 0,
+    "alternates": [
+      {
+        "locale": "fa",
+        "slug": "پایش-میدانی-پیش-از-آنکه-دیر-شود"
+      },
+      {
+        "locale": "en",
+        "slug": "field-scouting-before-problems-spread"
+      }
+    ],
+    "content": {
+      "type": "narrative",
+      "intro": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Field scouting is the part of integrated pest management that happens before a spray decision. It is a structured walk that records what is actually happening in the field: crop stage, pest pressure, beneficial insects, weeds, disease symptoms, moisture, and anything that looks different from the rest of the block."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The goal is not to identify every insect. It is to detect meaningful changes early enough to act, and to build a record that separates a real trend from a bad day."
+            }
+          ]
+        }
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Prepare before walking"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "University of Wisconsin Extension recommends starting with field history, planting information, the crop growth stage, and a scouting plan. Bring a map, a notebook or mobile form, a hand lens, a sweep net if appropriate, and a way to take geotagged photos."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Know the pest calendar and the control thresholds for the crops you are scouting. A threshold is not a license to spray; it is a decision aid that depends on crop stage, weather, natural enemies, and the cost of action."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "url": "/images/homepage/hero-landscape.jpg",
+            "alt": "A green farm field in daylight",
+            "width": 2000,
+            "height": 1499
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sample systematically"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Walk a consistent pattern: a W, a zigzag, or several transects across the field. Avoid judging the field from the headland or the road. Sample several stops, inspect plants at different heights and stages, and look at the underside of leaves and the soil surface."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Record the number of plants or insects per sample, not just a yes/no impression. Note the sampling pattern and the number of stops so the next visit is comparable. If the field is variable, map the zones separately instead of averaging them into one number."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Record what matters"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Capture the crop stage, pest species and life stage, beneficial insects, disease symptoms, weed species, soil moisture, and any recent field operations. A photo with a date and location is often more useful than a paragraph written from memory."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Keep a simple severity scale or count. \"A few aphids\" is not comparable across visits; \"12 aphids per 10 plants at five stops\" is. The record should let you answer whether the population is rising, falling, or stable."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Act on thresholds and follow up"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Use the local threshold or extension guidance for the crop and pest. Consider beneficial insects, weather, and crop stage before choosing an action. If you treat, record the product, rate, date, and target; then return to the same stops to check the result."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Scouting is a loop: observe, record, decide, and verify. A single visit is a snapshot; repeated visits with the same method are a management tool."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "A field protocol"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Review field history, crop stage, and pest calendars before the walk."
+              }
+            ],
+            [
+              {
+                "text": "Use the same route and number of stops each time."
+              }
+            ],
+            [
+              {
+                "text": "Inspect leaves, stems, roots, and soil surface, not just the canopy."
+              }
+            ],
+            [
+              {
+                "text": "Record counts, severity, beneficials, and geotagged photos."
+              }
+            ],
+            [
+              {
+                "text": "Compare the count with the local threshold before acting."
+              }
+            ],
+            [
+              {
+                "text": "Return after treatment or a weather event to verify the outcome."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Beneficial insects and natural enemies"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "A scouting record that counts only pests misses half the story. Predators, parasitoids, and pollinators can change the decision. Learn the common beneficials in your crop and note their abundance alongside the pest count."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Broad-spectrum treatments can remove natural enemies and trigger a secondary outbreak. If a threshold is close, consider whether the beneficial population is already increasing and whether a selective option is available."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Data quality and follow-up"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Use the same route, the same number of stops, and the same counting method each visit. Record the weather and recent field operations because they affect pest activity and crop symptoms. A photo without a location is difficult to compare later."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "After an action, return to the same stops. Did the pest population fall? Did the crop recover? Did a new problem appear? The follow-up visit is where scouting becomes management rather than observation."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Sources"
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "University of Wisconsin Extension: Introduction to crop scouting",
+                "href": "https://cropsandsoils.extension.wisc.edu/articles/introduction-to-crop-scouting"
+              }
+            ],
+            [
+              {
+                "text": "Iowa State University Extension: Early-season crop scouting",
+                "href": "https://crops.extension.iastate.edu/encyclopedia/early-season-crop-scouting"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  }
+]

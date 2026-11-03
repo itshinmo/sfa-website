@@ -34,6 +34,7 @@ export type BlogDetailLoaderData =
       related: BlogPostSummary[];
       title: string;
       description: string;
+      siteUrl: string;
       readingTimeMinutes: number;
       readingTimeLabel: string;
       byline?: string;
@@ -44,6 +45,7 @@ export type BlogDetailLoaderData =
       locale: Locale;
       title: string;
       description: string;
+      siteUrl: string;
       errorTitle: string;
       errorMessage: string;
       retryHref: string;
@@ -71,6 +73,7 @@ export async function loader({ params, request, context }: Route.LoaderArgs) {
         locale,
         title,
         description,
+        siteUrl: SITE.url,
         errorTitle: t("errorTitle"),
         errorMessage: t("error"),
         retryHref: `${new URL(request.url).pathname}${new URL(request.url).search}`,
@@ -107,6 +110,7 @@ export async function loader({ params, request, context }: Route.LoaderArgs) {
       related,
       title: post.seo?.title ?? post.title,
       description: post.seo?.description ?? post.excerpt,
+      siteUrl: SITE.url,
       readingTimeMinutes,
       readingTimeLabel: t("readingTime", { minutes: formattedReadingTime }),
       byline: post.author ? t("by", { name: post.author.name }) : undefined,
@@ -122,21 +126,21 @@ export async function loader({ params, request, context }: Route.LoaderArgs) {
   );
 }
 
-function canonicalUrl(post: { locale: string; slug: string }) {
+function canonicalUrl(post: { locale: string; slug: string }, siteUrl: string) {
   return new URL(
     `/${post.locale}/blog/${encodeURIComponent(post.slug)}`,
-    SITE.url,
+    siteUrl,
   ).toString();
 }
 
-function absoluteAssetUrl(value: string) {
-  return /^https?:\/\//.test(value) ? value : new URL(value, SITE.url).toString();
+function absoluteAssetUrl(value: string, siteUrl: string) {
+  return /^https?:\/\//.test(value) ? value : new URL(value, siteUrl).toString();
 }
 
 export const meta: Route.MetaFunction = ({ loaderData }) => {
   if (!loaderData) return [];
 
-  const { locale, title, description } = loaderData;
+  const { locale, title, description, siteUrl } = loaderData;
 
   if (!loaderData.ok) {
     return [
@@ -145,17 +149,17 @@ export const meta: Route.MetaFunction = ({ loaderData }) => {
       {
         tagName: "link",
         rel: "canonical",
-        href: new URL(`/${locale}/blog`, SITE.url).toString(),
+        href: new URL(`/${locale}/blog`, siteUrl).toString(),
       },
       { name: "robots", content: "noindex, nofollow" },
     ];
   }
 
   const { post, breadcrumb } = loaderData;
-  const canonical = canonicalUrl(post);
+  const canonical = canonicalUrl(post, siteUrl);
   const rawImage = post.seo?.ogImage ?? post.cover.url;
   const usesDefaultOg = rawImage.endsWith(".svg");
-  const image = absoluteAssetUrl(usesDefaultOg ? "/og-default.png" : rawImage);
+  const image = absoluteAssetUrl(usesDefaultOg ? "/og-default.png" : rawImage, siteUrl);
   const defaultAlternate = post.alternates.find((alternate) => alternate.locale === "fa");
   const localeTag = post.contentLocale ?? post.locale;
 
@@ -166,19 +170,22 @@ export const meta: Route.MetaFunction = ({ loaderData }) => {
     ...post.alternates.map((alternate) => ({
       tagName: "link" as const,
       rel: "alternate",
-      hreflang: alternate.locale,
-      href: canonicalUrl({ locale: alternate.locale, slug: alternate.slug }),
+      hrefLang: alternate.locale,
+      href: canonicalUrl({ locale: alternate.locale, slug: alternate.slug }, siteUrl),
     })),
     ...(defaultAlternate
       ? [
           {
             tagName: "link" as const,
             rel: "alternate",
-            hreflang: "x-default",
-            href: canonicalUrl({
-              locale: defaultAlternate.locale,
-              slug: defaultAlternate.slug,
-            }),
+            hrefLang: "x-default",
+            href: canonicalUrl(
+              {
+                locale: defaultAlternate.locale,
+                slug: defaultAlternate.slug,
+              },
+              siteUrl,
+            ),
           },
         ]
       : []),
@@ -222,7 +229,7 @@ export const meta: Route.MetaFunction = ({ loaderData }) => {
         author: post.author
           ? { "@type": "Person", name: post.author.name }
           : { "@type": "Organization", name: SITE.fullName },
-        publisher: { "@type": "Organization", name: SITE.fullName, url: SITE.url },
+        publisher: { "@type": "Organization", name: SITE.fullName, url: siteUrl },
         mainEntityOfPage: canonical,
         url: canonical,
         keywords: post.tags.map((tag) => tag.label),
@@ -237,13 +244,13 @@ export const meta: Route.MetaFunction = ({ loaderData }) => {
             "@type": "ListItem",
             position: 1,
             name: breadcrumb.home,
-            item: new URL(`/${locale}`, SITE.url).toString(),
+            item: new URL(`/${locale}`, siteUrl).toString(),
           },
           {
             "@type": "ListItem",
             position: 2,
             name: breadcrumb.blog,
-            item: new URL(`/${locale}/blog`, SITE.url).toString(),
+            item: new URL(`/${locale}/blog`, siteUrl).toString(),
           },
           {
             "@type": "ListItem",

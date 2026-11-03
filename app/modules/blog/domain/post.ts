@@ -148,7 +148,10 @@ export type BlogListQuery = {
   locale: Locale;
   page?: number;
   pageSize?: number;
+  /** @deprecated Prefer tags; kept for the legacy single-tag URL. */
   tag?: string;
+  /** All selected tags must match (AND semantics). */
+  tags?: string[];
   q?: string;
 };
 

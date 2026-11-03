@@ -23,6 +23,8 @@ const blog = {
   resultsFor_other: "{{formattedCount}} نتیجه برای «{{query}}»",
   searchChip: "جستجو: {{query}}",
   tagFilter: "موضوع: {{tag}}",
+  tagFilters: "موضوع‌ها: {{tags}}",
+  removeTag: "حذف {{tag}}",
   clearFilters: "پاک کردن فیلترها",
   readingTime: "{{minutes}} دقیقه مطالعه",
   related: "نوشته‌های مرتبط",
