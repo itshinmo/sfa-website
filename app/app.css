@@ -158,31 +158,26 @@
     transform: none;
   }
 
-  .reveal[data-reveal="pending"] {
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .reveal {
+        animation: reveal-in linear both;
+        animation-timeline: view();
+        animation-range: entry 2% cover 30%;
+      }
+    }
+  }
+}
+
+@keyframes reveal-in {
+  from {
     opacity: 0;
     transform: translateY(var(--motion-distance-md));
   }
 
-  .reveal:focus-within {
+  to {
     opacity: 1;
-    transform: none;
-  }
-
-  .reveal[data-reveal="visible"] {
-    opacity: 1;
-    transform: none;
-    transition:
-      opacity var(--motion-duration-reveal) var(--motion-ease-out),
-      transform var(--motion-duration-reveal) var(--motion-ease-out);
-    transition-delay: var(--reveal-delay, 0ms);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal[data-reveal] {
-    opacity: 1;
-    transform: none;
-    transition: none;
+    transform: translateY(0);
   }
 }
 
@@ -238,6 +233,22 @@
   }
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .hero-image {
+    animation: hero-image-in 18s var(--motion-ease-out) both;
+  }
+}
+
+@keyframes hero-image-in {
+  from {
+    transform: scale(1.045);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 767px) {
   .hero-frame {
     min-height: 86svh;
@@ -245,7 +256,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-rise {
+  .hero-rise,
+  .hero-image {
     animation: none;
     transform: none;
   }

@@ -263,25 +263,6 @@
       }
     ]
   },
-  "partners": {
-    "eyebrow": "Partners",
-    "title": "Research partners",
-    "description": "SFA develops alongside university and research-institute partners.",
-    "items": [
-      {
-        "id": "srbiau",
-        "name": "Islamic Azad University, Science and Research Branch",
-        "logo": "/images/partners/srbiau.png",
-        "logoAlt": "Islamic Azad University, Science and Research Branch logo"
-      },
-      {
-        "id": "swri",
-        "name": "Soil and Water Research Institute",
-        "logo": "/images/partners/swri.png",
-        "logoAlt": "Soil and Water Research Institute logo"
-      }
-    ]
-  },
   "faq": {
     "eyebrow": "Questions",
     "title": "Frequently asked questions",

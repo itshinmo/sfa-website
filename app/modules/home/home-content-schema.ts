@@ -106,17 +106,6 @@ export const homeContentSchema = z.object({
       }),
     ),
   }),
-  partners: z.object({
-    ...sectionIntroSchema,
-    items: z.array(
-      z.object({
-        id: z.string().min(1),
-        name: z.string().min(1),
-        logo: z.string().min(1),
-        logoAlt: z.string().min(1),
-      }),
-    ),
-  }),
   faq: z.object({
     ...sectionIntroSchema,
     items: z.array(

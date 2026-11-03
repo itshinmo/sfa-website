@@ -32,7 +32,7 @@ export function HomeHero({ hero }: HomeHeroProps) {
           fetchPriority="high"
           loading="eager"
           decoding="async"
-          className="absolute inset-0 size-full object-cover object-center md:object-[50%_58%]"
+          className="hero-image absolute inset-0 size-full object-cover object-center md:object-[50%_58%]"
         />
       </picture>
 

@@ -9,11 +9,9 @@ import { HomeDownloads } from "~/modules/home/presentation/home-downloads";
 import { HomeFaq } from "~/modules/home/presentation/home-faq";
 import { HomeFeatures } from "~/modules/home/presentation/home-features";
 import { HomeHero, HeroTrustStrip } from "~/modules/home/presentation/home-hero";
-import { HomePartners } from "~/modules/home/presentation/home-partners";
 import { HomeResearch } from "~/modules/home/presentation/home-research";
 import { HomeShowcase } from "~/modules/home/presentation/home-showcase";
 import { HomeTeam } from "~/modules/home/presentation/home-team";
-import { MotionProvider } from "~/shared/motion/motion-provider";
 import { toLocale } from "~/shared/lib/locale";
 import { SITE } from "~/shared/lib/site";
 
@@ -161,21 +159,18 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   const { content, locale, posts } = loaderData;
 
   return (
-    <MotionProvider>
-      <main id="main-content" tabIndex={-1}>
-        <HomeHero hero={content.hero} />
-        <HeroTrustStrip highlights={content.hero.highlights} />
-        <HomeFeatures features={content.features} />
-        <HomeShowcase showcase={content.showcase} locale={locale} />
-        <HomeResearch research={content.research} locale={locale} />
-        <HomeAchievements achievements={content.achievements} />
-        <HomeTeam team={content.team} />
-        <HomePartners partners={content.partners} />
-        <HomeBlogTeaser posts={posts} locale={locale} />
-        <HomeFaq faq={content.faq} />
-        <HomeDownloads downloads={content.downloads} />
-        <HomeContact contact={content.contact} />
-      </main>
-    </MotionProvider>
+    <main id="main-content" tabIndex={-1}>
+      <HomeHero hero={content.hero} />
+      <HeroTrustStrip highlights={content.hero.highlights} />
+      <HomeFeatures features={content.features} />
+      <HomeShowcase showcase={content.showcase} locale={locale} />
+      <HomeResearch research={content.research} locale={locale} />
+      <HomeAchievements achievements={content.achievements} />
+      <HomeTeam team={content.team} />
+      <HomeBlogTeaser posts={posts} locale={locale} />
+      <HomeFaq faq={content.faq} />
+      <HomeDownloads downloads={content.downloads} />
+      <HomeContact contact={content.contact} />
+    </main>
   );
 }

@@ -29,16 +29,16 @@ export function HomeAchievements({ achievements }: HomeAchievementsProps) {
               <Reveal delay={index * 60} className="h-full">
                 <Card
                   data-slot="achievement-card"
-                  className="flex h-full gap-5 p-6 transition-[box-shadow,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
+                  className="flex h-full items-start gap-4 p-6 transition-[box-shadow,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
                 >
                   <span
                     aria-hidden="true"
-                    className="font-mono text-sm font-semibold tracking-widest text-water-700"
+                    className="w-7 shrink-0 font-mono text-sm leading-7 font-semibold tracking-widest text-water-700"
                   >
                     {numerals[index] ?? String(index + 1)}
                   </span>
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground-strong">
+                  <div className="min-w-0">
+                    <h3 className="text-xl leading-7 font-bold text-foreground-strong">
                       {item.title}
                     </h3>
                     <p className="mt-2 text-sm leading-normal text-muted">

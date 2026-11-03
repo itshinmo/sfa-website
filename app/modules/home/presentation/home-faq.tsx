@@ -29,6 +29,26 @@ export function HomeFaq({ faq }: HomeFaqProps) {
               answer: item.answer,
             }))}
           />
+          <noscript>
+            <div
+              data-slot="faq-noscript"
+              className="divide-y divide-border overflow-hidden rounded-panel border border-border bg-surface"
+            >
+              {faq.items.map((item) => (
+                <details key={item.id} className="group">
+                  <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-4 px-6 py-4 text-start text-base font-semibold text-foreground-strong [&::-webkit-details-marker]:hidden">
+                    <span>{item.question}</span>
+                    <span aria-hidden="true" className="text-muted">
+                      +
+                    </span>
+                  </summary>
+                  <div className="px-6 pb-5 text-sm leading-normal text-muted sm:text-base">
+                    {item.answer}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </noscript>
         </Reveal>
       </Container>
     </Section>
