@@ -35,6 +35,13 @@ export const links: Route.LinksFunction = () => [
     type: "font/ttf",
     crossOrigin: "anonymous",
   },
+  {
+    rel: "preload",
+    href: "/fonts/Inter/InterVariable-latin.woff2",
+    as: "font",
+    type: "font/woff2",
+    crossOrigin: "anonymous",
+  },
 ];
 
 export async function loader({ request, context }: Route.LoaderArgs) {
@@ -120,6 +127,8 @@ export default function App({ loaderData }: Route.ComponentProps) {
   const locale = segment === "fa" || segment === "en" ? segment : loaderData.locale;
 
   useEffect(() => {
+    document.documentElement.dataset.hydrated = "true";
+
     if (i18n.language !== locale) {
       void i18n.changeLanguage(locale);
     }

@@ -65,12 +65,14 @@
   --color-hero-scrim-soft: rgb(7 28 20 / 0.35);
 
   /* Typography */
-  --font-body:
-    "BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system,
-    sans-serif;
-  --font-display:
-    "BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system,
-    sans-serif;
+  --font-fa:
+    "BYekan", "Inter", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui,
+    -apple-system, sans-serif;
+  --font-en:
+    "Inter", "BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui,
+    -apple-system, sans-serif;
+  --font-body: var(--font-fa);
+  --font-display: var(--font-fa);
   --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -135,6 +137,11 @@
   --z-header: 40;
   --z-overlay: 50;
   --z-toast: 60;
+}
+
+html[lang="en"] {
+  --font-body: var(--font-en);
+  --font-display: var(--font-en);
 }
 
 @media (min-width: 640px) {
