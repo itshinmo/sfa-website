@@ -26,12 +26,12 @@ describe("blog content headings", () => {
 
     expect(headings[0]).toEqual({
       id: "reference-section-1",
-      text: "Sandy soil group",
+      text: "1. Sandy Soil Group",
       level: 2,
     });
     expect(headings[1]).toEqual({
       id: "reference-subsection-1-1",
-      text: "Sand",
+      text: "1.1. Sand",
       level: 3,
     });
   });
@@ -39,8 +39,10 @@ describe("blog content headings", () => {
   it("builds narrative heading targets from structured heading blocks", () => {
     const headings = collectContentHeadings(contentFor("en", "narrative").content);
 
-    expect(headings.map((heading) => heading.level)).toEqual([2, 2]);
-    expect(headings[0]?.text).toBe("From surface irrigation to moisture engineering");
+    expect(headings.map((heading) => heading.level)).toEqual([2, 2, 2, 2, 2]);
+    expect(headings[0]?.text).toBe(
+      "Ancient Heritage and the Challenge of Gravity: Surface Irrigation",
+    );
     expect(headings[0]?.id).toBe("heading-2");
   });
 
@@ -48,9 +50,12 @@ describe("blog content headings", () => {
     const simple = collectContentHeadings(contentFor("en", "simple").content);
     const caseStudy = collectContentHeadings(contentFor("en", "case-study").content);
 
-    expect(simple).toEqual([
-      { id: "simple-section-1", text: "What you will find here", level: 2 },
-    ]);
+    expect(simple).toHaveLength(8);
+    expect(simple[0]).toEqual({
+      id: "simple-section-1",
+      text: "Why we look at water and soil together",
+      level: 2,
+    });
     expect(caseStudy).toEqual([]);
   });
 

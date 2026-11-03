@@ -8,7 +8,7 @@ test("blog detail is server-rendered with SEO metadata", async ({ request }) => 
   expect(html).toContain("<h1");
   expect(html).toContain("soil texture classes");
   expect(html).toContain('rel="canonical"');
-  expect(html).toContain('hreflang="fa"');
+  expect(html.toLowerCase()).toContain('hreflang="fa"');
   expect(html).toContain("application/ld+json");
   expect(html).toContain("BlogPosting");
 });
@@ -25,7 +25,7 @@ test("blog detail exposes breadcrumbs, TOC targets, and breadcrumb JSON-LD", asy
   expect(html).toContain("On this page");
   expect(html).toContain('href="#reference-section-1"');
   expect(html).toContain('id="reference-section-1"');
-  expect(html).toContain('hreflang="x-default"');
+  expect(html.toLowerCase()).toContain('hreflang="x-default"');
 });
 
 test("search and tag query pages are noindex while the blog index is indexable", async ({
@@ -36,7 +36,7 @@ test("search and tag query pages are noindex while the blog index is indexable",
 
   expect(clean.status()).toBe(200);
   expect(cleanHtml).toContain('rel="canonical"');
-  expect(cleanHtml).toContain('hreflang="fa"');
+  expect(cleanHtml.toLowerCase()).toContain('hreflang="fa"');
   expect(cleanHtml).not.toContain("noindex");
 
   for (const path of ["/en/blog?q=texture", "/fa/blog?tag=soil"]) {

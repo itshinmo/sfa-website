@@ -59,6 +59,20 @@ describe("FastApiBlogRepository", () => {
     expect(result.items[0]?.slug).toBe(post.slug);
   });
 
+  it("sends repeated tag params for multi-tag filters", async () => {
+    const fetchMock = vi.fn(async () =>
+      jsonResponse({ items: [], page: 1, pageSize: 9, total: 0, totalPages: 0 }),
+    );
+
+    await repository(fetchMock as unknown as typeof fetch).listPosts({
+      locale: "en",
+      tags: ["water", "research"],
+    });
+
+    const { url } = firstCall(fetchMock);
+    expect(url.searchParams.getAll("tag")).toEqual(["water", "research"]);
+  });
+
   it("omits the authorization header when no token is configured", async () => {
     const fetchMock = vi.fn(async () =>
       jsonResponse({ items: [], page: 1, pageSize: 9, total: 0, totalPages: 0 }),

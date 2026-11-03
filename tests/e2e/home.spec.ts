@@ -56,7 +56,8 @@ test("homepage hero uses the responsive farmland picture and two CTAs", async ({
 });
 
 test("homepage renders the selected sections in order", async ({ page }) => {
-  await page.goto("/en");
+  await page.goto("/en", { waitUntil: "networkidle" });
+  await expect(page.locator("html")).toHaveAttribute("data-hydrated", "true");
 
   for (const name of [
     "A plan that follows the crop",
@@ -64,7 +65,6 @@ test("homepage renders the selected sections in order", async ({ page }) => {
     "Research results",
     "Achievements",
     "The SFA team",
-    "Research partners",
     "Latest writing",
     "Frequently asked questions",
     "Bring SFA to your devices",
@@ -75,33 +75,42 @@ test("homepage renders the selected sections in order", async ({ page }) => {
 
   await expect(page.locator("#blog article")).toHaveCount(3);
   await expect(page.locator("#research dd")).toHaveCount(4);
-  await expect(page.locator("#research")).toContainText("2,000");
+  await page.locator("#research").scrollIntoViewIfNeeded();
+  await expect(page.locator("#research")).toContainText("2,000", {
+    timeout: 10_000,
+  });
   await expect(page.locator('[data-slot="team-card"]')).toHaveCount(6);
-  await expect(page.locator('[data-slot="partner-card"]')).toHaveCount(2);
+  await expect(page.locator('[data-slot="team-card-clone"]')).toHaveCount(6);
+  await expect(page.locator('footer img[src*="swri"]')).toHaveCount(1);
+  await expect(page.locator("footer")).toContainText("Soil and Water Research Institute");
 
   const firstTeamLink = page.locator('[data-slot="team-card"] a').first();
   await expect(firstTeamLink).toHaveAttribute("target", "_blank");
   await expect(firstTeamLink).toHaveAttribute("rel", "noreferrer");
+
+  const pause = page.getByRole("button", { name: /team carousel/i });
+  if (await pause.isVisible()) {
+    await pause.scrollIntoViewIfNeeded();
+    await expect(pause).toHaveAttribute("aria-pressed", "false");
+    await pause.click();
+    await expect(pause).toHaveAttribute("aria-pressed", "true");
+  }
 });
 
-test("FAQ answers are server-rendered and open natively", async ({ page }) => {
+test("FAQ answers are server-rendered and animate open", async ({ page }) => {
   await page.goto("/en", { waitUntil: "networkidle" });
+  await expect(page.locator("html")).toHaveAttribute("data-hydrated", "true");
 
-  const firstItem = page.locator("#faq details").first();
-  const summary = firstItem.locator("summary");
+  const trigger = page.getByRole("button", { name: "What is SFA?" });
+  await expect(trigger).toHaveAttribute("aria-expanded", "false");
 
-  await expect(firstItem).not.toHaveAttribute("open");
-  await expect(firstItem).toContainText(
-    "SFA is an AI-assisted irrigation optimization system",
-  );
-
-  await summary.focus();
-  await expect(summary).toBeFocused();
+  await trigger.focus();
+  await expect(trigger).toBeFocused();
   await page.keyboard.press("Enter");
 
-  await expect(firstItem).toHaveAttribute("open");
+  await expect(trigger).toHaveAttribute("aria-expanded", "true");
   await expect(
-    firstItem.getByText("SFA is an AI-assisted irrigation optimization system", {
+    page.getByText("SFA is an AI-assisted irrigation optimization system", {
       exact: false,
     }),
   ).toBeVisible();
@@ -155,6 +164,12 @@ test("homepage content is visible without JavaScript", async ({ browser }) => {
     page.getByRole("heading", { level: 2, name: "Research results" }),
   ).toHaveCount(1);
   await expect(page.locator("#download")).toContainText("Web app");
+  await expect(page.locator('[data-slot="faq-noscript"]')).toBeVisible();
+  const faqSummary = page.locator('[data-slot="faq-noscript"] summary').first();
+  await faqSummary.click();
+  await expect(
+    page.locator('[data-slot="faq-noscript"] details').first(),
+  ).toHaveAttribute("open", "");
 
   await context.close();
 });

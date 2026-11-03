@@ -13,20 +13,19 @@ const items = [
 ];
 
 describe("FaqAccordion", () => {
-  it("keeps answers in the DOM and opens the native disclosure", async () => {
+  it("keeps answers in the DOM and toggles through the Base UI trigger", async () => {
     const user = userEvent.setup();
     render(<FaqAccordion items={items} />);
 
-    const summary = screen.getByText("What is SFA?").closest("summary");
-    const details = summary?.closest("details");
+    const trigger = screen.getByRole("button", { name: "What is SFA?" });
+    const answer = screen.getByText("A smart irrigation platform.");
 
-    expect(summary).toBeInTheDocument();
-    expect(details).not.toHaveAttribute("open");
-    expect(screen.getByText("A smart irrigation platform.")).toBeInTheDocument();
+    expect(trigger).toHaveAttribute("aria-expanded", "false");
+    expect(answer).toBeInTheDocument();
 
-    await user.click(summary as HTMLElement);
+    await user.click(trigger);
 
-    expect(details).toHaveAttribute("open");
-    expect(screen.getByText("A smart irrigation platform.")).toBeVisible();
+    expect(trigger).toHaveAttribute("aria-expanded", "true");
+    expect(answer).toBeVisible();
   });
 });

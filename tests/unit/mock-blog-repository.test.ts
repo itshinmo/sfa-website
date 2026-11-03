@@ -30,6 +30,20 @@ describe("MockBlogRepository", () => {
     ).toBe(true);
   });
 
+  it("matches all selected tags", async () => {
+    const result = await repository.listPosts({
+      locale: "en",
+      tags: ["water", "research"],
+    });
+
+    expect(result.items.length).toBeGreaterThan(0);
+    expect(
+      result.items.every((post) =>
+        ["water", "research"].every((tag) => post.tags.some((item) => item.slug === tag)),
+      ),
+    ).toBe(true);
+  });
+
   it("searches Persian text with Arabic character variants", async () => {
     const result = await repository.listPosts({ locale: "fa", q: "خاك" });
 

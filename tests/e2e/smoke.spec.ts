@@ -26,16 +26,22 @@ test("blog index renders posts and opens a detail page", async ({ page }) => {
 });
 
 test("language switcher keeps the locale route working", async ({ page }) => {
-  await page.goto("/fa");
-  await page.getByRole("link", { name: /English/ }).click();
+  await page.goto("/fa", { waitUntil: "networkidle" });
+  await expect(page.locator("html")).toHaveAttribute("data-hydrated", "true");
+
+  await page.getByRole("combobox", { name: /Language|زبان/ }).click();
+  await page.getByRole("option", { name: "English" }).click();
 
   await expect(page).toHaveURL(/\/en$/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Precise water");
 });
 
 test("blog language switch uses the translated slug", async ({ page }) => {
-  await page.goto("/en/blog/soil-texture-triangle");
-  await page.getByRole("link", { name: /فارسی/ }).click();
+  await page.goto("/en/blog/soil-texture-triangle", { waitUntil: "networkidle" });
+  await expect(page.locator("html")).toHaveAttribute("data-hydrated", "true");
+
+  await page.getByRole("combobox", { name: /Language|زبان/ }).click();
+  await page.getByRole("option", { name: "فارسی" }).click();
 
   await expect(page).toHaveURL(/\/fa\/blog\/%D9%85%D8%AB%D9%84%D8%AB/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("بافت خاک");

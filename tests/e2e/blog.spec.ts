@@ -26,12 +26,35 @@ test("blog tag filters are links with an accessible current state", async ({ pag
   await topics.getByRole("link", { name: /^Water/ }).click();
 
   await expect(page).toHaveURL(/\/en\/blog\?tag=water$/);
-  await expect(page.getByRole("status")).toContainText("Topic: Water");
+  await expect(page.getByRole("status")).toContainText("Topics: Water");
   await expect(topics.getByRole("link", { name: /^Water/ })).toHaveAttribute(
     "aria-current",
     "page",
   );
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+});
+
+test("blog supports multiple filters and removing them independently", async ({
+  page,
+}) => {
+  await page.goto("/en/blog");
+
+  const topics = page.getByRole("navigation", { name: "Topics" });
+  await topics.getByRole("link", { name: /^Water/ }).click();
+  await expect(page).toHaveURL(/\/en\/blog\?tag=water$/);
+
+  await topics.getByRole("link", { name: /^Research/ }).click();
+  await expect(page).toHaveURL(/\/en\/blog\?tag=water&tag=research$/);
+  await expect(page.getByRole("status")).toContainText("Topics: Water, Research");
+  await expect(page.getByRole("article")).toHaveCount(1);
+
+  const remove = page.getByRole("link", { name: "Remove Water" });
+  await expect(remove).toBeVisible();
+  await remove.click();
+
+  await expect(page).toHaveURL(/\/en\/blog\?tag=research$/);
+  await expect(page.getByRole("status")).toContainText("Topics: Research");
+  await expect(page.getByRole("article")).toHaveCount(4);
 });
 
 test("blog pagination moves between pages", async ({ page }) => {
@@ -63,12 +86,13 @@ test("blog search empty state offers a way to clear filters", async ({ page }) =
 test("blog detail builds a table of contents from structured headings", async ({
   page,
 }) => {
-  await page.goto("/en/blog/soil-texture-triangle");
+  await page.goto("/en/blog/soil-texture-triangle", { waitUntil: "networkidle" });
+  await expect(page.locator("html")).toHaveAttribute("data-hydrated", "true");
 
   const toc = page.getByRole("navigation", { name: "On this page" });
   await expect(toc).toBeVisible();
 
-  const link = toc.getByRole("link", { name: "Sandy soil group" });
+  const link = toc.getByRole("link", { name: /Sandy Soil Group/ });
   await expect(link).toHaveAttribute("href", "#reference-section-1");
 
   await link.click();
@@ -130,5 +154,5 @@ test("Persian blog counts and reading time use Persian digits", async ({ page })
   await expect(page.getByRole("status")).toContainText("صفحه ۱ از ۲");
 
   await page.goto("/fa/blog/مثلث-بافت-خاک");
-  await expect(page.getByText("۷ دقیقه مطالعه")).toBeVisible();
+  await expect(page.getByText("۶ دقیقه مطالعه")).toBeVisible();
 });

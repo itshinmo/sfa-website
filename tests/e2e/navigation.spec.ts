@@ -4,10 +4,7 @@ test.use({ viewport: { width: 390, height: 844 } });
 
 test("mobile navigation closes on Escape and restores focus", async ({ page }) => {
   await page.goto("/fa", { waitUntil: "networkidle" });
-  await expect(page.locator("[data-reveal]").first()).toHaveAttribute(
-    "data-reveal",
-    /pending|visible/,
-  );
+  await expect(page.locator("html")).toHaveAttribute("data-hydrated", "true");
 
   const trigger = page.getByRole("button", { name: "باز کردن منو" });
   await trigger.click();
