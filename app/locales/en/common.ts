@@ -26,6 +26,8 @@ const common = {
   footer: {
     rights: "All rights reserved by the SFA team.",
     contact: "Contact us",
+    partners: "Research partner",
+    partnerName: "Soil and Water Research Institute",
   },
   downloads: {
     title: "Bring SFA to your devices",

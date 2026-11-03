@@ -40,12 +40,16 @@ const home = {
     research: "Research results",
     achievements: "Achievements",
     team: "The SFA team",
-    partners: "Partners and supporters",
     blog: "Latest writing",
     faq: "Frequently asked questions",
     contact: "Get in touch",
   },
   newTab: "opens in a new tab",
+  teamCarousel: {
+    label: "SFA team members",
+    pause: "Pause team carousel",
+    play: "Play team carousel",
+  },
   blogTeaser: {
     description: "Notes from the field, the research, and how SFA is used.",
     empty: "New writing will appear here soon.",

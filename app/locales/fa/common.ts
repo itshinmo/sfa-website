@@ -24,6 +24,8 @@ const common = {
   footer: {
     rights: "تمام حقوق برای تیم صفا محفوظ است.",
     contact: "تماس با ما",
+    partners: "همکار پژوهشی",
+    partnerName: "مؤسسه تحقیقات خاک و آب",
   },
   downloads: {
     title: "صفا را روی دستگاه خود داشته باشید",

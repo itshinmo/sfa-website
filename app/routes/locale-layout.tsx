@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import type { Route } from "./+types/locale-layout";
 import { supportedLanguages } from "~/locales";
+import { MotionProvider } from "~/shared/motion/motion-provider";
 import { SiteFooter } from "~/shared/ui/site-footer";
 import { SiteHeader } from "~/shared/ui/site-header";
 
@@ -16,12 +17,14 @@ export function loader({ params }: Route.LoaderArgs) {
 
 export default function LocaleLayout() {
   return (
-    <div className="flex min-h-svh flex-col">
-      <SiteHeader />
-      <div className="flex-1">
-        <Outlet />
+    <MotionProvider>
+      <div className="flex min-h-svh flex-col">
+        <SiteHeader />
+        <div className="flex-1">
+          <Outlet />
+        </div>
+        <SiteFooter />
       </div>
-      <SiteFooter />
-    </div>
+    </MotionProvider>
   );
 }

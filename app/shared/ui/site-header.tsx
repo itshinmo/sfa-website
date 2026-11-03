@@ -1,64 +1,17 @@
+import { AnimatePresence, motion } from "motion/react";
 import { Menu } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink, useLocation, useMatches, useParams } from "react-router";
+import { Link, NavLink, useLocation, useParams } from "react-router";
 import { cn } from "~/shared/lib/cn";
 import { Button, LinkButton } from "~/shared/ui/button";
 import { Container } from "~/shared/ui/container";
+import { LanguageSwitcher } from "~/shared/ui/language-switcher";
 
 const navItems = [
   { key: "home", to: "" },
   { key: "blog", to: "/blog" },
 ] as const;
-
-type BlogAlternate = { locale: string; slug: string };
-
-function findBlogAlternates(matches: ReturnType<typeof useMatches>) {
-  for (const match of matches) {
-    const data = match.loaderData as
-      { post?: { alternates?: BlogAlternate[] } } | undefined;
-    if (data?.post?.alternates?.length) return data.post.alternates;
-  }
-  return undefined;
-}
-
-function LanguageSwitcher({ inverse }: { inverse: boolean }) {
-  const { i18n, t } = useTranslation();
-  const location = useLocation();
-  const matches = useMatches();
-  const params = useParams();
-  const locale = params.locale ?? i18n.resolvedLanguage ?? "fa";
-  const otherLocale = locale === "fa" ? "en" : "fa";
-  const label = otherLocale === "fa" ? t("language.fa") : t("language.en");
-
-  const alternates = findBlogAlternates(matches);
-  const alternate = alternates?.find((item) => item.locale === otherLocale);
-
-  let target = `/${otherLocale}`;
-  if (alternate) {
-    target = `/${otherLocale}/blog/${encodeURIComponent(alternate.slug)}`;
-  } else {
-    const segments = location.pathname.split("/").filter(Boolean);
-    const rest = segments.slice(1).join("/");
-    target = `/${otherLocale}${rest ? `/${rest}` : ""}${location.search}`;
-  }
-
-  return (
-    <Link
-      data-slot="language-switcher"
-      to={target}
-      className={cn(
-        "inline-flex min-h-11 items-center rounded-pill border px-3 text-xs font-semibold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2",
-        inverse
-          ? "border-white/50 text-white hover:border-white hover:bg-white/10 focus-visible:outline-focus-inverse"
-          : "border-border text-muted hover:border-brand hover:text-brand focus-visible:outline-focus",
-      )}
-      aria-label={`${t("language.label")}: ${label}`}
-    >
-      {label}
-    </Link>
-  );
-}
 
 export function SiteHeader() {
   const { t } = useTranslation();
@@ -67,7 +20,7 @@ export function SiteHeader() {
   const locale = params.locale ?? "fa";
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const menuButtonRef = useRef<HTMLElement>(null);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const isHome =
     location.pathname === `/${locale}` || location.pathname === `/${locale}/`;
   const transparent = isHome && !scrolled && !open;
@@ -100,17 +53,17 @@ export function SiteHeader() {
       data-slot="site-header"
       data-transparent={transparent ? "true" : "false"}
       className={cn(
-        "sticky top-0 z-[var(--z-header)] border-b transition-colors duration-[var(--motion-duration-base)] ease-[var(--motion-ease-in-out)]",
+        "sticky top-0 z-[var(--z-header)] border-b transition-[background-color,border-color,box-shadow] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-in-out)]",
         transparent
-          ? "border-transparent bg-brand-950/35 backdrop-blur-sm"
-          : "border-border/80 bg-background/90 backdrop-blur-md",
+          ? "border-transparent bg-brand-950/35 shadow-none backdrop-blur-sm"
+          : "border-border/80 bg-background/90 shadow-sm backdrop-blur-md",
       )}
     >
       <Container className="flex h-[var(--header-height)] items-center justify-between gap-4">
         <Link
           to={`/${locale}`}
           className={cn(
-            "flex min-h-11 min-w-11 items-center gap-3 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4",
+            "group flex min-h-11 min-w-11 items-center gap-3 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4",
             transparent
               ? "focus-visible:outline-focus-inverse"
               : "focus-visible:outline-focus",
@@ -118,11 +71,20 @@ export function SiteHeader() {
         >
           <span
             className={cn(
-              "flex size-9 items-center justify-center rounded-full text-xs font-bold transition-colors",
-              transparent ? "bg-surface text-brand-strong" : "bg-brand text-white",
+              "flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border-2 transition-[background-color,border-color,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-2",
+              transparent ? "border-white/70 bg-surface" : "border-brand bg-surface",
             )}
           >
-            SFA
+            <img
+              src="/images/brand/sfa-512x512.png"
+              alt=""
+              width={40}
+              height={40}
+              className="size-9 object-contain"
+            />
+          </span>
+          <span className="sr-only sm:hidden">
+            {t("siteName")} {t("siteNameFull")}
           </span>
           <span className="hidden flex-col sm:flex">
             <span
@@ -152,7 +114,7 @@ export function SiteHeader() {
               end={item.key === "home"}
               className={({ isActive }) =>
                 cn(
-                  "rounded-pill px-4 py-3 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2",
+                  "group relative rounded-pill px-4 py-3 text-sm font-medium transition-colors focus-visible:outline-2 focus-visible:outline-offset-2",
                   transparent
                     ? [
                         isActive
@@ -198,46 +160,59 @@ export function SiteHeader() {
             aria-controls="mobile-navigation"
             onClick={() => setOpen((value) => !value)}
           >
-            <Menu aria-hidden="true" className="size-5" />
+            <motion.span
+              className="flex"
+              animate={{ rotate: open ? 90 : 0 }}
+              transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <Menu aria-hidden="true" className="size-5" />
+            </motion.span>
           </Button>
         </div>
       </Container>
 
-      {open && (
-        <nav
-          id="mobile-navigation"
-          className="border-t border-border bg-background md:hidden"
-          aria-label={t("siteName")}
-        >
-          <Container className="flex flex-col gap-1 py-3">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.key}
-                to={`/${locale}${item.to}`}
-                end={item.key === "home"}
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.nav
+            id="mobile-navigation"
+            key="mobile-navigation"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.24, ease: [0.22, 1, 0.36, 1] }}
+            className="overflow-hidden border-t border-border bg-background md:hidden"
+            aria-label={t("siteName")}
+          >
+            <Container className="flex flex-col gap-1 py-3">
+              {navItems.map((item) => (
+                <NavLink
+                  key={item.key}
+                  to={`/${locale}${item.to}`}
+                  end={item.key === "home"}
+                  onClick={() => setOpen(false)}
+                  className={({ isActive }) =>
+                    cn(
+                      "inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium transition-colors",
+                      isActive
+                        ? "bg-brand-soft text-brand-strong"
+                        : "text-muted hover:bg-surface-muted",
+                    )
+                  }
+                >
+                  {t(`nav.${item.key}`)}
+                </NavLink>
+              ))}
+              <Link
+                to={`/${locale}#download`}
                 onClick={() => setOpen(false)}
-                className={({ isActive }) =>
-                  cn(
-                    "inline-flex min-h-11 items-center rounded-md px-3 text-sm font-medium",
-                    isActive
-                      ? "bg-brand-soft text-brand-strong"
-                      : "text-muted hover:bg-surface-muted",
-                  )
-                }
+                className="inline-flex min-h-11 items-center rounded-md px-3 text-sm font-semibold text-brand transition-colors hover:bg-surface-muted"
               >
-                {t(`nav.${item.key}`)}
-              </NavLink>
-            ))}
-            <Link
-              to={`/${locale}#download`}
-              onClick={() => setOpen(false)}
-              className="inline-flex min-h-11 items-center rounded-md px-3 text-sm font-semibold text-brand"
-            >
-              {t("actions.download")}
-            </Link>
-          </Container>
-        </nav>
-      )}
+                {t("actions.download")}
+              </Link>
+            </Container>
+          </motion.nav>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
