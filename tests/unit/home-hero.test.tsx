@@ -37,6 +37,22 @@ describe("HomeHero", () => {
     expect(sources[0]).toHaveAttribute("srcset", content.hero.image.landscapeWebp);
     expect(sources[2]).toHaveAttribute("srcset", content.hero.image.portraitWebp);
   });
+
+  it("uses the full-height top-start composition with a scroll cue", () => {
+    const { container } = render(<HomeHero hero={content.hero} />);
+    const section = container.querySelector('[data-slot="home-hero"]');
+
+    expect(section).toHaveClass("hero-frame");
+    expect(section).not.toHaveAttribute("data-variant");
+    expect(container.querySelector('[data-slot="home-hero-copy"]')).toBeInTheDocument();
+    expect(
+      container.querySelector('[data-slot="home-hero-panel"]'),
+    ).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: content.hero.scrollCue })).toHaveAttribute(
+      "href",
+      "#features",
+    );
+  });
 });
 
 describe("HeroTrustStrip", () => {

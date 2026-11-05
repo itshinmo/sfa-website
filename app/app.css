@@ -19,6 +19,7 @@
   --color-brand-50: var(--color-brand-50);
   --color-brand-100: var(--color-brand-100);
   --color-brand-300: var(--color-brand-300);
+  --color-brand-400: var(--color-brand-400);
   --color-brand-500: var(--color-brand-500);
   --color-brand-600: var(--color-brand-600);
   --color-brand-700: var(--color-brand-700);
@@ -27,8 +28,16 @@
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
   --color-water: var(--color-water);
+  --color-water-50: var(--color-water-50);
   --color-water-100: var(--color-water-100);
+  --color-water-500: var(--color-water-500);
   --color-water-700: var(--color-water-700);
+  --color-soil-300: var(--color-soil-300);
+  --color-soil-500: var(--color-soil-500);
+  --color-soil-700: var(--color-soil-700);
+  --color-teal-500: var(--color-teal-500);
+  --color-teal-600: var(--color-teal-600);
+  --color-teal-700: var(--color-teal-700);
   --color-focus: var(--color-focus);
   --color-focus-inverse: var(--color-focus-inverse);
   --color-hero-scrim-strong: var(--color-hero-scrim-strong);
@@ -60,6 +69,7 @@
 
   --radius-card: var(--radius-lg);
   --radius-panel: var(--radius-xl);
+  --radius-button: var(--radius-button);
   --radius-organic: var(--radius-organic);
   --radius-pill: var(--radius-pill);
 
@@ -181,24 +191,20 @@
   }
 }
 
-/* Homepage hero: full-bleed photo frame, scrims, and a no-JS entrance. */
+/* Homepage hero: full-bleed photo frame, scrim, and a no-JS entrance. */
 @layer components {
   .hero-frame {
-    min-height: clamp(34rem, 78svh, 46rem);
+    min-height: 100svh;
   }
 
-  .hero-scrim {
+  .hero-scrim-top {
     background-image: linear-gradient(
-      to top,
-      var(--color-hero-scrim-strong) 0%,
-      var(--color-hero-scrim-strong) 62%,
-      var(--color-hero-scrim-soft) 82%,
-      transparent 100%
+      to bottom,
+      var(--color-hero-scrim-strong) 0,
+      var(--color-hero-scrim-strong) 32rem,
+      var(--color-hero-scrim-soft) 50rem,
+      transparent 62rem
     );
-  }
-
-  .hero-top-scrim {
-    background: linear-gradient(to bottom, var(--color-hero-scrim-strong), transparent);
   }
 
   .hero-rise {
@@ -249,9 +255,26 @@
   }
 }
 
-@media (max-width: 767px) {
-  .hero-frame {
-    min-height: 86svh;
+@media (prefers-reduced-motion: no-preference) {
+  .hero-scroll-cue {
+    animation: hero-scroll-cue-bob var(--motion-duration-cue) var(--motion-ease-in-out)
+      infinite alternate;
+  }
+
+  .hero-scroll-cue:hover,
+  .hero-scroll-cue:focus,
+  .hero-scroll-cue:focus-visible {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes hero-scroll-cue-bob {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(var(--motion-distance-cue));
   }
 }
 

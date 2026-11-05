@@ -86,8 +86,45 @@ test("Persian homepage localizes the document and hero", async ({ request }) => 
   expect(response.status()).toBe(200);
   expect(html).toContain('<html lang="fa" dir="rtl"');
   expect(html).toContain("آب دقیق");
-  expect(html).toContain("دریافت صفا");
+  expect(html).toContain("دریافت SFA");
   expect(html).toMatch(/rel="canonical" href="[^"]+\/fa"/);
   expect(html.toLowerCase()).toContain('hreflang="x-default"');
   expect(html).toContain("نمایی از یک مزرعه سرسبز در نور روز");
+});
+
+test("homepage server-renders the three-device app showcase", async ({ request }) => {
+  const response = await request.get("/en");
+  const html = await response.text();
+
+  for (const [src, alt] of [
+    ["/images/app/app-soil-lab.webp", "The soil lab screen in the SFA app"],
+    ["/images/app/app-irrigation.webp", "The irrigation plan screen in the SFA app"],
+    ["/images/app/app-assistant.webp", "The AI assistant screen in the SFA app"],
+  ]) {
+    expect(html).toContain(`src="${src}"`);
+    expect(html).toContain(`alt="${alt}"`);
+  }
+
+  expect(html).not.toContain("/images/app/app-fields.png");
+  expect(html).not.toContain("/images/app/app-login.jpg");
+  expect(html).toContain('data-slot="device-laptop"');
+  expect(html).toContain('data-slot="device-tablet"');
+  expect(html).toContain('data-slot="device-phone"');
+  expect(html).toContain('loading="lazy"');
+});
+
+test("the design lab stays out of search", async ({ request }) => {
+  const robots = await request.get("/robots.txt");
+  const robotsBody = await robots.text();
+
+  expect(robotsBody).toContain("Disallow: /design-lab");
+
+  const lab = await request.get("/design-lab");
+  const html = await lab.text();
+
+  expect([200, 404]).toContain(lab.status());
+
+  if (lab.status() === 200) {
+    expect(html).toContain('name="robots" content="noindex, nofollow"');
+  }
 });

@@ -23,14 +23,21 @@ export const links: Route.LinksFunction = () => [
   { rel: "manifest", href: "/site.webmanifest" },
   {
     rel: "preload",
-    href: "/fonts/BYekan/BYekan.ttf",
+    href: "/fonts/Vazirmatn/Vazirmatn-Regular.ttf",
     as: "font",
     type: "font/ttf",
     crossOrigin: "anonymous",
   },
   {
     rel: "preload",
-    href: "/fonts/BYekan/BYekanBold.ttf",
+    href: "/fonts/Vazirmatn/Vazirmatn-SemiBold.ttf",
+    as: "font",
+    type: "font/ttf",
+    crossOrigin: "anonymous",
+  },
+  {
+    rel: "preload",
+    href: "/fonts/Vazirmatn/Vazirmatn-Bold.ttf",
     as: "font",
     type: "font/ttf",
     crossOrigin: "anonymous",
@@ -87,7 +94,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#f7f1e3" />
+        <meta name="theme-color" content="#f4f6f2" />
         <Meta />
         <Links />
         <noscript>
@@ -167,7 +174,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
       <h1 className="text-4xl font-bold sm:text-5xl">{title}</h1>
       <p className="max-w-xl text-lg text-muted">{description}</p>
       <a
-        className="w-fit rounded-pill bg-brand px-6 py-3 text-sm font-semibold text-white"
+        className="w-fit rounded-button bg-brand px-6 py-3 text-sm font-semibold text-white"
         href="/fa"
       >
         {t("backHome")}
