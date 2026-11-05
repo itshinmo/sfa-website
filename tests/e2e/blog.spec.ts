@@ -102,6 +102,41 @@ test("blog detail builds a table of contents from structured headings", async ({
   await expect(page.locator("#reference-section-1")).toBeFocused();
 });
 
+test("blog table of contents sticks while the article scrolls", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.goto("/en/blog/soil-texture-triangle", { waitUntil: "networkidle" });
+
+  const toc = page.getByRole("navigation", { name: "On this page" });
+  await expect(toc).toHaveCSS("position", "sticky");
+
+  const headerHeight = await page
+    .locator("header")
+    .first()
+    .evaluate((element) => element.getBoundingClientRect().height);
+  const initial = await toc.boundingBox();
+
+  await page.evaluate(() => window.scrollTo({ top: 1600, behavior: "instant" }));
+  await page.waitForTimeout(150);
+
+  const stuck = await toc.boundingBox();
+  const expectedTop = headerHeight + 16;
+
+  expect(initial?.y ?? 0).toBeGreaterThan(expectedTop);
+  expect(Math.abs((stuck?.y ?? 0) - expectedTop)).toBeLessThanOrEqual(2);
+});
+
+test("blog table of contents precedes the body on mobile", async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto("/en/blog/soil-texture-triangle", { waitUntil: "networkidle" });
+
+  const cover = await page.locator('[data-slot="post-cover"]').boundingBox();
+  const toc = await page.locator('[data-slot="post-toc"]').boundingBox();
+  const body = await page.locator('[data-slot="post-body"]').boundingBox();
+
+  expect(toc?.y ?? 0).toBeGreaterThan(cover?.y ?? 0);
+  expect(toc?.y ?? 0).toBeLessThan(body?.y ?? 0);
+});
+
 test("skip link moves focus to main content", async ({ page }) => {
   await page.goto("/en/blog");
 
