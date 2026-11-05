@@ -11,6 +11,7 @@
     "description": "SFA pairs crop growth models with mathematical optimization to align irrigation with each crop, soil, and growth stage—so water goes where it is needed most.",
     "primaryCta": "Get SFA",
     "secondaryCta": "See how SFA works",
+    "scrollCue": "Continue to the next section",
     "image": {
       "landscape": "/images/homepage/hero-landscape.jpg",
       "landscapeWebp": "/images/homepage/hero-landscape.webp",
@@ -84,25 +85,31 @@
     ],
     "screens": [
       {
-        "id": "fields",
-        "src": "/images/app/app-fields.png",
-        "alt": "The fields screen in the SFA app"
+        "id": "soil-lab",
+        "device": "laptop",
+        "label": "Soil lab",
+        "src": "/images/app/app-soil-lab.webp",
+        "alt": "The soil lab screen in the SFA app",
+        "width": 1325,
+        "height": 828
       },
       {
         "id": "irrigation",
-        "src": "/images/app/app-irrigation.png",
-        "alt": "The irrigation plan screen in the SFA app"
+        "device": "tablet",
+        "label": "Irrigation plan",
+        "src": "/images/app/app-irrigation.webp",
+        "alt": "The irrigation plan screen in the SFA app",
+        "width": 928,
+        "height": 696
       },
       {
-        "id": "soil-lab",
-        "src": "/images/app/app-soil-lab.png",
-        "alt": "The soil lab screen in the SFA app"
-      },
-      {
-        "id": "login",
-        "src": "/images/app/app-login.jpg",
-        "alt": "The SFA app login screen",
-        "webp": "/images/app/app-login.webp"
+        "id": "assistant",
+        "device": "phone",
+        "label": "AI assistant",
+        "src": "/images/app/app-assistant.webp",
+        "alt": "The AI assistant screen in the SFA app",
+        "width": 390,
+        "height": 844
       }
     ]
   },
@@ -222,8 +229,8 @@
       {
         "id": "mohsen-shamsitabar",
         "name": "Mohsen Shamsitabar",
-        "role": "Web Developer",
-        "bio": "Builds scalable web interfaces.",
+        "role": "Software Engineer",
+        "bio": "Software engineer building reliable, accessible web products.",
         "image": "/images/team/Mohsen.png",
         "imageAlt": "Portrait of Mohsen Shamsitabar",
         "links": [

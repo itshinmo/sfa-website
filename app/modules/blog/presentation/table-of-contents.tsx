@@ -1,9 +1,11 @@
 import type { MouseEvent } from "react";
+import { cn } from "~/shared/lib/cn";
 import type { BlogContentHeading } from "../domain/content-headings";
 
 type TableOfContentsProps = {
   items: BlogContentHeading[];
   label: string;
+  className?: string;
 };
 
 function focusHeading(event: MouseEvent<HTMLAnchorElement>, id: string) {
@@ -29,14 +31,17 @@ function focusHeading(event: MouseEvent<HTMLAnchorElement>, id: string) {
   window.history.pushState(null, "", `#${id}`);
 }
 
-export function TableOfContents({ items, label }: TableOfContentsProps) {
+export function TableOfContents({ items, label, className }: TableOfContentsProps) {
   if (items.length < 2) return null;
 
   return (
     <nav
       data-slot="post-toc"
       aria-labelledby="post-toc-heading"
-      className="rounded-card border border-border bg-surface p-5 lg:sticky lg:top-[calc(var(--header-height)+1rem)]"
+      className={cn(
+        "rounded-card border border-border bg-surface p-5 lg:sticky lg:top-[calc(var(--header-height)+1rem)] lg:max-h-[calc(100svh-var(--header-height)-2rem)] lg:self-start lg:overflow-y-auto lg:overscroll-contain",
+        className,
+      )}
     >
       <h2
         id="post-toc-heading"

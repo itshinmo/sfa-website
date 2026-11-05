@@ -13,3 +13,4 @@ one instead of rewriting it.
 | [ADR-006](./ADR-006-agent-knowledge-layer.md)     | Agent-agnostic knowledge layer                |
 | [ADR-007](./ADR-007-quality-gates.md)             | Unit, E2E, axe, and SSR SEO gates             |
 | [ADR-008](./ADR-008-brand-direction.md)           | Field Notes × Rooted hybrid, light mode       |
+| [ADR-009](./ADR-009-app-aligned-identity.md)      | App-aligned palette, type, hero, and showcase |

@@ -40,13 +40,13 @@ export default function NotFound({ loaderData }: Route.ComponentProps) {
         <p className="text-lg text-muted">{t("description")}</p>
         <div className="flex flex-wrap gap-3">
           <Link
-            className="rounded-pill bg-brand px-6 py-3 text-sm font-semibold text-white"
+            className="rounded-button bg-brand px-6 py-3 text-sm font-semibold text-white"
             to={`/${locale}`}
           >
             {t("backHome")}
           </Link>
           <Link
-            className="rounded-pill border border-border px-6 py-3 text-sm font-semibold text-foreground"
+            className="rounded-button border border-border px-6 py-3 text-sm font-semibold text-foreground"
             to={`/${locale}/blog`}
           >
             {t("backBlog")}

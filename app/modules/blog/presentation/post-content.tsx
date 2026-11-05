@@ -301,7 +301,7 @@ export function PostContent({ content }: PostContentProps) {
             <a
               href={content.cta.href}
               rel={isExternalHref(content.cta.href) ? "noopener noreferrer" : undefined}
-              className="inline-flex rounded-pill bg-brand px-6 py-3 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-focus"
+              className="inline-flex rounded-button bg-brand px-6 py-3 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-focus"
             >
               {content.cta.label}
             </a>

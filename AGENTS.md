@@ -146,9 +146,10 @@ pnpm check:all        # check + build
 
 ## Current milestone
 
-The homepage and blog vertical are complete. The signed-off design has evolved
-with a BYekan + Inter two-script pairing, Base UI locale select and animated FAQ,
-Motion team carousel, footer research credit, long-form bilingual blog fixtures,
-multi-tag filtering, sitemap/robots/RSS, and passing unit/E2E/a11y/SEO checks.
-Next: author content/link confirmations, final visual review, and Docker image
-verification on a host with a daemon.
+The homepage and blog vertical are complete. The site now uses the app-aligned
+identity recorded in ADR-009: the SFA app palette, Vazirmatn + Inter, a 100svh
+top-start editorial hero with an opaque scroll cue, and a laptop/tablet/phone
+device showcase with current app screens. The hero composition was chosen on
+2026-11-05 and recorded in the ADR-009 addendum. Next: app-capture approval,
+final visual review, content/link confirmations, and Docker image verification on
+a host with a daemon.

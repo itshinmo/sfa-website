@@ -8,7 +8,10 @@ Add questions here; the orchestrator answers or escalates to the author.
   Signal/dashboard.
 - **Hero:** original farmland photo, desktop + mobile crops, optimized to
   JPEG/WebP.
-- **Typography:** original BYekan regular/bold for v1; author will change later.
+- **Typography:** Vazirmatn (Persian/Arabic) + Inter (Latin) under ADR-009;
+  BYekan is retired from the token/preload path.
+- **Hero composition:** top-start editorial, chosen 2026-11-05; copy at the top,
+  top-weighted scrim, no glass panel. Recorded in the ADR-009 addendum.
 - **Audience:** farmers; alive and informative, not an info dump.
 - **Blog source:** read-only public API; no drafts/editor/CMS.
 - **Locale strategy:** Persian default, `/fa` + `/en`, localized slugs.
@@ -28,9 +31,9 @@ Add questions here; the orchestrator answers or escalates to the author.
    address, hours, social profiles.
 6. **Downloads** — real Google Play, Bazaar, Myket, APK, Windows/macOS/Linux
    URLs; confirm whether the web app requires an account/pricing.
-7. **Imagery** — new app screenshots and any additional field photography.
-8. **App design update** — when the Flutter redesign lands, share the new
-   palette/type/screens so tokens and screenshots can be refreshed.
+7. **Imagery** — approve the three current, non-identifying app captures for
+   the device showcase; new field photography is optional. No
+   account/sidebar/personal data in any capture.
 
 ## Agent questions
 

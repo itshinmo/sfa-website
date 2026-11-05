@@ -331,82 +331,101 @@ export default function BlogDetail({ loaderData }: Route.ComponentProps) {
             </ol>
           </nav>
 
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_16rem]">
-            <article aria-labelledby="post-title" className="min-w-0 space-y-8">
-              <header className="space-y-5">
-                <div
-                  lang={contentLocale}
-                  dir={contentDirection}
-                  className="flex flex-wrap gap-2"
-                >
-                  {post.tags.map((tag) => (
-                    <Link
-                      key={tag.slug}
-                      to={`/${post.locale}/blog?tag=${encodeURIComponent(tag.slug)}`}
-                      className="rounded-pill focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
-                    >
-                      <Badge tone="brand">{tag.label}</Badge>
-                    </Link>
-                  ))}
-                </div>
+          <article
+            aria-labelledby="post-title"
+            className="grid min-w-0 gap-x-10 gap-y-8 lg:grid-cols-[minmax(0,1fr)_16rem]"
+          >
+            <header className="space-y-5 lg:col-start-1 lg:row-start-1">
+              <div
+                lang={contentLocale}
+                dir={contentDirection}
+                className="flex flex-wrap gap-2"
+              >
+                {post.tags.map((tag) => (
+                  <Link
+                    key={tag.slug}
+                    to={`/${post.locale}/blog?tag=${encodeURIComponent(tag.slug)}`}
+                    className="rounded-pill focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+                  >
+                    <Badge tone="brand">{tag.label}</Badge>
+                  </Link>
+                ))}
+              </div>
 
-                <h1
-                  id="post-title"
-                  lang={contentLocale}
-                  dir={contentDirection}
-                  className="text-4xl leading-tight font-black tracking-tight sm:text-6xl"
-                >
-                  {post.title}
-                </h1>
-                <p
-                  lang={contentLocale}
-                  dir={contentDirection}
-                  className="max-w-3xl text-xl text-muted"
-                >
-                  {post.excerpt}
-                </p>
+              <h1
+                id="post-title"
+                lang={contentLocale}
+                dir={contentDirection}
+                className="text-4xl leading-tight font-black tracking-tight sm:text-6xl"
+              >
+                {post.title}
+              </h1>
+              <p
+                lang={contentLocale}
+                dir={contentDirection}
+                className="max-w-3xl text-xl text-muted"
+              >
+                {post.excerpt}
+              </p>
 
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted">
-                  <span>
-                    <time dateTime={post.publishedAt}>
-                      {formatDate(post.publishedAt, post.locale)}
-                    </time>
-                  </span>
-                  {showUpdated && (
-                    <>
-                      <span aria-hidden="true">·</span>
-                      <span>
-                        {t("updated")}{" "}
-                        <time dateTime={post.updatedAt}>
-                          {formatDate(post.updatedAt, post.locale)}
-                        </time>
-                      </span>
-                    </>
-                  )}
-                  <span aria-hidden="true">·</span>
-                  <span>{readingTimeLabel}</span>
-                  {byline && (
-                    <>
-                      <span aria-hidden="true">·</span>
-                      <span>{byline}</span>
-                    </>
-                  )}
-                </div>
-              </header>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted">
+                <span>
+                  <time dateTime={post.publishedAt}>
+                    {formatDate(post.publishedAt, post.locale)}
+                  </time>
+                </span>
+                {showUpdated && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>
+                      {t("updated")}{" "}
+                      <time dateTime={post.updatedAt}>
+                        {formatDate(post.updatedAt, post.locale)}
+                      </time>
+                    </span>
+                  </>
+                )}
+                <span aria-hidden="true">·</span>
+                <span>{readingTimeLabel}</span>
+                {byline && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>{byline}</span>
+                  </>
+                )}
+              </div>
+            </header>
 
-              <figure data-slot="post-cover" lang={contentLocale} dir={contentDirection}>
-                <img
-                  src={post.cover.url}
-                  alt={post.cover.alt}
-                  width={post.cover.width}
-                  height={post.cover.height}
-                  srcSet={post.cover.srcSet}
-                  fetchPriority="high"
-                  decoding="async"
-                  className="aspect-[16/9] w-full rounded-panel object-cover"
-                />
-              </figure>
+            <figure
+              data-slot="post-cover"
+              lang={contentLocale}
+              dir={contentDirection}
+              className="lg:col-start-1 lg:row-start-2"
+            >
+              <img
+                src={post.cover.url}
+                alt={post.cover.alt}
+                width={post.cover.width}
+                height={post.cover.height}
+                srcSet={post.cover.srcSet}
+                fetchPriority="high"
+                decoding="async"
+                className="aspect-[16/9] w-full rounded-panel object-cover"
+              />
+            </figure>
 
+            <TableOfContents
+              items={toc}
+              label={t("toc")}
+              className="lg:col-start-2 lg:row-span-3 lg:row-start-1"
+            />
+
+            <div
+              data-slot="post-body"
+              lang={contentLocale}
+              dir={contentDirection}
+              className="space-y-6 lg:col-start-1 lg:row-start-3"
+            >
               {post.isFallback && (
                 <p
                   role="note"
@@ -416,13 +435,9 @@ export default function BlogDetail({ loaderData }: Route.ComponentProps) {
                 </p>
               )}
 
-              <div data-slot="post-body" lang={contentLocale} dir={contentDirection}>
-                <PostContent content={post.content} />
-              </div>
-            </article>
-
-            <TableOfContents items={toc} label={t("toc")} />
-          </div>
+              <PostContent content={post.content} />
+            </div>
+          </article>
         </Container>
       </Section>
 

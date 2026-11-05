@@ -1,12 +1,12 @@
 /* Self-hosted faces.
  *
- * BYekan is restricted to Persian/Arabic glyphs. Latin words inside Persian
- * sentences therefore fall through to Inter instead of using BYekan's Latin
+ * Vazirmatn is restricted to Persian/Arabic glyphs. Latin words inside Persian
+ * sentences therefore fall through to Inter instead of using Vazirmatn's Latin
  * forms. The pairing keeps mixed-language lines visually coherent.
  */
 @font-face {
-  font-family: "BYekan";
-  src: url("/fonts/BYekan/BYekan.ttf") format("truetype");
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn/Vazirmatn-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -15,8 +15,28 @@
 }
 
 @font-face {
-  font-family: "BYekan";
-  src: url("/fonts/BYekan/BYekanBold.ttf") format("truetype");
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn/Vazirmatn-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200D, U+0640;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn/Vazirmatn-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  unicode-range:
+    U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+200C-200D, U+0640;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn/Vazirmatn-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
   font-display: swap;

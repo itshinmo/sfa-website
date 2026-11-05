@@ -22,5 +22,25 @@ describe("homepage content contract", () => {
     expect(enContent.downloads.items.map((item) => item.id)).toEqual(
       faContent.downloads.items.map((item) => item.id),
     );
+    expect(enContent.showcase.screens.map((screen) => screen.id)).toEqual(
+      faContent.showcase.screens.map((screen) => screen.id),
+    );
+  });
+
+  it("provides a scroll cue and one screen per device", () => {
+    for (const content of [homeContentSchema.parse(fa), homeContentSchema.parse(en)]) {
+      expect(content.hero.scrollCue.trim()).not.toBe("");
+      expect(content.showcase.screens.map((screen) => screen.device)).toEqual([
+        "laptop",
+        "tablet",
+        "phone",
+      ]);
+
+      for (const screen of content.showcase.screens) {
+        expect(screen.label.trim()).not.toBe("");
+        expect(screen.width).toBeGreaterThan(0);
+        expect(screen.height).toBeGreaterThan(0);
+      }
+    }
   });
 });

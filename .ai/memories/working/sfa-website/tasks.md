@@ -69,3 +69,23 @@ Update status as work moves. Status: `todo`, `in-progress`, `review`, `done`,
 | M5-4 | Animated Base UI FAQ + reveal/count-up flicker   | orchestrator | done   | `app/shared/ui/faq-accordion.tsx`, `app/shared/motion/count-up.tsx` |
 | M5-5 | Long bilingual blog fixtures + multi-tag filters | orchestrator | done   | `app/modules/blog/infrastructure/mock-posts.json`, `blog-index.tsx` |
 | M5-6 | Tests, docs, production verification             | orchestrator | done   | `tests`, `docs`                                                     |
+
+## M6 — 2026-11-05 app-aligned identity
+
+| ID   | Task                                                        | Owner        | Status | Files                                                                                         |
+| ---- | ----------------------------------------------------------- | ------------ | ------ | --------------------------------------------------------------------------------------------- |
+| M6-1 | ADR-009 + design/motion/a11y docs + memories                | documenter   | done   | `decisions/ADR-009*`, `docs/*`, `.ai/memories/*`, `README.md`                                 |
+| M6-2 | App palette/type tokens, Vazirmatn, 100svh hero, scroll cue | implementer  | done   | `app/styles/*`, `app/root.tsx`, `app/shared/ui/button.tsx`, `app/modules/home/presentation/*` |
+| M6-3 | Device showcase (laptop/tablet/phone) + CSS frames          | implementer  | done   | `app/modules/home/presentation/device-*.tsx`, `home-showcase.tsx`, `app/app.css`              |
+| M6-4 | Content schema/JSON, app captures, theme/manifest           | orchestrator | review | `content/home/*`, `home-content-schema.ts`, `public/images/app/*`, `app/root.tsx`, manifest   |
+| M6-5 | Hero composition choice + demo cleanup                      | author       | done   | `decisions/ADR-009*`, `app/modules/home/presentation/home-hero.tsx`                           |
+| M6-6 | Unit/E2E/a11y/SEO coverage for cue and showcase             | quality      | done   | `tests/*`                                                                                     |
+
+## M7 — 2026-11-05 follow-up refinement
+
+| ID   | Task                                            | Owner        | Status | Files                                                   |
+| ---- | ----------------------------------------------- | ------------ | ------ | ------------------------------------------------------- |
+| M7-1 | Persian SFA naming + Mohsen profile             | orchestrator | done   | `content/home/*`, `app/locales/fa/*`, `mock-posts.json` |
+| M7-2 | RTL/LTR carousel correctness + pause removal    | implementer  | done   | `home-team.tsx`, `marquee.ts`, `app/locales/*/home.ts`  |
+| M7-3 | Blog TOC sticky desktop + top-of-article mobile | implementer  | done   | `blog-detail.tsx`, `table-of-contents.tsx`              |
+| M7-4 | Regression tests and docs                       | quality      | done   | `tests/*`, `docs/*`                                     |

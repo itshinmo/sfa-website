@@ -1,16 +1,18 @@
 # Design system
 
-The website has a **new marketing identity**, separate from the Flutter app UI.
-The SFA logo and a green accent remain as brand anchors. The app is a product
-reference, not a pixel template.
+The production identity is **app-aligned**
+([ADR-009](../decisions/ADR-009-app-aligned-identity.md)). The SFA application is
+the source of the palette, type, surfaces, and product feeling. The website
+shares that visual language, but it remains an editorial marketing site: it does
+**not** clone the app shell, navigation model, dashboard density, or data
+widgets.
 
-**Locked direction: Field Notes × Rooted.** A light, editorial hybrid of
-direction 01 (scientific agritech) and direction 02 (organic modern). It keeps
-01's forest/cream/water palette, research-led hierarchy, and precise data
-treatment, then adds 02's warmth, softer surfaces, generous spacing, human/team
-moments, and organic shape language. Direction 03 (Signal) and dashboard
-aesthetics are **not** part of this identity. See
-[ADR-008](../decisions/ADR-008-brand-direction.md).
+The earlier Field Notes × Rooted hybrid
+([ADR-008](../decisions/ADR-008-brand-direction.md)) is superseded for palette
+and typography by ADR-009. ADR-008's editorial principles still hold: light
+mode, a photography-led hero, clear hierarchy, and a calm long-form reading
+experience. The design lab's 01/02/03 proposals remain a historical record, not
+the production token set.
 
 The source of truth for values is `app/styles/tokens.css`. Tailwind maps those
 tokens to utilities in `app/app.css` under `@theme inline`. Font files and
@@ -21,7 +23,7 @@ tokens to utilities in `app/app.css` under `@theme inline`. Font files and
 1. **Primitive** — raw palette, type sizes, spacing, radii, shadows, motion
    durations/easings.
 2. **Semantic** — `--color-bg`, `--color-surface`, `--color-text`,
-   `--color-muted`, `--color-brand`, `--color-accent`, `--color-border`,
+   `--color-text-muted`, `--color-brand`, `--color-accent`, `--color-border`,
    `--color-focus`, `--color-focus-inverse`, `--color-hero-scrim-*`,
    `--font-body`, `--font-display`, etc.
 3. **Component** — optional local variables for variants, such as
@@ -34,120 +36,160 @@ permission to inline values in components.
 
 ## Current color system — light mode only
 
-V1 is **light mode only**. `color-scheme: light` is explicit. The dark forest
-hero overlay is a photo treatment, not a dark theme.
+V1 is **light mode only**. `color-scheme: light` is explicit. The dark green
+hero scrim is a photo treatment, not a dark theme.
 
-| Role              | Token                                        | Value                 | Notes                                    |
-| ----------------- | -------------------------------------------- | --------------------- | ---------------------------------------- |
-| Page background   | `--color-bg` / `bg-background`               | `#f7f1e3`             | warm cream                               |
-| Surface           | `--color-surface` / `bg-surface`             | `#fffcf4`             | paper cards, panels                      |
-| Raised surface    | `--color-surface-raised`                     | `#fbf7ec`             | subtle raised sections                   |
-| Muted surface     | `--color-surface-muted` / `bg-surface-muted` | `#efe7d6`             | section alternation                      |
-| Text              | `--color-text` / `text-foreground`           | `#13231c`             | high contrast                            |
-| Strong text       | `--color-text-strong`                        | `#0b1d16`             | headings                                 |
-| Muted text        | `--color-text-muted` / `text-muted`          | `#4e6157`             | tested ≥ 4.5:1 on all light surfaces     |
-| Brand             | `--color-brand` / `bg-brand`                 | `#15503b`             | interactive primary                      |
-| Brand strong      | `--color-brand-strong` / `bg-brand-strong`   | `#0b2b21`             | hero/dark panels, inverse sections       |
-| Brand soft        | `--color-brand-soft` / `bg-brand-soft`       | `#dde9dd`             | chips, selected states                   |
-| Accent            | `--color-accent`                             | `#387253`             | moss highlight; 5.04:1 on page ground    |
-| Water             | `--color-water` / `bg-water-100`             | `#1d6380` / `#d8eaf1` | data and supporting information          |
-| Border            | `--color-border`                             | `#dcd3c1`             | warm hairline                            |
-| Border strong     | `--color-border-strong`                      | `#6f7c6b`             | 3.91:1 on page ground; inputs/outline UI |
-| Focus             | `--color-focus`                              | `#15503b`             | visible focus ring on light surfaces     |
-| Focus inverse     | `--color-focus-inverse`                      | `#d8eaf1`             | focus ring on the dark hero photo        |
-| Hero scrim strong | `--color-hero-scrim-strong`                  | `rgb(7 28 20 / 0.92)` | bottom/mid of the hero overlay           |
-| Hero scrim soft   | `--color-hero-scrim-soft`                    | `rgb(7 28 20 / 0.35)` | upper fade of the hero overlay           |
-| Danger/success    | `--color-danger*`, `--color-success*`        | unchanged             | feedback states                          |
+The table maps the app palette to its web role. `app/styles/tokens.css` declares
+the matching semantic `--color-*` tokens; components consume those tokens, never
+the hex values.
 
-The palette keeps 01's forest, cream, and water. The page ground is slightly
-warmer than 01's original cream; cards are paper, not pure white. 03's lime,
-near-black surfaces, ticker, and dashboard density are not used.
+| Role              | Value                 | Use and contrast                             |
+| ----------------- | --------------------- | -------------------------------------------- |
+| Page ground       | `#F4F6F2`             | app light green-gray                         |
+| Surface           | `#FFFFFF`             | cards, header, footer                        |
+| Raised surface    | `#FAFCFA`             | subtle raised sections                       |
+| Muted surface     | `#EEF2ED`             | section alternation                          |
+| Text              | `#33444F`             | body; 10.09:1 on white, 9.28:1 on ground     |
+| Strong text       | `#1F2A30`             | headings; 13.48:1 on ground                  |
+| Muted text        | `#5B6B75`             | secondary; 5.52:1 on white, 5.08:1 on ground |
+| Brand interactive | `#007A1F`             | buttons/links; 5.52:1 with white             |
+| App primary       | `#018A24`             | large fills/accents; 4.50:1 on white         |
+| Bright accent     | `#02AA2C`             | decorative/large only; 3.09:1 on white       |
+| Dark brand        | `#006A1A`             | hover/strong green; 6.83:1 on white          |
+| Brand soft        | `#DDF3E2` / `#E8F7EC` | chips, active nav, tinted panels             |
+| Water action      | `#1565C0`             | links/actions; 5.75:1 on white               |
+| Water accent      | `#2196F3`             | large icons/accents; 3.12:1 on white         |
+| Water tint        | `#E3F2FD` / `#EFF8FE` | data panels; water text on tint is 5.03:1    |
+| Soil tan          | `#B0875F` / `#D8B98A` | soil data only; 3.24:1 on white              |
+| Soil text         | `#8A5A33`             | tan text; 5.85:1 on white                    |
+| Assistant teal    | `#0CA5CD` / `#00A99D` | decorative gradient only; 2.88:1 on white    |
+| Assistant text    | `#00796B`             | teal text; 5.32:1 on white                   |
+| Border            | `#E3E9E3`             | hairlines                                    |
+| Border strong     | `#7A8A80`             | inputs/outline UI; 3.34:1 on ground          |
+| Hero scrim strong | `rgb(6 33 18 / 0.94)` | top of the hero photo                        |
+| Hero scrim soft   | `rgb(6 33 18 / 0.38)` | lower hero fade                              |
+| Focus             | `#007A1F`             | visible focus ring on light surfaces; 5.08:1 |
+| Focus inverse     | `#D8EAF1`             | focus ring on the dark hero photo            |
+| Danger/success    | unchanged             | feedback states                              |
 
-`#4CAF50` from the app is **not** used for text or primary buttons on light
-surfaces; it fails AA. The system uses a darker green for text/actions and
-reserves brighter greens for large accents and dark surfaces.
+The website uses the full app palette. Bright app greens, water blue, tan, and
+teal are **large or decorative only**. Normal-size text and actions use the
+darker variants: `#007A1F`, `#006A1A`, `#1565C0`, `#8A5A33`, and `#00796B`.
+The same AA rule applies on the web even when a color is standard in the app.
 
 ### Locked contrast checks
 
 Calculated with the WCAG relative-luminance formula. All normal-text pairs pass
 AA (≥ 4.5:1); UI boundaries pass 3:1.
 
-| Pair                                              | Ratio |
-| ------------------------------------------------- | ----- |
-| Text on page ground                               | 14.51 |
-| Muted text on page ground                         | 5.88  |
-| Muted text on muted surface                       | 5.38  |
-| White on brand                                    | 9.36  |
-| Brand-strong text on brand-soft                   | 12.14 |
-| Water text on water tint                          | 5.39  |
-| Accent on page ground                             | 5.04  |
-| Accent on muted surface                           | 4.61  |
-| Border-strong on page ground                      | 3.91  |
-| Focus ring on page ground                         | 8.31  |
-| White on the strong hero scrim over white         | 8.79  |
-| Focus-inverse on the strong hero scrim over white | 7.10  |
+| Pair                            | Ratio |
+| ------------------------------- | ----- |
+| Text on white                   | 10.09 |
+| Text on page ground             | 9.28  |
+| Muted text on white             | 5.52  |
+| Muted text on page ground       | 5.08  |
+| White on brand                  | 5.52  |
+| Brand on brand soft (`#DDF3E2`) | 4.73  |
+| Dark brand on white             | 6.83  |
+| Water action on white           | 5.75  |
+| Water action on water tint      | 5.03  |
+| Soil text on white              | 5.85  |
+| Assistant text on white         | 5.32  |
+| Border strong on page ground    | 3.34  |
+| Focus ring on page ground       | 5.08  |
+| App primary on white            | 4.50  |
+
+These exact app colors fail normal-text AA on white and are large/decorative
+only:
+
+| App color | Ratio on white |
+| --------- | -------------- |
+| `#02AA2C` | 3.09           |
+| `#448AFF` | 3.32           |
+| `#2196F3` | 3.12           |
+| `#B0875F` | 3.24           |
+| `#0CA5CD` | 2.88           |
 
 The hero must be re-tested against the actual photograph: the scrim is a
 gradient, so verify white text over the brightest area it covers, not only the
-token composite.
+token composite. Measure the composited pixels under the copy.
 
 ## Typography
 
-The site uses a deliberate two-script pairing:
+The site uses a deliberate two-script pairing aligned with the app:
 
-- **Persian/Arabic:** **BYekan**, self-hosted from the migrated original repo
-  (`public/fonts/BYekan/BYekan.ttf` 400, `BYekanBold.ttf` 700). Its
-  `unicode-range` is limited to Persian/Arabic glyphs.
+- **Persian/Arabic:** **Vazirmatn**, self-hosted TTF under
+  `public/fonts/Vazirmatn/` — `Vazirmatn-Regular.ttf` (400),
+  `Vazirmatn-Medium.ttf` (500), `Vazirmatn-SemiBold.ttf` (600), and
+  `Vazirmatn-Bold.ttf` (700). Its `unicode-range` is limited to Persian/Arabic
+  glyphs.
 - **English/Latin:** **Inter Variable**, self-hosted at
   `public/fonts/Inter/InterVariable-latin.woff2` (SIL OFL, licence beside the
   font).
+- **Licence:** `public/fonts/Vazirmatn/OFL.txt`.
 
-Because BYekan excludes Latin glyphs, mixed Persian/English sentences use
-BYekan for Persian and Inter for Latin automatically. The English locale uses
-Inter for the whole page, with BYekan available for Persian fallback content.
+Because Vazirmatn excludes Latin glyphs, mixed Persian/English sentences use
+Vazirmatn for Persian and Inter for Latin automatically. The English locale uses
+Inter for the whole page.
 
-| Token            | Value                                                                                                  |
-| ---------------- | ------------------------------------------------------------------------------------------------------ |
-| `--font-fa`      | `"BYekan", "Inter", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system, sans-serif` |
-| `--font-en`      | `"Inter", "BYekan", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system, sans-serif` |
-| `--font-body`    | `var(--font-fa)`; `html[lang="en"]` switches it to `var(--font-en)`                                    |
-| `--font-display` | same locale switch as `--font-body`                                                                    |
-| `--font-mono`    | `"JetBrains Mono", "SFMono-Regular", Consolas, monospace`                                              |
+| Token            | Value                                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------------- |
+| `--font-fa`      | `"Vazirmatn", "Inter", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system, sans-serif` |
+| `--font-en`      | `"Inter", "Vazirmatn", "Noto Sans Arabic", "Segoe UI", system-ui, -apple-system, sans-serif` |
+| `--font-body`    | `var(--font-fa)`; `html[lang="en"]` switches it to `var(--font-en)`                          |
+| `--font-display` | same locale switch as `--font-body`                                                          |
+| `--font-mono`    | `"JetBrains Mono", "SFMono-Regular", Consolas, monospace`                                    |
 
-- `font-display: swap` is intentional; both faces are preloaded in
-  `app/root.tsx` to keep the first paint stable.
+- Preload weights 400, 600, and 700 in `app/root.tsx`; 500 loads on demand.
+- `font-display: swap` is intentional.
 - `font-synthesis-weight: none` prevents faux bold. Use `font-bold` (700) in
   new components.
 - No external Google Fonts or remote font CDN.
 - Test mixed-language strings at 14px, 16px, 18px, and display sizes. Keep
   display tracking near zero.
+- BYekan is retired from the token and preload path. Its files stay under
+  `public/fonts/BYekan/` for one release as an asset fallback, then are removed.
 - The families are tokens; a future swap touches `fonts.css` and the token
   layer, not components.
 
 ## Layout and shape
 
 - `Container` uses `--page-max` and `--page-gutter`.
-- `Section` keeps the existing `py-16` → `lg:py-24` rhythm. The hybrid direction
-  prefers the generous end; homepage composition should use the larger rhythm
-  and avoid dense stacks of cards.
+- `Section` keeps the `py-16` → `lg:py-24` rhythm. The app-aligned identity
+  keeps the generous editorial rhythm; homepage composition should use the
+  larger rhythm and avoid dense dashboard grids or stacks of cards.
 - Grid: mobile-first; 1 column → 2 → 3 where appropriate.
 - Header height is `--header-height`.
 - Touch targets ≥ 44px; no hover-only controls.
-- Radii: cards `1.25rem` (`rounded-card`), panels `1.75rem`
-  (`rounded-panel`), pills `9999px`.
+- Radii: cards `1rem` / 16px (`--radius-lg`, `rounded-card`), panels `1.5rem` /
+  24px (`--radius-xl`, `rounded-panel`), primary buttons `0.75rem` / 12px
+  (`--radius-button`, `rounded-button`). Chips, tags, and the language switcher
+  stay pills (`9999px`).
 - `--radius-organic` (`46% 54% 48% 52% / 54% 46% 54% 46%`, exposed as
   `rounded-organic`) is for non-interactive editorial photos or decorative
   shapes only. Do not use it on buttons, inputs, cards, or data UI. Keep at
   most one organic shape per viewport.
-- Shadows use warm ink, not neutral black:
-  - card: `0 2px 10px rgb(11 29 22 / 0.06), 0 1px 2px rgb(11 29 22 / 0.04)`
-  - card hover: `0 16px 40px rgb(11 29 22 / 0.09), 0 3px 8px rgb(11 29 22 / 0.04)`
-  - panel: `0 30px 80px rgb(11 29 22 / 0.13), 0 8px 20px rgb(11 29 22 / 0.05)`
+- Shadows use soft, green-tinted ink (`rgb(6 33 18 / …)`), not neutral black:
+  - card: `0 2px 10px rgb(6 33 18 / 0.06), 0 1px 2px rgb(6 33 18 / 0.04)`
+  - card hover: `0 16px 40px rgb(6 33 18 / 0.09), 0 3px 8px rgb(6 33 18 / 0.04)`
+  - panel: `0 30px 80px rgb(6 33 18 / 0.13), 0 8px 20px rgb(6 33 18 / 0.05)`
 
 ## Hero art direction — farmland photo
 
-The hero is the **single full-bleed photographic moment**. It should feel like a
-real field at working light, not a stock “tech” image and not a dashboard.
+The hero is the **single full-bleed photographic moment**. The final target is
+**100svh** (small viewport height), full-bleed, `object-fit: cover`, with the
+existing farmland photo. It should feel like a real field at working light, not
+a stock “tech” image and not a dashboard.
+
+### Composition
+
+The author chose the **top-start editorial** composition on 2026-11-05. The copy
+sits at the logical start, directly below the header. A top-weighted scrim
+protects it; there is no glass panel. The choice is recorded in the
+[ADR-009 addendum](../decisions/ADR-009-app-aligned-identity.md#addendum--2026-11-05-chosen-hero-composition).
+
+The centered-glass variant was not chosen and the review route
+`/:locale/design-lab/hero` has been removed.
 
 ### Assets
 
@@ -165,37 +207,37 @@ filter. A dark overlay is a readability tool, not a colour grade.
 
 ### Composition and crop
 
-- **Desktop:** full-bleed, `min-height: clamp(34rem, 78svh, 46rem)`,
-  `object-fit: cover`, `object-position: 50% 58%`. Keep the receding crop rows
-  and the horizon; crop sky before field. Text sits in the lower third at the
-  inline start.
-- **Mobile:** full-bleed, `min-height: 86svh`, `object-fit: cover`,
-  `object-position: 50% 50%`. The portrait is wider than the phone container, so
-  cover fills the height and crops the sides; vertical object-position does not
-  move the horizon. Keep the rows, horizon, and enough lower field for the text.
-  Do not put white text over the bright sky or the sunlit mountains; keep the
-  eyebrow at or below the tree line. If the eyebrow lands on the mountains,
-  increase the hero min-height (for example 90svh), lower the copy block, or
-  strengthen the lower scrim before adding a text shadow.
-- **Text alignment:** logical `start`; Persian RTL on the right, English LTR on
-  the left. Max text width ~42rem. One eyebrow, one `<h1>`, one short
-  two-line description, two CTAs. No floating stats, no app mock, no feature
-  list in the hero.
-- **Overlay:** a bottom-weighted forest scrim. Suggested composition:
-  `linear-gradient(to top, var(--color-hero-scrim-strong) 0–62%, var(--color-hero-scrim-soft) 82%, transparent)`
-  plus a dark translucent header surface. If a
-  side-weighted scrim is used, mirror it with `:dir(rtl)` so the strongest area
-  stays under the text.
-- **Contrast:** white headline and CTAs must clear 4.5:1 over the strongest
-  scrim; muted hero copy (white at ~80%) must also clear 4.5:1. Test over the
-  brightest part of the actual image, not just the token composite.
-- **CTA hierarchy:** primary is warm paper (`bg-surface text-brand-strong`);
-  secondary is an outline (`border-white/45 text-white`). Primary first in DOM
-  and at the inline start. Both are at least 44px tall. On the photo, use
-  `outline-focus-inverse` for focus; do not use the forest focus token on the
-  dark overlay. Because the shared `Button` default primary is forest green, use
-  a hero-local paper treatment or a dedicated variant for the photo instead of
-  the default primary.
+- **Viewport:** `100svh` at both breakpoints, `object-fit: cover`. The production
+  hero is full-height on every screen size.
+- **Desktop crop:** `object-position: 50% 58%`. Keep the receding crop rows and
+  the horizon; crop sky before field.
+- **Mobile crop:** `object-position: 50% 50%`. The portrait is wider than the
+  phone container, so cover fills the height and crops the sides; vertical
+  object-position does not move the horizon. Keep the rows, horizon, and enough
+  lower field for the text. The top scrim keeps the copy readable over the
+  brighter sky.
+- **Copy:** one eyebrow, one `<h1>`, one short two-line description, two CTAs.
+  Max text width ~42rem. Copy sits at the logical `start` and at the top, below
+  the header (Persian RTL on the right, English LTR on the left). No floating
+  stats, app mock, or feature list in the hero.
+- **Overlay:** a top-weighted dark-green scrim, using
+  `rgb(6 33 18 / 0.94)` hold through `32rem`, `rgb(6 33 18 / 0.38)` at `50rem`,
+  and transparent at `62rem`:
+  `linear-gradient(to bottom, var(--color-hero-scrim-strong) 0–32rem, var(--color-hero-scrim-soft) 50rem, transparent 62rem)`.
+  The lower field stays visible. There is no glass panel. If a side-weighted
+  scrim is added, mirror it with `:dir(rtl)` so the strongest area stays under
+  the text.
+- **Contrast:** white headline and CTAs must clear 4.5:1 over the actual
+  composited pixels, including the top scrim. Muted hero copy (white at ~80%)
+  must also clear 4.5:1. Test over the brightest part of the real landscape and
+  portrait images, not just the token composite.
+- **CTA hierarchy:** primary is an opaque surface button
+  (`bg-surface text-brand-strong`); secondary is an outline
+  (`border-white/45 text-white`). Primary first in DOM and at the inline start.
+  Both are at least 44px tall. On the photo, use `outline-focus-inverse` for
+  focus; do not use the light-surface focus token on the dark overlay. Because
+  the shared `Button` default primary is brand green, use a hero-local surface
+  treatment or a dedicated variant for the photo instead of the default primary.
 - **Image loading:** use `<picture>`:
   - desktop source: `(min-width: 768px)` WebP, then JPG;
   - mobile source: portrait WebP, then portrait JPG fallback in `<img>`;
@@ -205,18 +247,36 @@ filter. A dark overlay is a readability tool, not a colour grade.
   - In the home route `links`, preload **one** matching WebP with a media query
     (`min-width: 768px` vs `max-width: 767px`). Do not preload both crops.
 - **Relationship to the rest of the page:** the hero is the only full-bleed
-  photo. Below it, use cream/paper sections, the generous section rhythm, and at
-  most one secondary editorial field/team photo to create a human moment. Avoid
-  a dashboard panel, floating metric cards, lime accents, or a second dark
-  full-bleed section. The page should move from “alive field” to “calm,
-  credible explanation.”
+  photo. Below it, use the white and muted app surfaces, the generous section
+  rhythm, and at most one secondary editorial field/team photo to create a human
+  moment. Avoid a dashboard panel, floating metric cards, a data ticker, or a
+  second dark full-bleed section. The page should move from “alive field” to
+  “calm, credible explanation.”
+
+### Scroll cue
+
+The hero carries an **opaque** scroll cue, not a faint floating chevron:
+
+- 48×48px solid surface circle with a chevron, centered at the bottom.
+- Visible only while the hero covers the viewport; hidden after about 8px of
+  scroll.
+- Bobs with `transform: translateY()` only, using `--motion-duration-cue` and
+  `--motion-distance-cue`. Pauses on hover/focus; static with reduced motion.
+- When hidden, it leaves the tab order and the accessibility tree. Do not leave
+  an invisible focusable link behind.
+- Without JavaScript it is a normal anchor to `#features` and stays visible.
+- Accessible name comes from `hero.scrollCue`; focus uses
+  `--color-focus-inverse`.
+- Hiding must not shift layout.
 
 ## Components
 
 Base UI primitives live under `app/shared/ui`:
 
-- `Button` — CVA variants `primary`, `secondary`, `outline`, `ghost`; sizes
-  `sm`, `md`, `lg`, `icon`.
+- `Button` — CVA variants `primary`, `secondary`, `outline`, `ghost`, `surface`,
+  `inverse`; sizes `sm`, `md`, `lg`, `icon`. Primary buttons use a 12px radius
+  (`--radius-button`, `rounded-button`); chips, tags, and the language switcher
+  stay pills.
 - `Container`, `Section`, `Card`, `Badge`.
 - `SiteHeader`, `SiteFooter`.
 - `LanguageSwitcher` — Base UI Select, data-driven from
@@ -224,11 +284,43 @@ Base UI primitives live under `app/shared/ui`:
   in that array.
 - FAQ uses Base UI Accordion with animated height and `keepMounted` panels, plus
   a native `<details>` fallback inside `<noscript>`.
-- `HomeTeam` — Motion-driven continuous carousel with pause control and a
-  reduced-motion/native-scroll path.
-- Next: `Field`, `Input`, `SearchField`, `Dialog`/`Popover`, `Tabs`, `Tooltip`,
-  `Pagination`, `TableOfContents`, `EmptyState`, `ErrorState`, `Skeleton`,
-  `DownloadButton`, `StoreBadge`.
+- `HomeTeam` — Motion-driven continuous carousel with hover/focus pause and a
+  reduced-motion/native-scroll path. It is direction-aware in RTL and LTR.
+- `TableOfContents` — generated from structured headings. Sticky in the desktop
+  article column; after the cover and before the body on mobile. Tall lists
+  scroll internally.
+
+The app-aligned component set includes:
+
+- `HeroScrollCue` — the opaque 48px link that targets `#features`. Behavior is
+  specified in the hero section and in [`motion.md`](./motion.md).
+- `DeviceShowcase` — laptop/tablet/phone composition for the current app
+  screens. CSS/SVG generic frames, no hardware trademarks; content order defines
+  the stage order; overlapping perspective stage on desktop and a simplified
+  stack on mobile; logical start/end in RTL.
+
+Next: `Field`, `Input`, `SearchField`, `Dialog`/`Popover`, `Tabs`, `Tooltip`,
+`Pagination`, `EmptyState`, `ErrorState`, `Skeleton`,
+`DownloadButton`, `StoreBadge`.
+
+### App screenshots
+
+The showcase uses current app captures, not the old browser-chrome grid and not
+the 74 MB Photoshop composite:
+
+| Device | Screen          | Asset                                   |
+| ------ | --------------- | --------------------------------------- |
+| Laptop | Soil lab        | `public/images/app/app-soil-lab.webp`   |
+| Tablet | Irrigation plan | `public/images/app/app-irrigation.webp` |
+| Phone  | AI assistant    | `public/images/app/app-assistant.webp`  |
+
+- Crop out the sidebar, account identity, email, phone number, farm identity,
+  and coordinates before export.
+- WebP, lazy-loaded, explicit `width`/`height`, localized alt text, visible
+  localized caption, total target under 300 KB.
+- The asset and its caption must match. The historical mismatch where
+  `app-soil-lab.png` showed the irrigation screen must not return.
+- The old `app-login` and `app-fields` captures are not showcase content.
 
 Rules:
 
@@ -245,16 +337,21 @@ Rules:
 `/design-lab` is an internal, noindex preview, available in development and
 gated by `DESIGN_LAB=1` in production.
 
-**Status: direction chosen.** The production tokens now lock the 01+02 hybrid.
-The lab remains a historical record of the three proposals: 01 Field Notes, 02
-Rooted, and 03 Signal. Its scoped previews intentionally preserve the original
-proposal palettes and radii and are not the production token set; they inherit
-the locked BYekan + Inter pairing. Do not copy 03's dark, lime, or dashboard treatments
-into production.
+**Status: historical.** The lab remains the record of the three proposals from
+2026-11-02: 01 Field Notes, 02 Rooted, and 03 Signal. Production is now the
+app-aligned identity ([ADR-009](../decisions/ADR-009-app-aligned-identity.md)),
+which is not one of those proposals. Its scoped previews intentionally preserve
+the original proposal palettes and radii and are not the production token set;
+they inherit the production Vazirmatn + Inter pairing. Do not copy 03's dark,
+lime, or dashboard treatments into production.
+
+The app-aligned hero has a single production composition, chosen on 2026-11-05;
+there is no separate hero review route. The composition is documented above and
+in the [ADR-009 addendum](../decisions/ADR-009-app-aligned-identity.md#addendum--2026-11-05-chosen-hero-composition).
 
 ## Motion
 
-See [`motion.md`](./motion.md). The locked hybrid uses:
+See [`motion.md`](./motion.md). The app-aligned identity uses:
 
 | Token                        | Value                            |
 | ---------------------------- | -------------------------------- |
@@ -262,14 +359,17 @@ See [`motion.md`](./motion.md). The locked hybrid uses:
 | `--motion-duration-base`     | 280ms                            |
 | `--motion-duration-slow`     | 420ms                            |
 | `--motion-duration-reveal`   | 650ms                            |
+| `--motion-duration-cue`      | 2600ms                           |
 | `--motion-ease-out`          | `cubic-bezier(0.22, 1, 0.36, 1)` |
 | `--motion-ease-in-out`       | `cubic-bezier(0.65, 0, 0.35, 1)` |
 | `--motion-distance-sm/md/lg` | `0.5rem` / `1rem` / `1.5rem`     |
+| `--motion-distance-cue`      | `0.375rem`                       |
 
-Motion is calm and editorial: staggered hero entrance, subtle scroll reveals,
-hover lift 2–4px, count-up only when it adds meaning, and a pauseable team
-carousel. No 03 kinetic ticker, no unpausable autoplay, no scroll hijacking.
-Reduced motion is mandatory.
+Motion is calm and editorial: staggered hero entrance, an opaque hero scroll cue
+that pauses on hover/focus, subtle scroll reveals, hover lift 2–4px, count-up
+only when it adds meaning, and a hover/focus-paused team carousel. The device showcase
+uses Reveal and hover lift only, with no 3D scroll effects. No kinetic ticker, no
+unpausable autoplay, no scroll hijacking. Reduced motion is mandatory.
 
 ## Accessibility
 
@@ -278,12 +378,16 @@ visibility, or reduced motion for visual effects. Test axe on every page type.
 
 - Use `--color-focus-inverse` on the dark hero photo; use `--color-focus`
   elsewhere.
-- Verify BYekan for Persian and Inter for English at 14px, 16px, 18px, and
+- Verify Vazirmatn for Persian and Inter for English at 14px, 16px, 18px, and
   display sizes. `font-synthesis-weight: none` means unsupported weights render
-  at the nearest loaded weight (700).
-- Keep hero text out of the bright sky; use the scrim, not a text shadow, for
-  contrast.
+  at the nearest loaded weight.
+- Bright app accents (`#02AA2C`, `#2196F3`, `#B0875F`, `#0CA5CD`) are large or
+  decorative only; never use them for normal-size text on light surfaces.
+- Keep hero text over the top scrim, not directly on the bright sky; do not use
+  a text shadow for contrast.
 - Test the hero at 360px, 768px, 1024px, and 1440px, and with reduced motion.
+- Test the cue at 48px, with visible focus, and confirm it leaves the tab order
+  when hidden.
 
 ## Extension rules
 
@@ -294,5 +398,6 @@ visibility, or reduced motion for visual effects. Test axe on every page type.
   focus-visible, active, disabled, loading, empty, error).
 - New animation: use motion tokens, provide reduced-motion behavior, and test
   that content is visible without JS.
-- Brand-level change (palette, typeface, logo, layout language): propose 2–3
-  directions in the design lab, then record the choice in an ADR.
+- Brand-level change: keep tokens as the switch point. A change that follows the
+  app is recorded in `docs/`; a change that diverges from the app needs an ADR,
+  and 2–3 design-lab directions when there are real alternatives.

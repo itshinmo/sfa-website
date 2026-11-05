@@ -5,11 +5,11 @@ import { Link, type LinkProps } from "react-router";
 import { cn } from "~/shared/lib/cn";
 
 export const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 rounded-pill text-sm font-semibold whitespace-nowrap transition-[background-color,color,border-color,box-shadow,transform] duration-[var(--motion-duration-fast)] ease-[var(--motion-ease-out)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-focus disabled:pointer-events-none disabled:opacity-50 motion-safe:hover:-translate-y-0.5",
+  "inline-flex items-center justify-center gap-2 rounded-button text-sm font-semibold whitespace-nowrap transition-[background-color,color,border-color,box-shadow,transform] duration-[var(--motion-duration-fast)] ease-[var(--motion-ease-out)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-focus disabled:pointer-events-none disabled:opacity-50 motion-safe:hover:-translate-y-0.5",
   {
     variants: {
       intent: {
-        primary: "bg-brand text-white shadow-card hover:bg-brand-strong",
+        primary: "bg-brand text-white shadow-card hover:bg-brand-700",
         secondary: "bg-brand-soft text-brand-strong hover:bg-brand-100",
         outline:
           "border border-border-strong bg-transparent text-foreground hover:border-brand hover:text-brand",

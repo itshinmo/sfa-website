@@ -1,6 +1,7 @@
 # Design lab — identity directions
 
-- **Status:** chosen — deliberate hybrid of 01 Field Notes + 02 Rooted
+- **Status:** historical — the 2026-11-02 hybrid was superseded for palette and
+  typography by [ADR-009](../decisions/ADR-009-app-aligned-identity.md)
 - **Chosen:** 2026-11-02
 - **Task:** M1-1
 - **Date:** 2026-11-02
@@ -18,10 +19,15 @@
 > of the three proposals and their scoped palettes are not the locked production
 > values.
 
+> **Production update (2026-11-05):** the website moved to the app-aligned
+> identity ([ADR-009](../decisions/ADR-009-app-aligned-identity.md)). The hybrid
+> below and the three previews remain the historical record; the previews keep
+> their scoped palettes and are not the production tokens.
+
 The lab presents three token-driven identity directions using the same content
 and the same shared primitives. Only the palette, type treatment, surface
 language, and motion feel change. The three previews are retained as proposal
-history; production now uses the locked hybrid.
+history; production now uses the app-aligned identity.
 
 ## How to review
 
@@ -44,10 +50,10 @@ stable. Persian specimens and RTL samples explicitly set `lang="fa" dir="rtl"`.
 | 02  | **Rooted**      | Organic modern      | Calm · tactile · human         | Growers, team, fields, photography-led homepage               | Risks generic eco-branding; softness can hide the product              |
 | 03  | **Signal**      | Bold product        | Loud · kinetic · product-first | Launch campaigns, download conversion, social/video           | Energy can overpower research credibility; needs a calm long-form mode |
 
-The type tables below record the proposal-time fallback (Vazirmatn stack). The
-locked production family is BYekan; see
-[`docs/design-system.md`](./design-system.md) and
-[ADR-008](../decisions/ADR-008-brand-direction.md).
+The type tables below record the proposal-time fallback (Vazirmatn stack).
+BYekan was the production family from ADR-008 until ADR-009 replaced it with
+Vazirmatn + Inter. See [`docs/design-system.md`](./design-system.md) and
+[ADR-009](../decisions/ADR-009-app-aligned-identity.md).
 
 **Designer recommendation at proposal time (superseded by the author's
 decision):** 01 as the base for a research-led site, borrowing 03's hero energy
@@ -276,16 +282,18 @@ normal-text pairs pass AA (≥ 4.5:1); large text and UI boundaries pass 3:1.
 ## Decision record
 
 1. **Direction:** deliberate hybrid of 01 Field Notes + 02 Rooted. 03 Signal is
-   rejected. Recorded in ADR-008.
+   rejected. Recorded in ADR-008; superseded by ADR-009 on 2026-11-05.
 2. **Type:** BYekan, self-hosted from the migrated original repo files
-   (`BYekan.ttf`, `BYekanBold.ttf`) with `font-display: swap`. The family stays
-   behind `--font-body` / `--font-display`; the author will revisit it later.
+   (`BYekan.ttf`, `BYekanBold.ttf`) with `font-display: swap`. The family stayed
+   behind `--font-body` / `--font-display`; ADR-009 replaced it with Vazirmatn +
+   Inter.
 3. **Photography:** the migrated farmland hero assets are approved for the hero.
    Team/partner/app-screen assets remain content-migration work.
 4. **Light/dark scope:** light mode only for v1. No dark theme.
-5. **Production:** `app/styles/tokens.css`, the font wiring, and the design docs
-   now implement the hybrid. The homepage implementer builds against those
-   tokens; the lab remains historical reference.
+5. **Production (at the time):** `app/styles/tokens.css`, the font wiring, and
+   the design docs implemented the hybrid. The homepage implementer built
+   against those tokens; the lab remains historical reference. ADR-009 later
+   replaced the palette and type.
 
 ## Verification
 

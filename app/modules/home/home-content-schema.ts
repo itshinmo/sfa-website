@@ -26,6 +26,7 @@ export const homeContentSchema = z.object({
     description: z.string().min(1),
     primaryCta: z.string().min(1),
     secondaryCta: z.string().min(1),
+    scrollCue: z.string().min(1),
     image: z.object({
       landscape: z.string().min(1),
       landscapeWebp: z.string().min(1),
@@ -64,9 +65,13 @@ export const homeContentSchema = z.object({
     screens: z.array(
       z.object({
         id: z.string().min(1),
+        device: z.enum(["laptop", "tablet", "phone"]),
+        label: z.string().min(1),
         src: z.string().min(1),
         webp: z.string().min(1).optional(),
         alt: z.string().min(1),
+        width: z.number().int().positive(),
+        height: z.number().int().positive(),
       }),
     ),
   }),
