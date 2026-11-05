@@ -28,13 +28,18 @@ or provide Chrome; adjust `playwright.config.ts` if the runner differs.
 
 - Homepage in both locales.
 - Blog index → detail navigation.
+- Blog TOC sticky on desktop and placed before the article body on mobile.
 - Locale select and localized blog-slug switch.
 - Search, multi-tag filters with independent removal, pagination.
 - 404.
 - Download CTA states (available vs placeholder).
 - Mobile navigation.
-- Team carousel pause control and reduced-motion behavior.
+- Team carousel movement in both RTL and LTR, hover/focus pause, and
+  reduced-motion behavior.
 - FAQ animation plus no-JS disclosure fallback.
+- Hero scroll cue (48px target, hides after scroll, no-JS anchor, reduced
+  motion) and the three-device app showcase.
+- App showcase images load lazily with explicit dimensions and no overflow.
 
 ### Accessibility
 

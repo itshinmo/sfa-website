@@ -72,11 +72,11 @@ Start with [`AGENTS.md`](./AGENTS.md) for the rules, then:
 
 ## Status
 
-The site has a complete homepage, blog vertical, locked hybrid identity, a
-self-hosted BYekan + Inter pairing, locale select, animated team carousel,
-Base UI FAQ/select primitives, footer research credit, FastAPI blog adapter with
-mock fallback, four templates, TOC, multi-tag filtering, sitemap/robots/RSS, and
-quality gates. Remaining work is author content/link confirmation and Docker
-verification. See the working memory at
+The homepage and blog vertical are complete. The identity is now app-aligned
+([ADR-009](./decisions/ADR-009-app-aligned-identity.md)): the app palette, a
+self-hosted Vazirmatn + Inter pairing, a 100svh top-start editorial hero with an
+opaque scroll cue, and a laptop/tablet/phone device showcase. The hero
+composition was chosen on 2026-11-05; app-capture approval, author content/link
+confirmation, and Docker verification remain. See the working memory at
 [`.ai/memories/working/sfa-website/README.md`](./.ai/memories/working/sfa-website/README.md)
 for the task board.

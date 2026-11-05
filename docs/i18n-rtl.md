@@ -36,8 +36,10 @@ stale cookie.
 - Add a namespace to both locales and register it in `fa/index.ts` and
   `en/index.ts`.
 - No hardcoded UI strings. Proper nouns and API data are exceptions.
-- Persian uses BYekan; English uses Inter. BYekan's `unicode-range` excludes
-  Latin, so mixed sentences fall through to Inter cleanly.
+- Persian uses Vazirmatn; English uses Inter. Vazirmatn's `unicode-range`
+  excludes Latin, so mixed sentences fall through to Inter cleanly. See
+  [`design-system.md`](./design-system.md) and
+  [ADR-009](../decisions/ADR-009-app-aligned-identity.md).
 
 ## Localized slugs
 
