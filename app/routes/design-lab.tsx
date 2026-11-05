@@ -219,7 +219,7 @@ const directions: Direction[] = [
       faDisplay: "آب را اندازه بگیریم.",
       enDisplay: "Water, measured.",
       faBody:
-        "صفا داده‌های خاک، اقلیم و محصول را می‌خواند و برنامهٔ آبیاری را برای هر قطعه زمین تنظیم می‌کند. اعداد ۱۲۳۴۵۶۷۸۹۰؛ نشانه‌ها: ، ؛ ؟ «»",
+        "SFA داده‌های خاک، اقلیم و محصول را می‌خواند و برنامهٔ آبیاری را برای هر قطعه زمین تنظیم می‌کند. اعداد ۱۲۳۴۵۶۷۸۹۰؛ نشانه‌ها: ، ؛ ؟ «»",
       enBody:
         "SFA reads soil, climate, and crop signals to tune irrigation per plot. Numerals 0123456789 — punctuation: , ; ? “”.",
     },
@@ -340,14 +340,14 @@ const directions: Direction[] = [
       accent: "پیش بروید.",
       description:
         "آبیاری هوشمند، آرام و به‌اندازه؛ برای خاکی که نسل بعد هم باید زنده بماند.",
-      primaryCta: "شروع با صفا",
+      primaryCta: "شروع با SFA",
       secondaryCta: "داستان ما",
     },
     specimen: {
       faDisplay: "با ریتم زمین پیش بروید.",
       enDisplay: "Move with the land.",
       faBody:
-        "صفا با خواندن داده‌های خاک، اقلیم و محصول، برنامهٔ آبیاری را برای هر قطعه زمین تنظیم می‌کند. اعداد ۱۲۳۴۵۶۷۸۹۰؛ نشانه‌ها: ، ؛ ؟ «»",
+        "SFA با خواندن داده‌های خاک، اقلیم و محصول، برنامهٔ آبیاری را برای هر قطعه زمین تنظیم می‌کند. اعداد ۱۲۳۴۵۶۷۸۹۰؛ نشانه‌ها: ، ؛ ؟ «»",
       enBody:
         "SFA reads soil, climate, and crop signals to tune irrigation per plot. Numerals 0123456789 — punctuation: , ; ? “”.",
     },
@@ -472,7 +472,7 @@ const directions: Direction[] = [
       faDisplay: "بیشتر رشد. کمتر آب.",
       enDisplay: "Grow more. Use less.",
       faBody:
-        "صفا داده‌های خاک، اقلیم و محصول را می‌خواند و برنامهٔ آبیاری را برای هر قطعه زمین تنظیم می‌کند. اعداد ۱۲۳۴۵۶۷۸۹۰؛ نشانه‌ها: ، ؛ ؟ «»",
+        "SFA داده‌های خاک، اقلیم و محصول را می‌خواند و برنامهٔ آبیاری را برای هر قطعه زمین تنظیم می‌کند. اعداد ۱۲۳۴۵۶۷۸۹۰؛ نشانه‌ها: ، ؛ ؟ «»",
       enBody:
         "SFA reads soil, climate, and crop signals to tune irrigation per plot. Numerals 0123456789 — punctuation: , ; ? “”.",
     },
@@ -787,7 +787,7 @@ function OrganicCard({ direction }: { direction: Direction }) {
           href="/fa#features"
           className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-brand underline-offset-4 hover:underline"
         >
-          داستان صفا
+          داستان SFA
           <span aria-hidden="true">←</span>
         </a>
         <p

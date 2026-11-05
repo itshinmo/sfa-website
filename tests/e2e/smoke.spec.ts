@@ -3,9 +3,9 @@ import { expect, test } from "@playwright/test";
 test("home renders in Persian and exposes the primary CTA", async ({ page }) => {
   await page.goto("/fa");
 
-  await expect(page).toHaveTitle(/صفا/);
+  await expect(page).toHaveTitle(/SFA/);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("آب دقیق");
-  await expect(page.getByRole("link", { name: "دریافت صفا" }).first()).toBeVisible();
+  await expect(page.getByRole("link", { name: "دریافت SFA" }).first()).toBeVisible();
 });
 
 test("blog index renders posts and opens a detail page", async ({ page }) => {

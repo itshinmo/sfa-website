@@ -176,7 +176,7 @@ test("home is server-rendered in both locales", async ({ request }) => {
   const enHtml = await en.text();
 
   expect(faHtml).toContain("آب دقیق");
-  expect(faHtml).toContain("دریافت صفا");
+  expect(faHtml).toContain("دریافت SFA");
   expect(enHtml).toContain("Precise water");
   expect(enHtml).toContain("Get SFA");
 });

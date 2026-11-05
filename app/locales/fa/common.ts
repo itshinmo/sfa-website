@@ -1,5 +1,5 @@
 const common = {
-  siteName: "صفا",
+  siteName: "SFA",
   siteNameFull: "کشاورزی هوشمند آبی",
   siteNameEn: "Smart Farm Aqua",
   tagline: "هوشمندی در هر قطره",
@@ -22,13 +22,13 @@ const common = {
     backHome: "بازگشت به خانه",
   },
   footer: {
-    rights: "تمام حقوق برای تیم صفا محفوظ است.",
+    rights: "تمام حقوق برای تیم SFA محفوظ است.",
     contact: "تماس با ما",
     partners: "همکار پژوهشی",
     partnerName: "مؤسسه تحقیقات خاک و آب",
   },
   downloads: {
-    title: "صفا را روی دستگاه خود داشته باشید",
+    title: "SFA را روی دستگاه خود داشته باشید",
     description:
       "نسخه وب را همین حالا باز کنید یا اپلیکیشن را برای اندروید و دسکتاپ دریافت کنید.",
     web: "نسخه وب",
