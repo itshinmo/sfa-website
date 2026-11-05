@@ -88,12 +88,45 @@ test("homepage renders the selected sections in order", async ({ page }) => {
   await expect(firstTeamLink).toHaveAttribute("target", "_blank");
   await expect(firstTeamLink).toHaveAttribute("rel", "noreferrer");
 
-  const pause = page.getByRole("button", { name: /team carousel/i });
-  if (await pause.isVisible()) {
-    await pause.scrollIntoViewIfNeeded();
-    await expect(pause).toHaveAttribute("aria-pressed", "false");
-    await pause.click();
-    await expect(pause).toHaveAttribute("aria-pressed", "true");
+  await expect(
+    page.getByRole("button", {
+      name: /team carousel|توقف حرکت تیم|پخش حرکت تیم/i,
+    }),
+  ).toHaveCount(0);
+});
+
+test("team carousel advances in both LTR and RTL", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+
+  for (const [path, direction] of [
+    ["/en", "ltr"],
+    ["/fa", "rtl"],
+  ] as const) {
+    await page.goto(path, { waitUntil: "networkidle" });
+    await page.locator("#team").scrollIntoViewIfNeeded();
+
+    const track = page.locator('[data-slot="team-track"]');
+    const readX = () =>
+      track.evaluate((element) => {
+        const transform = getComputedStyle(element).transform;
+        return transform === "none" ? 0 : new DOMMatrixReadOnly(transform).m41;
+      });
+
+    await expect(track).toBeVisible();
+    await page.waitForTimeout(120);
+
+    const start = await readX();
+    await expect
+      .poll(async () => Math.abs((await readX()) - start), { timeout: 3000 })
+      .toBeGreaterThan(4);
+
+    const end = await readX();
+
+    if (direction === "rtl") {
+      expect(end).toBeGreaterThan(start);
+    } else {
+      expect(end).toBeLessThan(start);
+    }
   }
 });
 
@@ -188,4 +221,116 @@ test("homepage fits 360px and stays usable with reduced motion", async ({ page }
 
   await page.locator("#research").scrollIntoViewIfNeeded();
   await expect(page.locator("#research")).toContainText("۲٬۰۰۰");
+});
+
+test("hero cue is a 48px anchor that hides after scrolling", async ({ page }) => {
+  await page.goto("/en");
+
+  const cue = page.locator('[data-slot="hero-scroll-cue"]');
+
+  await expect(cue).toBeVisible();
+  await expect(cue).toHaveAttribute("href", "#features");
+  await expect(cue).toHaveAttribute("aria-label", "Continue to the next section");
+
+  const box = await cue.boundingBox();
+  expect(Math.round(box?.width ?? 0)).toBe(48);
+  expect(Math.round(box?.height ?? 0)).toBe(48);
+
+  await cue.focus();
+  await expect(cue).toBeFocused();
+
+  await page.evaluate(() => window.scrollTo({ top: 240, behavior: "instant" }));
+  await expect(cue).toHaveAttribute("aria-hidden", "true");
+  await expect(cue).toHaveAttribute("tabindex", "-1");
+  await expect(cue).toBeHidden();
+
+  await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
+  await expect(cue).toBeVisible();
+  await expect(cue).not.toHaveAttribute("aria-hidden");
+});
+
+test("hero cue is static with reduced motion", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await page.goto("/en");
+
+  const cue = page.getByRole("link", {
+    name: "Continue to the next section",
+  });
+  const animation = await cue.evaluate((element) => {
+    const style = getComputedStyle(element);
+    return {
+      name: style.animationName,
+      duration: style.animationDuration,
+    };
+  });
+
+  expect(animation.name).toBe("none");
+  await expect(cue).toBeVisible();
+});
+
+test("hero keeps its cue as a plain anchor without JavaScript", async ({ browser }) => {
+  const context = await browser.newContext({
+    baseURL: test.info().project.use.baseURL,
+    javaScriptEnabled: false,
+    viewport: { width: 1280, height: 900 },
+  });
+  const page = await context.newPage();
+
+  await page.goto("/en");
+
+  const cue = page.locator('[data-slot="hero-scroll-cue"]');
+
+  await expect(cue).toBeVisible();
+  await expect(cue).toHaveAttribute("href", "#features");
+  await expect(cue).toHaveAttribute("aria-label", "Continue to the next section");
+  await expect(cue).not.toHaveAttribute("aria-hidden");
+
+  await context.close();
+});
+
+test("homepage showcase presents three labeled app screens", async ({ page }) => {
+  await page.goto("/en", { waitUntil: "networkidle" });
+  await page.locator("#showcase").scrollIntoViewIfNeeded();
+
+  const figures = page.locator('[data-slot="device-figure"]');
+
+  await expect(figures).toHaveCount(3);
+
+  const devices = await figures.evaluateAll((elements) =>
+    elements.map((element) => element.getAttribute("data-device")),
+  );
+  expect(devices).toEqual(["laptop", "tablet", "phone"]);
+
+  const expected = [
+    ["/images/app/app-soil-lab.webp", "Soil lab"],
+    ["/images/app/app-irrigation.webp", "Irrigation plan"],
+    ["/images/app/app-assistant.webp", "AI assistant"],
+  ];
+
+  for (const [index, [src, label]] of expected.entries()) {
+    const figure = figures.nth(index);
+    const image = figure.locator("img");
+
+    await expect(image).toHaveAttribute("src", src);
+    await expect(image).toHaveAttribute("loading", "lazy");
+    await expect(image).toHaveAttribute("decoding", "async");
+    await expect(image).toHaveAttribute("width", /.+/);
+    await expect(image).toHaveAttribute("height", /.+/);
+    await expect(figure.locator("figcaption")).toHaveText(label);
+  }
+
+  await expect
+    .poll(async () =>
+      figures
+        .locator("img")
+        .evaluateAll((images) =>
+          images.every((image) => (image as HTMLImageElement).naturalWidth > 0),
+        ),
+    )
+    .toBe(true);
+
+  const overflow = await page.evaluate(
+    () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  );
+  expect(overflow).toBeLessThanOrEqual(1);
 });

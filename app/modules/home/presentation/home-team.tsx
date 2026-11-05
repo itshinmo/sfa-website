@@ -1,4 +1,3 @@
-import { Pause, Play } from "lucide-react";
 import {
   motion,
   useAnimationFrame,
@@ -10,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import type { HomeContent } from "~/modules/home/home-content-schema";
 import { SectionIntro } from "~/modules/home/presentation/section-intro";
 import { cn } from "~/shared/lib/cn";
-import { Button } from "~/shared/ui/button";
+import { advanceMarquee } from "~/shared/lib/marquee";
 import { Card } from "~/shared/ui/card";
 import { Container } from "~/shared/ui/container";
 import { Reveal } from "~/shared/ui/reveal";
@@ -85,18 +84,20 @@ type HomeTeamProps = {
 };
 
 /**
- * A continuous, pauseable team rail on desktop and a native snap-scroller on
- * small screens. The clone set is presentational only: its links are removed
- * from the tab order and the list is hidden from assistive technology.
+ * A continuous team rail on desktop and a native snap-scroller on small
+ * screens. The rail pauses while the pointer or keyboard focus is inside it,
+ * and stays still when reduced motion is requested. The clone set is
+ * presentational only: its links are removed from the tab order and the list
+ * is hidden from assistive technology.
  */
 export function HomeTeam({ team }: HomeTeamProps) {
-  const { t } = useTranslation("home");
+  const { t, i18n } = useTranslation("home");
   const reduceMotion = useReducedMotion();
   const trackRef = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
-  const [paused, setPaused] = useState(false);
   const [interacting, setInteracting] = useState(false);
   const [desktop, setDesktop] = useState(false);
+  const rtl = i18n.dir() === "rtl";
 
   useEffect(() => {
     const query = window.matchMedia("(min-width: 768px)");
@@ -108,51 +109,45 @@ export function HomeTeam({ team }: HomeTeamProps) {
     return () => query.removeEventListener("change", update);
   }, []);
 
+  // A direction or breakpoint change must not leave a stale transform behind.
+  useEffect(() => {
+    x.set(0);
+  }, [desktop, reduceMotion, rtl, x]);
+
   useAnimationFrame((_time, delta) => {
-    if (!desktop || paused || interacting || reduceMotion) return;
+    if (!desktop || interacting || reduceMotion) return;
 
     const track = trackRef.current;
     if (!track) return;
 
-    const half = track.scrollWidth / 2;
-    if (half <= 0) return;
+    const firstSet = track.firstElementChild as HTMLElement | null;
+    if (!firstSet) return;
 
-    const speed = 0.032;
-    let next = x.get() - delta * speed;
+    const trackStyles = getComputedStyle(track);
+    const gap = Number.parseFloat(trackStyles.columnGap || "0") || 0;
+    const period = firstSet.getBoundingClientRect().width + gap;
+    if (period <= 0) return;
 
-    if (next <= -half) next += half;
-    if (next > 0) next -= half;
-
-    x.set(next);
+    x.set(
+      advanceMarquee({
+        value: x.get(),
+        delta,
+        speed: 0.032,
+        period,
+        rtl,
+      }),
+    );
   });
 
   return (
     <Section id="team">
       <Container className="space-y-10">
         <Reveal>
-          <div className="flex flex-wrap items-end justify-between gap-5">
-            <SectionIntro
-              eyebrow={team.eyebrow}
-              title={team.title}
-              description={team.description}
-            />
-            <Button
-              type="button"
-              intent="outline"
-              size="sm"
-              className="hidden md:inline-flex"
-              aria-pressed={paused}
-              aria-label={paused ? t("teamCarousel.play") : t("teamCarousel.pause")}
-              onClick={() => setPaused((value) => !value)}
-            >
-              {paused ? (
-                <Play aria-hidden="true" className="size-4" />
-              ) : (
-                <Pause aria-hidden="true" className="size-4" />
-              )}
-              <span>{paused ? t("teamCarousel.play") : t("teamCarousel.pause")}</span>
-            </Button>
-          </div>
+          <SectionIntro
+            eyebrow={team.eyebrow}
+            title={team.title}
+            description={team.description}
+          />
         </Reveal>
 
         <div

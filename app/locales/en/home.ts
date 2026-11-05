@@ -47,8 +47,6 @@ const home = {
   newTab: "opens in a new tab",
   teamCarousel: {
     label: "SFA team members",
-    pause: "Pause team carousel",
-    play: "Play team carousel",
   },
   blogTeaser: {
     description: "Notes from the field, the research, and how SFA is used.",
