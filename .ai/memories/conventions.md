@@ -13,6 +13,7 @@ Contract: [`AGENTS.md`](../../../AGENTS.md), [`docs/architecture.md`](../../../d
 - Routes compose; they do not import module infrastructure.
 - Use `cn()` for classes and CVA for variants.
 - No raw values outside `app/styles/tokens.css`.
+- Write canonical Tailwind v4 utilities; no `suggestCanonicalClasses` warnings.
 - Every `className`-bearing layer carries `data-slot`.
 - Use logical CSS properties for RTL.
 - No hardcoded UI strings; add fa/en keys.

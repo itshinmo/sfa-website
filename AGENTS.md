@@ -72,6 +72,9 @@ blog editing.
 - Use Base UI for interactive primitives; do not build an inaccessible custom
   select, dialog, menu, or tooltip.
 - Use `class-variance-authority` for variants and `cn()` for class merging.
+- Use canonical Tailwind v4 utilities (for example `aspect-video`, `inset-s-4`,
+  `duration-(--token)`); the editor's `suggestCanonicalClasses` warning is a
+  defect.
 - A new token or component is justified in `docs/design-system.md` in the same
   change.
 

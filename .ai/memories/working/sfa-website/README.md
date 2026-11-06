@@ -55,6 +55,9 @@ docs/ADR layer.
   is listed as Software Engineer. The team carousel is direction-aware in RTL
   and LTR, its pause button is removed, and the blog TOC sticks on desktop and
   appears before the body on mobile.
+- Tailwind v4 utilities canonicalized across the app; the rule is in
+  `AGENTS.md`, `docs/design-system.md`, and `.ai/memories/conventions.md`, and
+  `app/app.css` excludes `docs/` from source detection.
 
 ## Decisions locked
 
