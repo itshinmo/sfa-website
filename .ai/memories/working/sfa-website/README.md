@@ -50,7 +50,8 @@ docs/ADR layer.
   2026-11-05; the demo route is removed.
 - Theme color and manifest moved to `#F4F6F2`.
 - Unit/E2E/a11y/SEO coverage for the cue, hero variants, and showcase added.
-- Follow-up refinement: Persian brand copy now uses **SFA**; Mohsen Shamsitabar
+- Follow-up refinement: Persian brand copy now uses **SFA**, and Persian blog
+  slugs use the SFA phonetic form (`اس-اف-ای`); Mohsen Shamsitabar
   is listed as Software Engineer. The team carousel is direction-aware in RTL
   and LTR, its pause button is removed, and the blog TOC sticks on desktop and
   appears before the body on mobile.

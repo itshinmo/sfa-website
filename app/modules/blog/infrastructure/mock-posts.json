@@ -1289,7 +1289,7 @@
   },
   {
     "id": "post-3-fa",
-    "slug": "نتایج-پایلوت-صفا",
+    "slug": "نتایج-پایلوت-اس-اف-ای",
     "locale": "fa",
     "translationKey": "sfa-pilot-results",
     "title": "نتایج پایلوت SFA در یک فصل زراعی",
@@ -1320,7 +1320,7 @@
     "alternates": [
       {
         "locale": "fa",
-        "slug": "نتایج-پایلوت-صفا"
+        "slug": "نتایج-پایلوت-اس-اف-ای"
       },
       {
         "locale": "en",
@@ -1532,7 +1532,7 @@
     "alternates": [
       {
         "locale": "fa",
-        "slug": "نتایج-پایلوت-صفا"
+        "slug": "نتایج-پایلوت-اس-اف-ای"
       },
       {
         "locale": "en",
@@ -1721,7 +1721,7 @@
   },
   {
     "id": "post-4-fa",
-    "slug": "به-صفا-خوش-آمدید",
+    "slug": "به-اس-اف-ای-خوش-آمدید",
     "locale": "fa",
     "translationKey": "welcome-to-sfa",
     "title": "به بلاگ SFA خوش آمدید",
@@ -1748,7 +1748,7 @@
     "alternates": [
       {
         "locale": "fa",
-        "slug": "به-صفا-خوش-آمدید"
+        "slug": "به-اس-اف-ای-خوش-آمدید"
       },
       {
         "locale": "en",
@@ -1976,7 +1976,7 @@
     "alternates": [
       {
         "locale": "fa",
-        "slug": "به-صفا-خوش-آمدید"
+        "slug": "به-اس-اف-ای-خوش-آمدید"
       },
       {
         "locale": "en",
