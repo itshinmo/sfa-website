@@ -25,11 +25,11 @@ export function SectionIntro({
       </p>
       <h2
         id={titleId}
-        className="text-3xl font-bold break-words text-foreground-strong sm:text-4xl lg:text-5xl"
+        className="text-3xl font-bold wrap-break-word text-foreground-strong sm:text-4xl lg:text-5xl"
       >
         {title}
       </h2>
-      <p className="text-lg leading-normal break-words text-muted">{description}</p>
+      <p className="text-lg leading-normal wrap-break-word text-muted">{description}</p>
     </div>
   );
 }

@@ -29,7 +29,7 @@ export function HomeAchievements({ achievements }: HomeAchievementsProps) {
               <Reveal delay={index * 60} className="h-full">
                 <Card
                   data-slot="achievement-card"
-                  className="flex h-full items-start gap-4 p-6 transition-[box-shadow,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
+                  className="flex h-full items-start gap-4 p-6 transition-[box-shadow,transform] duration-(--motion-duration-base) ease-(--motion-ease-out) motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
                 >
                   <span
                     aria-hidden="true"

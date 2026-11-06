@@ -45,7 +45,7 @@ export function HomeContact({ contact }: HomeContactProps) {
               >
                 <a
                   href={`mailto:${contact.email}`}
-                  className="break-words underline decoration-border-strong underline-offset-4 hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+                  className="wrap-break-word underline decoration-border-strong underline-offset-4 hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
                 >
                   {contact.email}
                 </a>

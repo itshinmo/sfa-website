@@ -53,13 +53,13 @@ export function SiteHeader() {
       data-slot="site-header"
       data-transparent={transparent ? "true" : "false"}
       className={cn(
-        "sticky top-0 z-[var(--z-header)] border-b transition-[background-color,border-color,box-shadow] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-in-out)]",
+        "sticky top-0 z-(--z-header) border-b transition-[background-color,border-color,box-shadow] duration-(--motion-duration-base) ease-(--motion-ease-in-out)",
         transparent
           ? "border-transparent bg-brand-950/35 shadow-none backdrop-blur-sm"
           : "border-border/80 bg-background/90 shadow-sm backdrop-blur-md",
       )}
     >
-      <Container className="flex h-[var(--header-height)] items-center justify-between gap-4">
+      <Container className="flex h-(--header-height) items-center justify-between gap-4">
         <Link
           to={`/${locale}`}
           className={cn(
@@ -71,7 +71,7 @@ export function SiteHeader() {
         >
           <span
             className={cn(
-              "flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border-2 transition-[background-color,border-color,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-2",
+              "flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border-2 transition-[background-color,border-color,transform] duration-(--motion-duration-base) ease-(--motion-ease-out) motion-safe:group-hover:scale-105 motion-safe:group-hover:-rotate-2",
               transparent ? "border-white/70 bg-surface" : "border-brand bg-surface",
             )}
           >

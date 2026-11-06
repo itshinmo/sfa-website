@@ -50,7 +50,7 @@ export function TabletFrame({ children, className }: DeviceFrameProps) {
       <span
         aria-hidden="true"
         data-slot="device-tablet-button"
-        className="absolute end-0 top-1/3 z-10 h-5 w-0.5 rounded-pill bg-brand-700 sm:h-7"
+        className="absolute inset-e-0 top-1/3 z-10 h-5 w-0.5 rounded-pill bg-brand-700 sm:h-7"
       />
       <div
         data-slot="device-tablet-body"
@@ -78,17 +78,17 @@ export function PhoneFrame({ children, className }: DeviceFrameProps) {
       <span
         aria-hidden="true"
         data-slot="device-phone-volume-up"
-        className="absolute start-0 top-12 z-10 h-4 w-0.5 rounded-pill bg-brand-700 sm:top-16 sm:h-5"
+        className="absolute inset-s-0 top-12 z-10 h-4 w-0.5 rounded-pill bg-brand-700 sm:top-16 sm:h-5"
       />
       <span
         aria-hidden="true"
         data-slot="device-phone-volume-down"
-        className="absolute start-0 top-18 z-10 h-4 w-0.5 rounded-pill bg-brand-700 sm:top-24 sm:h-5"
+        className="absolute inset-s-0 top-18 z-10 h-4 w-0.5 rounded-pill bg-brand-700 sm:top-24 sm:h-5"
       />
       <span
         aria-hidden="true"
         data-slot="device-phone-power"
-        className="absolute end-0 top-14 z-10 h-6 w-0.5 rounded-pill bg-brand-700 sm:top-20 sm:h-8"
+        className="absolute inset-e-0 top-14 z-10 h-6 w-0.5 rounded-pill bg-brand-700 sm:top-20 sm:h-8"
       />
       <div
         data-slot="device-phone-body"

@@ -21,9 +21,9 @@ const frameByDevice = {
 const placementByDevice: Record<ShowcaseScreen["device"], string> = {
   laptop: "lg:absolute lg:inset-x-[8%] lg:top-[3%] lg:z-10 lg:w-auto lg:-rotate-2",
   tablet:
-    "w-3/5 max-w-xs lg:absolute lg:end-0 lg:bottom-[6%] lg:z-20 lg:w-[30%] lg:max-w-none lg:rotate-2",
+    "w-3/5 max-w-xs lg:absolute lg:inset-e-0 lg:bottom-[6%] lg:z-20 lg:w-[30%] lg:max-w-none lg:rotate-2",
   phone:
-    "w-1/3 max-w-36 lg:absolute lg:start-0 lg:bottom-[4%] lg:z-30 lg:w-1/5 lg:max-w-none lg:-rotate-2",
+    "w-1/3 max-w-36 lg:absolute lg:inset-s-0 lg:bottom-[4%] lg:z-30 lg:w-1/5 lg:max-w-none lg:-rotate-2",
 };
 
 type DeviceFigureProps = {
@@ -82,12 +82,12 @@ export function DeviceShowcase({ title, screens }: DeviceShowcaseProps) {
       <span
         aria-hidden="true"
         data-slot="device-showcase-glow"
-        className="pointer-events-none absolute end-0 -top-24 size-56 rounded-full bg-brand-100/70 blur-3xl"
+        className="pointer-events-none absolute inset-e-0 -top-24 size-56 rounded-full bg-brand-100/70 blur-3xl"
       />
 
       <div
         data-slot="device-showcase-stage"
-        className="relative flex flex-col gap-6 sm:gap-8 lg:block lg:aspect-[4/3] lg:[transform:perspective(1800px)_rotateX(3deg)]"
+        className="relative flex flex-col gap-6 sm:gap-8 lg:block lg:aspect-4/3 lg:transform-[perspective(1800px)_rotateX(3deg)]"
       >
         {laptop ? (
           <DeviceFigure screen={laptop} className={placementByDevice.laptop} />
