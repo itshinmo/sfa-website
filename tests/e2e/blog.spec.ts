@@ -157,7 +157,7 @@ test("blog detail exposes breadcrumbs and related reading", async ({ page }) => 
 });
 
 test("case-study headings follow the content locale", async ({ page }) => {
-  await page.goto("/fa/blog/نتایج-پایلوت-صفا");
+  await page.goto("/fa/blog/نتایج-پایلوت-اس-اف-ای");
 
   await expect(page.getByRole("heading", { level: 2, name: "چالش" })).toBeVisible();
   await expect(page.getByRole("heading", { level: 2, name: "راه‌حل" })).toBeVisible();
