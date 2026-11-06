@@ -11,8 +11,8 @@ import {
   useLocation,
 } from "react-router";
 import type { Route } from "./+types/root";
-import { getLocale, i18nextMiddleware, localeCookie } from "./middleware/i18next";
 import "./app.css";
+import { getLocale, i18nextMiddleware, localeCookie } from "./middleware/i18next";
 
 export const middleware = [i18nextMiddleware];
 
@@ -115,7 +115,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <a
           href="#main-content"
           onClick={handleSkipLink}
-          className="sr-only focus:not-sr-only focus:fixed focus:start-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
+          className="sr-only focus:not-sr-only focus:fixed focus:inset-s-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-brand focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-white"
         >
           {t("a11y.skipToContent")}
         </a>
