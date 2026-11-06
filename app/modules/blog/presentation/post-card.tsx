@@ -26,13 +26,13 @@ export function PostCard({
     <article className="h-full">
       <Card
         data-slot="post-card"
-        className="group h-full overflow-hidden transition-[box-shadow,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
+        className="group h-full overflow-hidden transition-[box-shadow,transform] duration-(--motion-duration-base) ease-(--motion-ease-out) motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
       >
         <Link
           to={`/${locale}/blog/${encodeURIComponent(post.slug)}`}
           className="flex h-full flex-col rounded-panel focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
         >
-          <div className="aspect-[16/9] overflow-hidden bg-surface-muted">
+          <div className="aspect-video overflow-hidden bg-surface-muted">
             <img
               src={post.cover.url}
               alt={post.cover.alt}
@@ -41,7 +41,7 @@ export function PostCard({
               loading={priority ? "eager" : "lazy"}
               fetchPriority={priority ? "high" : "auto"}
               decoding="async"
-              className="size-full object-cover transition-transform duration-[var(--motion-duration-slow)] ease-[var(--motion-ease-out)] motion-safe:group-hover:scale-[1.03]"
+              className="size-full object-cover transition-transform duration-(--motion-duration-slow) ease-(--motion-ease-out) motion-safe:group-hover:scale-[1.03]"
             />
           </div>
 

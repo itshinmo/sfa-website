@@ -37,9 +37,9 @@ export function HomeFeatures({ features }: HomeFeaturesProps) {
               <Reveal key={feature.id} delay={index * 60} className="h-full">
                 <Card
                   data-slot="feature-card"
-                  className="group flex h-full flex-col p-6 transition-[box-shadow,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
+                  className="group flex h-full flex-col p-6 transition-[box-shadow,transform] duration-(--motion-duration-base) ease-(--motion-ease-out) motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover"
                 >
-                  <span className="flex size-12 items-center justify-center rounded-card bg-brand-soft text-brand-strong transition-transform duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-3">
+                  <span className="flex size-12 items-center justify-center rounded-card bg-brand-soft text-brand-strong transition-transform duration-(--motion-duration-base) ease-(--motion-ease-out) motion-safe:group-hover:scale-110 motion-safe:group-hover:-rotate-3">
                     <Icon aria-hidden="true" className="size-6" />
                   </span>
                   <h3 className="mt-6 text-xl font-bold text-foreground-strong">

@@ -42,7 +42,7 @@ export function HomeHero({ hero }: HomeHeroProps) {
   return (
     <section
       data-slot="home-hero"
-      className="hero-frame relative isolate -mt-[var(--header-height)] flex flex-col overflow-hidden bg-brand-950 text-white"
+      className="hero-frame relative isolate -mt-(--header-height) flex flex-col overflow-hidden bg-brand-950 text-white"
     >
       <HeroPicture image={hero.image} />
 
@@ -53,7 +53,7 @@ export function HomeHero({ hero }: HomeHeroProps) {
       />
 
       <Container className="relative flex flex-1 flex-col pt-[calc(var(--header-height)+2.5rem)] pb-32">
-        <div data-slot="home-hero-copy" className="max-w-[42rem]">
+        <div data-slot="home-hero-copy" className="max-w-2xl">
           <p
             data-slot="home-hero-eyebrow"
             className="hero-rise hero-rise-1 text-xs font-semibold tracking-[0.22em] text-white uppercase sm:text-sm"

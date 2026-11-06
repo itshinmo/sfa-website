@@ -67,7 +67,7 @@ export function LanguageSwitcher({ inverse = false, className }: LanguageSwitche
         data-slot="language-switcher"
         aria-label={t("language.label")}
         className={cn(
-          "inline-flex min-h-11 items-center gap-2 rounded-pill border px-3 text-xs font-semibold transition-[background-color,border-color,color,transform] duration-[var(--motion-duration-fast)] ease-[var(--motion-ease-out)] hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 data-[popup-open]:-translate-y-0.5",
+          "inline-flex min-h-11 items-center gap-2 rounded-pill border px-3 text-xs font-semibold transition-[background-color,border-color,color,transform] duration-(--motion-duration-fast) ease-(--motion-ease-out) hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 data-popup-open:-translate-y-0.5",
           inverse
             ? "border-white/50 text-white hover:border-white hover:bg-white/10 focus-visible:outline-focus-inverse"
             : "border-border text-muted hover:border-brand hover:text-brand focus-visible:outline-focus",
@@ -76,7 +76,7 @@ export function LanguageSwitcher({ inverse = false, className }: LanguageSwitche
       >
         <Languages aria-hidden="true" className="size-4" />
         <Select.Value />
-        <Select.Icon className="transition-transform duration-[var(--motion-duration-fast)] data-[popup-open]:rotate-180">
+        <Select.Icon className="transition-transform duration-(--motion-duration-fast) data-popup-open:rotate-180">
           <ChevronDown aria-hidden="true" className="size-3.5" />
         </Select.Icon>
       </Select.Trigger>
@@ -85,11 +85,11 @@ export function LanguageSwitcher({ inverse = false, className }: LanguageSwitche
         <Select.Positioner
           sideOffset={8}
           align="end"
-          className="z-[var(--z-toast)] outline-hidden select-none"
+          className="z-(--z-toast) outline-hidden select-none"
         >
           <Select.Popup
             data-slot="language-popup"
-            className="min-w-[var(--anchor-width)] origin-[var(--transform-origin)] rounded-panel border border-border bg-surface p-1.5 text-foreground shadow-panel transition-[opacity,scale] duration-[var(--motion-duration-fast)] ease-[var(--motion-ease-out)] data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0"
+            className="min-w-(--anchor-width) origin-(--transform-origin) rounded-panel border border-border bg-surface p-1.5 text-foreground shadow-panel transition-[opacity,scale] duration-(--motion-duration-fast) ease-(--motion-ease-out) data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0"
           >
             <Select.List>
               {items.map((item) => (

@@ -34,19 +34,19 @@ export function FaqAccordion({ items, className }: FaqAccordionProps) {
           <Accordion.Header className="m-0">
             <Accordion.Trigger
               data-slot="faq-trigger"
-              className="group flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 px-6 py-4 text-start text-base font-semibold text-foreground-strong transition-colors duration-[var(--motion-duration-fast)] hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-focus"
+              className="group flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 px-6 py-4 text-start text-base font-semibold text-foreground-strong transition-colors duration-(--motion-duration-fast) hover:text-brand focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-focus"
             >
               <span>{item.question}</span>
               <ChevronDown
                 aria-hidden="true"
-                className="size-5 shrink-0 text-muted transition-transform duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] group-data-panel-open:rotate-180"
+                className="size-5 shrink-0 text-muted transition-transform duration-(--motion-duration-base) ease-(--motion-ease-out) group-data-panel-open:rotate-180"
               />
             </Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Panel
             data-slot="faq-panel"
             keepMounted
-            className="h-[var(--accordion-panel-height)] overflow-hidden text-sm leading-normal text-muted transition-[height,opacity,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] data-ending-style:h-0 data-ending-style:-translate-y-1 data-ending-style:opacity-0 data-starting-style:h-0 data-starting-style:-translate-y-1 data-starting-style:opacity-0 sm:text-base"
+            className="h-(--accordion-panel-height) overflow-hidden text-sm leading-normal text-muted transition-[height,opacity,transform] duration-(--motion-duration-base) ease-(--motion-ease-out) data-ending-style:h-0 data-ending-style:-translate-y-1 data-ending-style:opacity-0 data-starting-style:h-0 data-starting-style:-translate-y-1 data-starting-style:opacity-0 sm:text-base"
           >
             <div className="px-6 pb-5">{item.answer}</div>
           </Accordion.Panel>

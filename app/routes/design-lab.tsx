@@ -772,7 +772,7 @@ function OrganicCard({ direction }: { direction: Direction }) {
     >
       <div
         aria-hidden="true"
-        className="lab-organic-photo lab-organic-photo--card aspect-[16/10] w-full"
+        className="lab-organic-photo lab-organic-photo--card aspect-16/10 w-full"
       />
       <div className="p-6">
         <div className="flex items-center justify-between gap-3">
@@ -1110,11 +1110,11 @@ function OrganicHero({ direction }: { direction: Direction }) {
           <div
             data-slot="lab-photo"
             aria-hidden="true"
-            className="lab-organic-photo aspect-[4/3] w-full sm:aspect-[4/5]"
+            className="lab-organic-photo aspect-4/3 w-full sm:aspect-4/5"
           />
           <div
             lang="en"
-            className="absolute end-5 top-5 rounded-pill bg-surface px-3 py-1.5 text-xs font-semibold text-foreground shadow-card"
+            className="absolute inset-e-5 top-5 rounded-pill bg-surface px-3 py-1.5 text-xs font-semibold text-foreground shadow-card"
           >
             Photography slot
           </div>
@@ -1122,7 +1122,7 @@ function OrganicHero({ direction }: { direction: Direction }) {
             data-slot="lab-photo-chip"
             dir="rtl"
             lang="fa"
-            className="lab-hero-panel absolute start-4 bottom-4 rounded-panel border p-4 shadow-card"
+            className="lab-hero-panel absolute inset-s-4 bottom-4 rounded-panel border p-4 shadow-card"
           >
             <p className="lab-eyebrow lab-hero-panel-muted">سلامت خاک</p>
             <p className="mt-1 text-3xl font-bold tabular-nums">۸۲٪</p>

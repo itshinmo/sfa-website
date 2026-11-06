@@ -410,7 +410,7 @@ export default function BlogDetail({ loaderData }: Route.ComponentProps) {
                 srcSet={post.cover.srcSet}
                 fetchPriority="high"
                 decoding="async"
-                className="aspect-[16/9] w-full rounded-panel object-cover"
+                className="aspect-video w-full rounded-panel object-cover"
               />
             </figure>
 

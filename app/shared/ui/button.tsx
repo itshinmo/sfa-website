@@ -5,7 +5,7 @@ import { Link, type LinkProps } from "react-router";
 import { cn } from "~/shared/lib/cn";
 
 export const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 rounded-button text-sm font-semibold whitespace-nowrap transition-[background-color,color,border-color,box-shadow,transform] duration-[var(--motion-duration-fast)] ease-[var(--motion-ease-out)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-focus disabled:pointer-events-none disabled:opacity-50 motion-safe:hover:-translate-y-0.5",
+  "inline-flex items-center justify-center gap-2 rounded-button text-sm font-semibold whitespace-nowrap transition-[background-color,color,border-color,box-shadow,transform] duration-(--motion-duration-fast) ease-(--motion-ease-out) focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-focus disabled:pointer-events-none disabled:opacity-50 motion-safe:hover:-translate-y-0.5",
   {
     variants: {
       intent: {

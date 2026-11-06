@@ -29,7 +29,7 @@ function TeamCard({ member, clone = false }: TeamCardProps) {
     <Card
       data-slot={clone ? "team-card-clone" : "team-card"}
       className={cn(
-        "group flex h-full w-[17rem] shrink-0 snap-start flex-col overflow-hidden p-0 transition-[box-shadow,transform] duration-[var(--motion-duration-base)] ease-[var(--motion-ease-out)] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover sm:w-[18rem]",
+        "group flex h-full w-68 shrink-0 snap-start flex-col overflow-hidden p-0 transition-[box-shadow,transform] duration-(--motion-duration-base) ease-(--motion-ease-out) motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-card-hover sm:w-72",
       )}
     >
       <div className="flex flex-1 flex-col items-center gap-3 p-5 text-center">
@@ -41,7 +41,7 @@ function TeamCard({ member, clone = false }: TeamCardProps) {
             height={512}
             loading="lazy"
             decoding="async"
-            className="size-full object-cover object-top transition-transform duration-[var(--motion-duration-slow)] ease-[var(--motion-ease-out)] motion-safe:group-hover:scale-105"
+            className="size-full object-cover object-top transition-transform duration-(--motion-duration-slow) ease-(--motion-ease-out) motion-safe:group-hover:scale-105"
           />
         </div>
 
@@ -52,7 +52,7 @@ function TeamCard({ member, clone = false }: TeamCardProps) {
           </p>
         </div>
 
-        <p className="line-clamp-3 min-h-[4.5rem] text-sm leading-normal text-muted">
+        <p className="line-clamp-3 min-h-18 text-sm leading-normal text-muted">
           {member.bio}
         </p>
 
@@ -65,7 +65,7 @@ function TeamCard({ member, clone = false }: TeamCardProps) {
                   target="_blank"
                   rel="noreferrer"
                   tabIndex={clone ? -1 : undefined}
-                  className="inline-flex min-h-11 items-center gap-1 rounded-pill border border-border px-3 text-xs font-semibold text-brand transition-[background-color,border-color,color,transform] duration-[var(--motion-duration-fast)] hover:-translate-y-0.5 hover:border-brand hover:bg-brand-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+                  className="inline-flex min-h-11 items-center gap-1 rounded-pill border border-border px-3 text-xs font-semibold text-brand transition-[background-color,border-color,color,transform] duration-(--motion-duration-fast) hover:-translate-y-0.5 hover:border-brand hover:bg-brand-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
                 >
                   {link.label}
                   <span className="sr-only"> ({t("newTab")})</span>
@@ -155,7 +155,7 @@ export function HomeTeam({ team }: HomeTeamProps) {
           role="region"
           aria-roledescription="carousel"
           aria-label={t("teamCarousel.label")}
-          className="relative -mx-4 [scrollbar-width:none] overflow-x-auto px-4 pb-4 md:mx-0 md:overflow-hidden md:px-0 [&::-webkit-scrollbar]:hidden"
+          className="relative -mx-4 scrollbar-none overflow-x-auto px-4 pb-4 md:mx-0 md:overflow-hidden md:px-0 [&::-webkit-scrollbar]:hidden"
           onMouseEnter={() => setInteracting(true)}
           onMouseLeave={() => setInteracting(false)}
           onFocusCapture={() => setInteracting(true)}

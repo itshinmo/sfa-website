@@ -373,7 +373,7 @@ export default function BlogIndex({ loaderData }: Route.ComponentProps) {
                   key={item.slug}
                   to={toggleTagHref(item.slug)}
                   className={cn(
-                    "rounded-pill border px-4 py-2 text-sm font-medium transition-[background-color,border-color,color,transform] duration-[var(--motion-duration-fast)] hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
+                    "rounded-pill border px-4 py-2 text-sm font-medium transition-[background-color,border-color,color,transform] duration-(--motion-duration-fast) hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
                     selected
                       ? "border-brand bg-brand-soft text-brand-strong"
                       : "border-border text-muted hover:border-brand hover:text-brand",

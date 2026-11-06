@@ -3,6 +3,9 @@
 @import "./styles/fonts.css";
 @plugin "@tailwindcss/typography";
 
+/* Documentation examples must not become production utilities. */
+@source not "../docs";
+
 @theme inline {
   --color-background: var(--color-bg);
   --color-surface: var(--color-surface);
