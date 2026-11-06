@@ -325,6 +325,15 @@ the 74 MB Photoshop composite:
 Rules:
 
 - Every layer exposing `className` has `data-slot="<name>"`.
+- Use canonical Tailwind v4 utilities. The editor's
+  `tailwindCSS.lint.suggestCanonicalClasses` warning is a defect: `aspect-video`
+  not `aspect-[16/9]`, `inset-s-4` not `start-4`,
+  `duration-(--motion-duration-base)` not
+  `duration-[var(--motion-duration-base)]`, and `data-popup-open:` not
+  `data-[popup-open]:`. Prefer named theme values and spacing-scale utilities;
+  if a literal size must stay legible, add a component token instead of
+  suppressing the warning. `app/app.css` excludes `docs/` from Tailwind source
+  detection so documentation examples never enter the production CSS.
 - Use `render` on Base UI primitives for links/buttons rather than nesting an
   interactive element inside another.
 - Component APIs should expose semantic variants, not raw colors.
